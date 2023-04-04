@@ -1,0 +1,19 @@
+10-mavzu. Sensorli tarmoqlarni asosiy arxitekturasi.
+Reja:
+1.	Sensor tarmog'ining asosiy arxitekturasi
+2.	Arxitekturasining asosiy interfeysi
+
+     Sensorli tarmoqlarni standartlashtirish ko'plab xalqaro tashkilotlar tomonidan amalga oshiriladi, ular orasida Iso, IEC, ITU-T, IEEE va boshqalar. 
+O'zbekiston Respublikasi Prezidentining qarori ISO / IEC JTC 1 (Qo'shma texnik qo'mita 1) sensorli tarmoqning asosiy arxitekturasini aniqladi va uning asosiy interfeyslari (rasm. 3.3). 
+      Rasmdan ko'rinib turibdiki, sensorli tugun quyidagilardan iborat:
+-apparatli ta'minot;
+-asosiy dasturiy ta'minot;
+-amaliy dasturiy ta'minot.
+          Arxitektura tarkibida to'rtta asosiy interfeys mavjud:
+1. Asosiy va amaliy sensorli dasturiy ta'minot o'rtasidagi interfeys tugun.
+2. Asosiy dasturiy ta'minot va apparat o'rtasidagi interfeys sensorli tugun (sensorlar, aktuatorlar va / yoki aloqa tugunlari va boshqalar).
+3. Sensorli tarmoqdagi tugunlar orasidagi simsiz yoki simli interfeyslar.
+4. Sensorli tarmoq va tashqi muhit o'rtasidagi interfeys (xizmat ko'rsatuvchi provayderlar, foydalanuvchilar).
+
+ 
+Rasm. 3.3-Sensorli tarmoqning asosiy elementlari va interfeyslari
