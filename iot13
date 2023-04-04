@@ -1,0 +1,67 @@
+13-mavzu. M2M umumiy tamoyillari va standartizaсiyasi.
+
+Reja:
+1.	M2M umumiy tamoyillari
+2.	M2M umumiy standartizaсiyasi.
+
+Intermashinnoe o'zaro (mashina-mashina o'zaro, eng. Mashina-mashina uchun, M2M) - mashinalarning almashinishiga imkon beruvchi texnologiyalarning umumiy nomi bir-biri bilan axborot, yoki bir tomonlama tarzda e передавать uzatish inson ishtirokisiz qurilmalar o'rtasida avtomatik rejim. Quyosh bilan amaliy xilma-xillik, mashina-mashina shovqin g'oyasi kamaytirilishi mumkin uchta elementning oddiy sxemasi. Raqamli qurilmani (mashinani) tasavvur qiling, har qanday ma'lumotni yig'ish bilan band. Yig'ilgan ma'lumotlar aloqa kanali orqali uzatiladi (simli yoki simsiz) qurilma (mashina) C, qurilma a dan ba'zi olib tashlash, olingan ma'lumotlarni tahlil qilish va natijalarni saqlash va agar kerak bo'lsa, a qurilmasi uchun boshqaruv buyruqlarini yaratish (rasm.4.1). Ishlaydi inson ishtirokisiz bunday sxema (mashina mashina bilan muloqot qiladi), bu erda nom: M2M. M2(CN2)M (mashina – to)-yanada aniq qisqarishdan foydalanish to'g'ri bo'lsa-da-(Aloqa-tarmoq-to-) mashinasi), bu aniq majburiy mavjudligini ko'rsatadi ba'zi telekommunikatsiya tarmoqlari bilan aloqa qilish.
+Mashina va aloqa tarmog'i bilan mashina
+
+ 
+Rasm.4.1-aloqa g'oyasi
+
+Ko'pchilik M2M ni maxsus IoT ishi deb hisoblaydi, ba'zilari esa aksincha –      Intermashinnyh aloqa amalga oshirish uchun bir variant sifatida narsalar Internet. Mualliflar birinchi yondashuvga rioya qiling, chunki narsalarning Interneti-bu atama juda ko'p keng, faqat qurilmalar, odamlar va narsalar bilan o'zaro aloqani nazarda tutmaydi, shuningdek, ushbu o'zaro ta'sirni quyidagi qo'shimcha kontekstlar bilan ta'minlash geografik, vaqtinchalik koordinatalar va boshqalar. 
+M2M tizimlarining paydo bo'lishining aniq sanasi juda qiyin. Birinchi biriM2M ning simsiz echimlar bilan integratsiyalashuvi omnitracs hisoblanadi –1989 yilda tashkil etilgan Qualcomm Amerika kompaniyasining qaroritijorat transporti.
+Mashinani elektron aloqadan chiqarib tashlash, uning rolini kamaytirish kuzatuvchining passiv roli muhim ahamiyatga ega. Inson ishonchsiz-u sekin, xato qilishga moyil, tez charchagan, shuning uchun insonni chiqarib tashlash axborot tizimi ancha samarali elektron qurish imkonini beradi komplekslar. Biroq, XX asrning oxiriga qadar asosiy shaxs bo'lib qoldi generator va erdagi axborotning asosiy iste'molchisi. Va faqat yaqinda vaziyat sezilarli darajada o'zgardi – M2M-funksionallik millionlarda paydo bo'ldi qurilmalar.
+M2M kontsepciyasi telekommunikatsiya va axborot texnologiyalarini birlashtiraditurli texnologik va biznes jarayonlarini avtomatlashtirish uchun. M2M texnologiyasiular turli sohalarda – energetika, logistika, yuk tashishda qo'llaniladi, moliya, savdo, xavfsizlik, menejment, sog'liqni saqlash, ta'lim va boshqalar.
+transport sohasida M2M texnologiyasi, masalan, vosita diagnostikasi uchun ishlatiladi, transport monitoringi, sun'iy yo'ldoshni kuzatish, GLONASS / GPS haydovchilar va yuklarni nazorat qilish va M2MNI kundalik hayotda ishlatishning o'ziga xos misollari energiya sarfi hisoblagichlarini o'lchash va uzatish (elektr energiyasi, suv, gaz va h. k.), uy xavfsizligini ta'minlash (qo'riqlash va yong'in xavfsizligi signal, suv qochqinlarni nazorat qilish). 
+Ichki aloqalarni amalga oshirish uchun barcha mumkin bo'lgan muhitlar qo'llaniladi ma'lumotlar uzatish: elektr liniyalari, optik tolali chiziqlar, radioliniyalar. Biri M2M keng tarqalgan bo'lib foydalaniladigan kichik sinflardan intermashin shovqin mobil echimlardan foydalanish uchun qisqartma ham ishlatilishi mumkin M2M (ingliz tili. Mobil-to-Mobile yoki mobil-to-Machine). Simsiz M2M foydalanish-aloqa aniq foyda beradi. Birinchidan, monitoring qilish imkoniyati va simli aloqa o'rnatish uchun foydasiz bo'lgan uzoq ob'ektlarni boshqarish. 
+Ikkinchidan, yangi qurilmalarni zudlik bilan va oddiygina ulash imkoniyati qo'shimcha xarajatlar. Nihoyat, u foydalanish qaerda ob'ektlarni boshqarish hisoblanadi simlar tamoyili mumkin emas (masalan, monitoring va ko'char nazorat qilish uchun ob'ektlar). 
+                M2M standartlashtirish
+Intermashinnye aloqa narsalar Internet muhim tarkibiy qismi hisoblanadi. 
+Hozirgi vaqtda 140 dan ortiq tashkilot to'g'ridan-to'g'ri yoki bilvosita ajratilishi mumkin 
+M2M standartlashtirish jarayonlarida ishtirok etadi. 
+2007da ETSI texnik qo'mitasi bir qator hujjatlarni tayyorladi elektron sog'liqni saqlash, e-Sog'liqni saqlash, aqlli uchun M2M qo'llash hollari metr, iste'molchilar uchun, shuningdek, atamalar va ta'riflar, M2M xizmatlari uchun talablar va ETSI, machine-to-machine (yoki Mobile to-machine) versiyasiga ko'ra, Telecom va avtomatlashtirish uchun axborot texnologiyalarining simbiozidir biznes jarayonlari va qo'shimcha qiymatli VAS (Value Added Service)xizmatlarini yaratish, axborot va texnologik jarayonlarni boshqarishga qaratilgan jamiyat hayotining turli sohalari.
+M2M ning funktsional arxitekturasi ETSI TS 102 690 standartida taqdim etiladi. U ikkita domenga bo'lingan: domen qurilmalari va Gateway M2M va tarmoq domenlari (rasm. 4.2). 
+M2M qurilmalar va shlyuzlar domen quyidagi elementlarni o'z ichiga oladi:
+1. Qurilma M2M-M2M ilovalarni qo'llab-quvvatlaydi va xizmat foydalanadi M2M. M2M qurilmalari quyidagi tarmoq domeniga ulanadi usullari:
+a) to'g'ridan-to'g'ri ulanish-M2M qurilmasi tarmoq orqali tarmoq domeniga ulanadi kirish, M2M qurilmasi bilan ro'yxatga olish kabi tartiblar mavjud, tarmoq domenida autentifikatsiya qilish, avtorizatsiya qilish, boshqarish va ishga tushirish. 
+M2M qurilma tarmoqdan yashirilgan boshqa qurilmalarga xizmatlarni taqdim etishi mumkin domen nomi;
+b) tarmoq proksi-server sifatida Gateway-M2M qurilmasi ulanadi tarmoq domeni M2M shluzi orqali. M2M qurilmasining shluzi orqali ulanadi mavjud qurilmalar tarmog'i M2M. bu holda Gateway proksi-server rolini o'ynaydi. Orqali proksi-server autentifikatsiya, avtorizatsiya, boshqarish va boshqalar kabi protseduralar mavjud ishga tushirish.
+Umuman olganda, M2M qurilmasi tarmoq domeniga ulanishi mumkin M2M turli shlyuzlari.
+2. M2M kirish tarmog'i-M2M qurilmalari va shlyuzlar o'rtasidagi aloqani ta'minlaydi M2M tarmoqlari misollari IEEE kabi shaxsiy tarmoqlar (PAN) sifatida xizmat qilishi mumkin802.15.1, ZigBee, Bluetooth, IETF ROLL, ISA100.11a yoki PLC, M BUS, simsiz M-BUS va KNX kabi mahalliy tarmoqlar.
+ 
+Rasm. 4.2-yuqori darajadagi etsi M2M arxitekturasi (manba: ETSI)
+3. Gateway M2M-M2M ilovalarini qo'llab-quvvatlaydi va xizmat ko'rsatish qobiliyatidan foydalanadi 
+M2M. Gateway M2M qurilmasi va tarmoq o'rtasida proksi-server vazifasini bajaradi domen. M2M shluzi maxfiy boshqa qurilmalarga xizmatlarni taqdim etishi mumkin tarmoq domen. 
+Tarmoq domenlari quyidagi elementlardan iborat:
+1. M2M kirish tarmog'i-M2M qurilmalari va M2M shlyuzlariga ruxsat beradi transport tarmog'i bilan muloqot qilish. M2M kirish tarmog'i xDSL, HFC dan foydalanadi, sun'iy yo'ldosh tarmoqlari, GERAN, UTRAN, eUTRAN, W-LAN, WiMAX va boshqa texnologiyalar.
+2. M2M transport tarmog'i quyidagilarni ta'minlaydi:
+IP-ulanishlar va aloqa, ehtimol, boshqa yo'llari;
+xizmat va tarmoqni boshqarish funktsiyalari;
+boshqa tarmoqlar bilan ishlash;
+Rouming xizmatlari;
+turli xil xizmatlar to'plamlarini taqdim etish;
+M2M transport tarmog'i, masalan, bunday standartlar asosida amalga oshirilishi mumkin, 3GPP, ETSI TISPAN, 3GPP2 va boshqalar.
+3. M2M xizmat ko'rsatish imkoniyatlari:
+turli xil foydalanish mumkin M2M xususiyatlarini ta'minlash ilovalar;
+ochiq interfeyslar to'plami orqali funktsiyalarni kengaytirish;
+tarmoq yadrosi funksiyasidan foydalanish;
+ilovalarni ishlab chiqish va amalga oshirishni soddalashtirish va optimallashtirish.
+4. M2M ilovalari-xizmatlar mantig'ini amalga oshiradi va xizmat ko'rsatish imkoniyatlaridan foydalanadi 
+Ochiq interfeyslar orqali M2M xizmatlari.
+5. Tarmoqni boshqarish funktsiyalari-tarmoqlarni boshqarish uchun zarur bo'lgan xususiyatlarni o'z ichiga oladi kirish va transport tarmog'i, jumladan, ishga tushirish, boshqarish, boshqarish xatolar va boshqalar.
+6. M2M nazorat funktsiyalari-boshqarish uchun zarur bo'lgan funktsiyalardan iborat tarmoq domenida M2M xizmat ko'rsatish imkoniyatlari. M2M va qurilmalarni boshqarish shlyuzlar M2MNING o'ziga xos xizmat ko'rsatish imkoniyatlarini o'z ichiga oladi:
+M2M boshqaruv funktsiyalari to'plami M2M (Service) xizmatlarini yuklab olish funksiyasini o'z ichiga oladi Bootstrap, MSBF) tegishli serverda amalga oshiriladi. Msbfning roli quyidagicha M2M da doimiy xavfsizlik ma'lumotlarini dastlabki yuklab olishni soddalashtirish qurilma (yoki M2M Gateway) va tarmoq ichida M2M xizmat qobiliyatini foydalanish domen;
+MSBF bilan Yuklangan doimiy xavfsizlik ma'lumotlari saqlanadi M2M autentifikatsiya serveri (M2M) deb nomlangan xavfsiz joyda Authentication Server, MAS). Bunday serverning roli aaa server bo'lishi mumkin. Funktsiya MSBF MAS serverida yoki boshqa qurilmada amalga oshirilishi mumkin, tegishli protokol yordamida MAS bilan o'zaro aloqada bo'lish (masalan, Aaa serveridan foydalangan holda diametri).
+TS standarti 102-690 funktsional jihatdan uchta interfeyslarni aniqlaydi arxitektura M2M (rasm 4.3): 
+ 
+Rasm. 4.3-M2M funktsional arxitekturasining oldingi nuqtalari (manba: ETSI)
+1. Nuqta (interfeys) mIa-NA tarmoq ilovasi (tarmoq ilovasi) va tarmoq domenlari va M2M ilovalarining xizmat ko'rsatish qobiliyatlari o'rtasida. NA uchun ro'yxatdan o'tish va avtorizatsiya qilish, xizmat sessiyalarini boshqarish (voqealar yoki oqim sessiyalari to'g'risidagi hisobot) va to'g'ridan-to'g'ri M2M yoki shlyuzlarda joylashgan ob'ektlar yoki guruhlar uchun o'qish/yozish /ijro/obuna/bildirishnomalar, shuningdek tarmoq domeni tomonidan boshqariladigan
+2. DIa nuqtasi (interfeys) :
+a) qurilma da (qurilma ilovasi) va M2M xizmat ko'rsatish imkoniyatlarini bir xil M2M qurilma yoki M2M shluzi orqali qo'llash;
+b) Gateway ga (Gateway Application) ilovasi va M2M xizmat ko'rsatish qobiliyatlari bir xil M2M Shlyuzida.
+DIa interfeysi qurilma/shluzda DA va GA ilovalari uchun ro'yxatdan o'tish va avtorizatsiya qilish funktsiyalarini bajaradi, ob'ektlar yoki ob'ektlar guruhlari uchun xizmat sessiyalarini boshqarish (voqea hisoboti yoki oqim sessiyalari) va o'qish/yozish/ijro etish/obuna/bildirishnoma ibtidoiy M2M yoki shlyuzlar qurilmalarida, shuningdek, qurilma/Gateway yordamida.
+3. M2M qurilma yoki shluzi va M2M xizmat ko'rsatish qobiliyatlari o'rtasida tarmoq domenida va ilovalarda mId interfeysi. mId M2M yadrosidagi DA va GA ilovalari uchun ro'yxatga olish va avtorizatsiya qilish funktsiyalarini bajaradi, ob'ektlar yoki ob'ektlar guruhlari uchun xizmat sessiyalarini boshqarish (voqea hisoboti yoki oqim sessiyalari) va o'qish/yozish/ijro/ obuna/xabarnomalarni ibtidoiy M2M yoki shlyuzlar qurilmalarida, shuningdek qurilmalar orqali boshqariladigan ob'ektlar guruhlari uchun, tarmoq yadrosi shlyuzlari yoki imkoniyatlari.
+2012-yilda opem2m global hamkorlik loyihasi yaratildi, bu M2M (M2M Service Layer) xizmat ko'rsatish darajasiga oid umumiy va umume'tirof etilgan texnik spetsifikatsiyalar va texnik hisobotlarni shakllantirishga yordam beradi. 
+OneM2M loyihasi doirasida quyidagi yo'nalishlar bo'yicha to'rtta ishchi guruh tashkil etildi: texnik talablar; arxitektura; xavfsizlik; boshqarish, ob'ektlarning umumiy tavsifi va ularning semantikasi. Ushbu guruhlarning natijalari hali ham dastlabki va ishlab chiqilgan hujjatlar kelishuv bosqichlarida. OneM2M tashabbusi ideal tarzda M2M xizmatlarining yagona standartini shakllantirishni nazarda tutadi.shuningdek, axborot uzatish xizmatlari bozori ishtirokchilari, vertikal bozorlar va dasturiy ta'minot arxitekturasini ishlab chiquvchilar bilan o'zaro hamkorlik qilishning yagona yondashuvlarini shakllantirish ko'zda tutilgan.
