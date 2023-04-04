@@ -1,0 +1,32 @@
+9-mavzu. Sensorli tarmoqlarni asosiy tushunchalari va tamoyillari.
+Reja:
+
+1.	Sensorli tarmoqlarning asosiy tushunchalari va tamoyillari 
+2.	Sensorli tarmoqlarning tamoyillari 
+       
+Sensor (ingliz tili., sensor) - nazorat ostida ta'sirni sezadigan qurilma (yorug'lik, bosim, harorat va boshqalar), uning miqdoriy va sifatini o'lchaydi xususiyatlari va o'lchov ma'lumotlarini signalga aylantiradi. Signal bo'lishi mumkin elektr, kimyoviy yoki boshqa turdagi.
+Datchik (ingliz tili., transducer) - konvertatsiya qilish uchun ishlatiladigan qurilma bir turdagi energiya boshqasiga. Shunday qilib, sensor ham sensordir jismoniy ma'lumotni uzatish mumkin bo'lgan elektr energiyasiga aylantiradi qayta ishlash uchun hisoblash tizimi yoki nazoratchi. 
+Aktuator (ingliz tili. ushbu veb – saytida ko'rsatilgan barcha rasmlar, ularning egalari tomonidan mualliflik huquqi bor. 
+boshqariladigan ob'ektning holatini o'zgartirish uchun qabul qilingan signal. Aktuatorda 
+energiya turlarini, masalan, elektr energiyasini yoki energiyani o'zgartiradi siqilgan (siyrak) havo (suyuqlik, tvрдrdogo tanasi) mexanik aylanadi.
+Sensorli tugun (ingliz tili.. sensor node) - bu qurilma, hech bo'lmaganda, bir sensordan (bir yoki bir nechta aktuatorlarni ham o'z ichiga olishi mumkin) va hisoblash va simli yoki simsiz tarmoq imkoniyatlari.
+Sensorli tarmoq-tarqalgan sensorli tugunlar tizimi, o'zaro ta'sir o'tkazish so'rovlar, ishlov berish, uzatish va etkazib berish uchun boshqa tarmoqlar bilan bir qatorda rivojlantirish maqsadida Real jismoniy dunyo ob'ektlaridan olingan ma'lumotlar ushbu ma'lumotlarga javob. Shunday qilib, sensorli tarmoq o'z ichiga oladi eng kamida sensorlar, aktuatorlar va aloqa tugunlari. Asosiy maydon sensorli tarmoq qo'llash nazorat qilish va o'lchanadigan parametrlarni monitoring qilish jismoniy muhitlar va ob'ektlar va ba'zi hollarda-bu ob'ektlarni boshqarish(ularda muayyan jarayonlarni faollashtirish). Sensorli tarmoqlar misollari: keng tarqalgan sensorli tarmoqlar( AQSh-Ubiquitous Sensor Network), transport vositalari uchun tarmoqlar (VANET - Vehicular maxsus Hoc Network), shahar tarmoqlari (HANET-uy maxsus tarmoq), tibbiy tarmoqlar – MBAN (S) - Medicine Body Area Network (services) va boshqalar. 
+sensorli tarmoqlar bilan ishlashda amalga oshiriladigan harakatlar shakl. 3.1 (nuqta chiziq majburiy bo'lmagan jarayonlar ko'rsatiladi).
+
+ 
+Rasm. 3.1-sensorli tarmoqlarda ma'lumotlarni to'plash va boshqarish
+     Sensorli tarmoq qamrovi maydoni bir necha metrdan farq qilishi mumkin bir elementdan xabarlarni uzatish qobiliyati tufayli bir necha kilometr boshqa tarmoqlar. Sensor tarmog'i xabarlarni qayta yuborish qobiliyatiga ega bir tugundan ikkinchisiga zanjir, bu tugunlardan birining muvaffaqiyatsiz bo'lishiga imkon beradi sifatni yo'qotmasdan qo'shni tugunlar orqali ma'lumotlarni uzatishni tashkil qilish. Tarmoq o'zi 
+axborot oqimlarining optimal yo'nalishini belgilaydi (shakl. 3.2).
+ 
+Rasm. 3.2-sensorli tarmoqdagi ma'lumotlarni yo'naltirish
+
+   O'z-o'zini tashkil qilish (lotin. ad hoc - "joyida") aloqa tarmog'i-bu raqam tugunlar vaqti-vaqti bilan tasodifiy bo'lib, 0 dan biroz farq qilishi mumkin maksimal qiymat. Bunday tarmoqdagi tugunlar o'rtasidagi munosabatlar ham tasodifiy vaqt va shunga o'xshash tugunlar va tashqi axborot uzatish uchun hosil bo'ladi aloqa tarmog'i.
+Simsiz sensorli tarmoq (BSS) (eng. WSN – Wireless Sensor Network) –ko'p sensor va ijro etuvchi tarqatish, o'z-o'zini tashkil etuvchi sensorli tarmoq radio kanallari orqali birlashtirilgan qurilmalar. Simsiz sensorli tarmoqlarning afzalliklari: 
+o'z-o'zini tiklash va o'z-o'zini tashkil etish qobiliyati;
+axborotni kichik masofalarga etkazish qobiliyati transmitter quvvati (relaying orqali);
+tugunlarning arzonligi va ularning kichik hajmi;
+kam quvvat iste'moli va avtonom quvvat manbai manbalar; 
+o'rnatish oson, kabellarni o'rnatish kerak emas (rahmat simsiz texnologiyalar va batareya quvvati); 
+bunday tarmoqlarni mavjud va ekspluatatsiya qilish uchun o'rnatish imkoniyati qo'shimcha ishlarsiz ob'ekt; 
+past parvarishlash qiymati.
+Amalda simsiz sensorli qurilmalar eng keng tarqalgan tarmoq, shuning uchun bo'lim materialining asosiy qismi bunday tarmoqlarga bag'ishlangan.
