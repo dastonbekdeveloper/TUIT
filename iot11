@@ -1,0 +1,44 @@
+
+11-mavzu. Simsiz sensorli tarmoq tugunlari va ma'lumotlar uzatish usullari.
+
+Reja:
+1.	Simsiz sensorli tarmoq 
+2.	Simsiz sensorli tarmoq tugunlari
+3.	Simsiz sensorli tarmoq ma'lumotlar uzatish usullari.
+
+
+Simsiz sensorli tarmoq sensorlar bilan jihozlangan miniatyura hisoblash qurilmalaridan iborat, muayyan diapazonda ishlaydigan aktuatorlar va transduserlar (transduserlar) radiochastota. Bunday BSS tuguniga sensorli tugun yoki faqat sensor deb ataladi. Sensorli ekran tugun odatda bir kub dyuymdan ko'p bo'lmagan o'lchamdagi kengashdir. Haqida anakart protsessor, xotira - flesh va RAM, raqamli-analog va analog-raqamli transduserlar, radio chastotasi transduserlari, quvvat manbai va turli sensorlar, aktuatorlar. Shunday qilib, simsiz tarmoq tugunining apparat qismi quyidagi to'rtta kichik tizimga bo'linishi mumkin (rasm. 3.4):
+1) aloqa quyi tizimi-boshqalar bilan simsiz ulanish imkonini beradi sensorli tarmoqdagi tugunlar va radio qabul qiluvchi mavjud;
+2) hisoblash quyi tizimi - ma'lumotlarni qayta ishlash va funksionallikni ta'minlaydi tugun va protsessorni o'z ichiga olgan MCU mikrokontroleridan tashkil topgan, RAM SRAM, uchuvchi EEPROM va flesh xotira, analog-raqamli ADC konvertori, taymer, i/u portlari;
+3) sensorli quyi tizim - sensorli simsiz tugunni ulashni ta'minlaydi analog va raqamli sensorlarni o'z ichiga oladigan tashqi dunyo, aktuatorlar;
+4) elektr ta'minoti quyi tizimi-barcha energiya ta'minotini ta'minlaydi simsiz sensorli tugun elementlari va avlod qurilmalarini o'z ichiga oladi energiya to'planishi, shuningdek, kuchlanish sozlamalari.
+ 
+Rasm. 3.4-simsiz sensorli tarmoq qurilmasi
+Sensorlar juda xilma-xil bo'lishi mumkin. Tez-tez ishlatiladigan sensorlar harorat, bosim, namlik, yorug'lik, tebranish, joy, kamroq –magnit-elektr, kimyoviy (masalan, Co, CO2, level tarkibini o'lchash radiatsiyaviy fon), ovoz va boshqalar. Qo'llaniladigan sensorlar majmui bog'liq simsiz sensorli tarmoqlar tomonidan bajarilgan vazifalardan. 
+Sensordan olingan elektr signallari ko'pincha ishlov berishga tayyor emas, shuning uchun ular konvertatsiya bosqichida motega o'tadilar. Misol uchun, signal tez-tez talab qilinadi 
+amplitudani oshirish uchun kuchaytirish, filtrlarni yo'q qilish uchun qo'llash mumkin muayyan chastota diapazonlarida kiruvchi shovqin va boshqalar. 
+analog-raqamli transduser (ADC) yordamida raqamli signal. Natijada, signal raqamli shaklda olinadi va keyinchalik qayta ishlashga tayyor protsessor va mikrokontrolder xotirasida saqlash. Ijrochilar ishtirokida mexanizmlar, shuningdek, tarmoq tugunlaridan tashqi ta'sirlarga nazorat ta'sirini o'tkazish ham mumkin aktuator orqali muhit. Sensor tugunni oziqlantirish odatda kichikdan amalga oshiriladi batareya. 
+Hajmi bilan bir qatorda, BSS tugunlari uchun boshqa qattiq cheklovlar mavjud. Ular:
+juda kam energiya iste'mol qiling;
+qisqa masofalarda ko'plab tugunlar bilan ishlash;
+kam ishlab chiqarish xarajatlariga ega bo'ling;
+mustaqil bo'lish va xizmat ko'rsatmasdan ishlash;
+atrof-muhitga moslashish.
+Sensor tugunlarining ko'rinishi rasm. 3.5.
+
+ 
+Rasm. 3.5-sensorli tugunlarning ko'rinishi
+Har bir sensorli tugun uchun funktsiyalarni bajarish uchun o'rnatiladi maxsus operatsion tizim (OS). Keng tarqalgan misol sensorli tugunlar uchun operatsion tizim Berkli universitetida ishlab chiqilgan TinyOS ochiq kodli tizim voqea-hodisalarga asoslangan operatsion tizimdir cheklangan hisoblash sharoitida ishlash uchun mo'ljallangan Real vaqt resurslar. Ushbu OS sensorlarga qo'shnilar bilan aloqalarni avtomatik ravishda o'rnatish imkonini beradi berilgan topologiyaning sensorli tarmog'ini yaratish.
+Egaligingizni tasdiqlang qo'shimcha imkoniyatlar uchun Sensorlarning eng muhim vazifalaridan biri avtomatik tanlovdir tarmoqni tashkil qilish sxemalari va ma'lumotlar uzatish yo'llari, simsiz sensorli tarmoqlar aslida o'z-o'zidan qurilgan. Ko'pincha sensorli tugun bo'lishi kerak o'z joylashuvingizni mustaqil ravishda aniqlash qobiliyati, hech bo'lmaganda ma'lumotlarni uzatadigan boshqa sensorga nisbatan. Bu birinchi barcha sensorlar identifikatsiyalanadi va keyin marshrut sxemasi shakllantiriladi. 
+Sensor tugunlari doimiy ravishda o'rnatilishi va nisbiy bo'lishi mumkin mobillik, ya'ni o'zboshimchalik bilan bir-biriga nisbatan harakat qilish tarmoqning mantiqiy ulanishini buzmasdan bo'sh joy. Ikkinchi holda sensor tarmog'ida doimiy topologiya mavjud emas va uning tuzilishi dinamik ravishda vaqt o'tishi bilan o'zgaradi.
+Sensor tarmog'ida tugunlar odatda simsiz aloqa orqali muloqot qiladi. Aloqa radio, infraqizil nurlanish (IQ porti) yoki optik signallar. Radio aloqaning eng keng tarqalgan variantlaridan biri ISM sanoat, ilmiy va tibbiy maqsadlar uchun chastota bantlarini ishlatishdir Radioaloqa sektori tomonidan aniqlangan (sanoat, ilmiy va tibbiy) ITU-r xalqaro elektraloqa Ittifoqi va ko'pgina mamlakatlarda litsenziyasiz foydalanish mumkin (jadval. 3.2).
+Ushbu chastotalarning ba'zilari allaqachon simsiz mahalliy tarmoqlarda (WLAN) ishlatilgan. 
+Kichik o'lchamli va arzon narxlardagi sensorli tarmoqlar uchun signal kuchaytirgichi talab qilinmaydi. 
+Uskuna cheklovlari va antenna samaradorligi o'rtasida uzviylikni topish energiya iste'moli uzatish chastotasini tanlashga ma'lum cheklovlar qo'yadi Ultra yuqori chastotalar oralig'ida. Eng ko'p ishlatiladigan ISM - 433 chastotalar Evropada MGts va shimoliy Amerikada 915 MGts. Foydalanishning asosiy afzalliklari ISM chastotasi butun dunyo bo'ylab keng chastota diapazoni va mavjudligi. Ular emas muayyan standartga bog'langan, shu bilan amalga oshirish uchun ko'proq erkinlik beradi sensorli tarmoqlarda energiya tejaydigan strategiyalar.
+
+ 
+     Rossiyada Radiochastotalar bo'yicha davlat komissiyasining qaroriga asosan (GKRCH)  08-24-01-001 № 28.04.2008 va 07-20-03-001 № 07.05 2007-dan ISM sifatida ajratilgan LPD chastota diapazonlari (eng. Past quvvat qurilmasi) 433,075 – 434,750 MGts, PMR (eng. Xususiy mobil Radio) 446,00625 – 446,09375 va 868,7-869,2 MGts. Ushbu radio chastotalar GCRCHNING maxsus ruxsatnomasini rasmiylashtirmasdan va butunlay bepul foydalaning ipning kengligi, chiqadigan kuch (10 mw gacha) talablariga muvofiq tuman chastotasi 434 MGts, 500 MW gacha, 446 MGts chastotasida va 25 mw gacha 868 MGts chastotalari) va radio mahsulotlarini tayinlash.
+Sensorli tarmoqlarda muloqot qilishning yana bir usuli ir dan foydalanishdir-aloqa IQ aloqasi licenziyasiz mavjud va elektr jihozlarining aralashuvidan himoyalangan. Ir-transmitterlar arzon va ishlab chiqarish osonroq. Bugungi noutbuklar ko'p, PDA va mobil telefonlar ma'lumotlarni uzatish uchun ir interfeysidan foydalanadi. Asosiy bunday aloqaning salbiy tomoni-jo'natuvchi va qabul qiluvchi. Bu ir aloqasini sensorli tarmoqlarda ishlatish uchun istalmagan qiladi-uzatish muhiti uchun.
+Optik muhitni uzatish uchun ishlatiladigan BSS tugunlari ham mavjud. 
+CCR yansıtıcı yordamida passiv-ikki uzatish davrlari qo'llaniladi (Sogpeg-Cube Retroreflector) va lazer diodidan foydalangan holda faol va boshqariladigan nometall. Birinchi holda, uzatish uchun integratsiya yorug'lik manbai talab qilinmaydi signal uch CCR nometall konfiguratsiyasi tomonidan ishlatiladi. Faol usul foydalanadi lazer diodasi va qabul qiluvchiga yorug'lik nurlarini yuborish uchun faol lazer aloqa tizimi. 
+Sensorli tarmoqlardan foydalanish uchun maxsus talablar uzatish muhitini tanlaydi qiyin vazifa. Misol uchun, dengiz ilovalari suv muhitidan foydalanishni talab qiladi uzatish. Bu yerda siz kirib mumkin uzoq to'lqin radiatsiya foydalanish kerak suv yuzasi orqali. Qiyin joylarda yoki jang maydonida paydo bo'lishi mumkin xatolar va katta shovqin. Bundan tashqari, tugunlarning antennalari yo'q bo'lishi mumkin boshqa qurilmalar bilan bog'lanish uchun kerakli balandlik va radiatsiya kuchi. Shuning uchun, transmisyon muhitini tanlash ishonchli modulyaciya sxemalari bilan birga bo'lishi kerak uzatish kanalining xususiyatlariga bog'liq bo'lgan kodlash.
