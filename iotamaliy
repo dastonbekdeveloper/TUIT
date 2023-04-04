@@ -1,0 +1,785 @@
+1-Amaliy mashg’ulot
+ 
+Mavzu: IoT texnologiyasi asosiy tushunchalari.
+2009 yilda Birlashgan Hisoblash tizimini taklif qilib, Cisco Systems korporatsiyasi Serverlar ishlab chiqaruvchilar klubining a'zosi bo'ldi va bu kompyuterlar jamoasini hayratda qoldirdi. 2012 yilda kompaniya "narsalar Internetini" yaratishda etakchilik qilishni o'z niyati bilan hayratga soldi. Bu atama 1999 yilda eng qadimgi RFID ixlosmandlaridan biri va hozirda Massachusets Texnologiya Institutidagi Auto-ID markazining rahbari Kevin Eshton tomonidan kiritilgan. Narsalar interneti haqida ko'p narsa aytilgan, ammo simsiz tarmoqlarning keng tatbiq etilishi, IPv6 ga faol o'tish, shuningdek bulutlarning tobora ommalashib borishi va mashinadan mashinaga aloqa texnologiyalari guruhining paydo bo'lishi. (Machine to Machine, M2M) asta-sekin narsalar Internetini amaliy tekislikka o'tkazmoqda.
+M2M sinf tizimlarining ommaviy taqsimoti hali oldinda, ammo M2M ning joriy etilishi insoniyat hayotida XIX asrda odamlar tomonidan boshqariladigan mashinalar yaratilishidan kam bo'lmagan muhim o'zgarishlarga olib kelishi mumkinligi allaqachon aniq. Mustaqil ravishda ishlaydigan mashinalar atrof-muhitda harakat qilish, odamlarning aralashuvisiz qarorlar qabul qilish qobiliyatiga ega bo'ladi va natijada texnik inqilobning keyingi to'lqinini keltirib chiqarishi mumkin.
+	Analitiklar allaqachon 2015 yilga kelib M2M qo'llab-quvvatlashi aloqa operatorlari daromadlarining 5 foizini tashkil etadi, bu esa 65 milliard dollarni tashkil etadi, deb taxmin qilmoqda.Mashinalar hozirgi vaqtda Janubi-Sharqiy Osiyo mamlakatlarida to'plangan sanoat ishlab chiqarishining katta qismini egallashi mumkin. Ehtimol, o'sha paytda bilimlarni ishlab chiqaradigan ishchilarning ustunligi haqida gapirgan biznesdagi menejment haqidagi zamonaviy ilm-fan asoschisi Piter Drakerning bashorati amalga oshadi. Agar bu sodir bo'lsa, unda Sulaymonning Hikmatlar kitobida birinchi marta eslatib o'tilgan Scientia potentia est tezisi (bilim kuchdir) g'olib chiqadi.
+	Hozirgi vaqtda M2M boshqa qurilmalar bilan o'zaro ta'sirlashish qobiliyatiga ega qurilmalarni ta'minlaydigan texnologiyalarning yig'indisi sifatida tushuniladi va ularning birgalikdagi faoliyati cheklangan miqdordagi qurilmalarning oddiy o'zaro ta'siridan tashqariga chiqadi - bu shahar transportida mikroplanlar yoki avtoulovlarga hujum qilish kabi guruhlar bo'lishi mumkin. Hozirda M2M ishini bir nechta tashkilotlar muvofiqlashtirmoqdalar: Eclipse Foundation, Xalqaro elektraloqa ittifoqining Mashinadan mashinaga yo'naltirilgan Fokus guruhi va TR-50 M2M muhandislik qo'mitasi aqlli qurilmalar. M2M Premier maxsus jurnali nashr etiladi.
+
+"Mashinadan mashinaga", "Mashinadan mashinaga" M2M , aloqa - bu "mashinalar" ga bir-birlari bilan ma'lumot almashish yoki uni bir tomonlama ravishda, inson aralashuvisiz uzatish imkonini beradigan texnologiyalarning umumiy nomi. M2M subklasslaridan biri bu mobil echimlardan foydalangan holda mashinadan mashinaga aloqa; uni M2M - Mobile-to Mobile deb qisqartirish ham mumkin.
+	IoT, narsalar interneti, "narsalar Internet" - bu bir-biri bilan yoki tashqi muhit bilan o'zaro ta'sirlashish uchun o'rnatilgan texnologiyalar bilan jihozlangan jismoniy ob'ektlarning ("narsalarning") hisoblash tarmog'ining metodologiyasi, bunday tarmoqlarni tashkil qilishni iqtisodiy va ijtimoiy jarayonlarni tiklashga qodir hodisa deb hisoblaydi, bundan tashqari harakatlar va operatsiyalar qismidan inson ishtiroki zaruriyati.
+	M2M va IOT turli xil ma'nolarga ega. Aksariyat mutaxassislarning fikriga ko'ra, narsalar interneti M2M va boshqa texnologiyalardan rivojlanib boradigan yanada kengroq tushuncha. Oddiy qilib aytganda, M2M - bu "mashinalar" ning o'zi yoki atrof-muhitni kuzatib borish va boshqarish maqsadida masofaviy dastur infratuzilmasi bilan aloqa qilish uchun tarmoq resurslaridan foydalanadigan holat. Aqlli ob'ektlarning potentsial o'zaro bog'liqligi va atrof-muhit bilan o'zaro munosabatlarimiz "narsalar Internetini" tashkil etadi, bu erda fizik olam raqamli dunyo bilan birlashadi.
+	Bitta seminarda ma'ruzachi quyidagi misol yordamida M2M va IOT o'rtasidagi farqlarni bayon qildi - agar sizning idorangizda xizmat ko'rsatuvchi xodimlarga kofe donalari tugayotgani to'g'risida xabar beradigan kofe mashinasi bo'lsa, demak bu M2M. Agar tizim avvalgi tajriba va mijozlar bilan bo'ladigan uchrashuvlar to'g'risida Outlook taqvimidagi ma'lumotlarga asoslanib, kun davomida xodimlarning kofe iste'molini tahlil qilsa, u ba'zi ingredientlarning (loviya, qaymoq yoki suv) tugashini bashorat qiladi, so'ngra ularga yonilg'i quyish yoki hatto sotib olish to'g'risida so'rov yuboradi, keyin bu IoT. Boshqa bir ta'rif shundaki, M2M - bu narsalarning Internetini ulanish imkoniyatini beradi, bu holda IOT mumkin emas. O'sha. IoT - bu M2M va razvedka.
+
+
+2- Amaliy mashg’ulot
+
+Mavzu: IoT texnologiyasida ma'lumotlar uzatish standartlari va protokollari
+Ko'pgina xalqaro tashkilotlar, nodavlat birlashmalar, ishlab chiqaruvchilar va operatorlar alyanslari va sheriklik loyihalari narsalar Internetining individual tarkibiy qismlarini (M2M, RFID, keng tarqalgan sensorli tarmoqlar va boshqalar) standartlashtirish va amaliy tatbiq etish masalalarida ishtirok etmoqda. Umuman olganda, narsalar Internetida infokommunikatsiyalarni rivojlantirishning yangi yo'nalishi sifatida hozirgi vaqtda eng umumiy kontseptual va me'moriy echimlar aniqlangan. Yaqin kelajakda asosiy narsalar narsa Internetini amalda tatbiq etish uchun yagona va izchil me'yoriy-huquqiy bazani shakllantirish uchun turli xil standartlarni uyg'unlashtirish bo'ladi.
+Xalqaro elektraloqa ittifoqi (ITU-T) telekommunikatsiyalarni standartlashtirish sektorida uchta GSI (global standartlar) mavjud
+  Global tashabbus muvofiqlashtirilgan ish rejasiga muvofiq turli ITU o'quv guruhlari tomonidan parallel ravishda amalga oshiriladigan ishlar majmuini anglatadi. Ana shunday tashabbuslardan biri narsalar Internetini standartlashtirishga bag'ishlangan - IoT-GSI (Ob'ektlar Internetidagi global standartlar tashabbusi). Boshqa ikkita global tashabbus - NGN-GSI yangi avlod tarmoqlarini va IPTV-GSI Internetga asoslangan televizion tizimlarni standartlashtirish ham IoT-GSI singari IP-ga asoslangan.
+IoT-GSI ITU-T harakatlariga asoslangan tarmoq identifikatori (NID), hamma joyda joylashgan sensorli tarmoqlar (USN), mashinadan mashinaga (M2M), WEB narsalar (WoT) va h.k. ITU-T Y.2xx seriyasining keyingi avlod NGN-lari allaqachon "narsalar interneti" uchun birinchi tavsiyalarni ma'qullagan: Y.2060 "narsalar Internetiga umumiy nuqtai", Y.2063 "narsalar" veb-sayti va Y.2069 yil "shartlar va narsalar Internetining ta'riflari "va boshqalar.
+
+Y.2060 tavsiyasi NGN modeliga juda o'xshash IOT mos yozuvlar modelini taqdim etadi va to'rtta gorizontal qatlamni o'z ichiga oladi (1.5-rasm): 
+-	IoT dastur qatlami; 
+-	dasturlar va xizmatlarni qo'llab-quvvatlash darajasi; 
+-	tarmoq qatlami;
+-	qurilma darajasi.
+
+
+
+
+
+
+
+
+
+
+Rasm: 1.5 - ITU-T Y.2060 bo'yicha IoT mos yozuvlar modeli
+
+IoT dastur qatlami Y.2060 da batafsil yoritilmagan. Ilovalar va xizmatlarni qo'llab-quvvatlash qatlami ma'lumotlarni qayta ishlash va saqlash uchun turli xil IOT sub'ektlari uchun umumiy imkoniyatlarni, shuningdek ba'zi IOT dasturlari yoki bunday dasturlar guruhlari talab qiladigan imkoniyatlarni o'z ichiga oladi. Tarmoq sathiga tarmoq imkoniyatlari (kirish va transport tarmog'idagi resurslarni boshqarish, mobillikni boshqarish, avtorizatsiya qilish, autentifikatsiya qilish va hisob-kitob qilish funktsiyalari, AAA) va transport imkoniyatlari (IoT dastur ma'lumotlari va xizmatlarini uzatish uchun tarmoq ulanishini ta'minlash) kiradi.
+Va nihoyat, qurilma qatlami qurilma imkoniyatlari va shluzi imkoniyatlarini o'z ichiga oladi. Qurilmaning imkoniyatlariga aloqa tarmog'i bilan to'g'ridan-to'g'ri almashish, shlyuz orqali almashish, simsiz dinamik ad-hoc tarmog'i orqali almashish, shuningdek energiyani tejash uchun qurilmani vaqtincha to'xtatish va qayta yoqish kiradi. Shlyuz xususiyatlari qurilmalar (CAN bus, ZigBee, Bluetooth, WiFi va boshqalar) va kirish / transport tarmoqlari (2G / 3G, LTE, DSL va boshqalar) uchun turli xil interfeyslarni qo'llab-quvvatlaydi. Shlyuzning yana bir xususiyati - bu qurilmalar va tarmoqlar interfeyslari protokollari bir-biridan farq qiladigan bo'lsa, protokollarni konversiyasini qo'llab-quvvatlashdir.
+Shuningdek, to'rtta gorizontal darajani qamrab oladigan ikkita vertikal daraja, boshqaruv darajasi va xavfsizlik darajasi mavjud. Vertikal darajadagi operatsion boshqaruv qobiliyatlari muvaffaqiyatsizlik ta'sirini boshqarish, tarmoq imkoniyatlari, konfiguratsiya, xavfsizlik va hisob-kitob ma'lumotlarini o'z ichiga oladi.
+Boshqaruvning asosiy ob'ektlari bu qurilmalar, mahalliy tarmoqlar va ularning topologiya, trafik va tarmoq tirbandligi. Xavfsizlikning vertikal darajasining imkoniyatlari gorizontal darajaga bog'liq. Ilovalar va xizmatlarning qo'llab-quvvatlash qatlami uchun AAA funktsiyalari, virusga qarshi himoya, ma'lumotlar yaxlitligi testlari aniqlangan. Tarmoq sathi uchun - avtorizatsiya qilish, autentifikatsiya qilish, signalizatsiya protokollarini axborotdan himoya qilish imkoniyatlari. Qurilma darajasida avtorizatsiya, autentifikatsiya, kirishni boshqarish va ma'lumotlarning maxfiyligi imkoniyatlari.
+Turli kompaniyalar ishtirok etadigan IoT-A (Internet of Things - Architecture) Evropa integratsiyalashuv loyihasining asosiy maqsadi heterojen IoT texnologiyalarini o'zaro bog'liq bo'lgan yagona me'morchilikka birlashtirishga imkon beradigan asosiy tarkibiy qismlarining tavsifi bilan narsalar Internetining mos yozuvlar arxitektura modelini ishlab chiqishdir.
+IoT-A funktsional modeli (1.6-rasm) XEI modelidan bir oz farq qiladi (1.5-rasmga qarang), garchi u ham ierarxik bo'lsa-da, lekin ikkita vertikal (boshqaruv va xavfsizlik) bilan to'ldirilgan ettita gorizontal darajadan iborat. jarayonlar
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rasm: 1.6 - IoT-A arxitekturasining funktsional modeli
+Agar biz rasmning texnik xususiyatlariga murojaat qilsak. 1.7, Internetdagi ma'lumotlar uzatish modeli IoT-A Internetdagi mavjud ma'lumotlar uzatish modelidan farq qiladi deb aytish mumkin. IoT-A arxitektura modelida ikkita muhim tushunchalar mavjud. Cheklangan tarmoq uzatish tezligining nisbatan pastligi bilan tavsiflanadi - 1 Mbit / s dan kam (masalan, IEEE 802.15.4 standarti) va juda yuqori kechikishlar. Cheklovlarsiz tarmoq mos ravishda ma'lumot uzatishning yuqori tezligi (o'nlab Mbit / s va undan ortiq) bilan ajralib turadi va mavjud Internetga o'xshashdir. Ushbu tarmoq modellari orasidagi farq rasm. 1.7.
+
+Стандартная модель Интернета
+
+Модель IoT
+Rasm: 1.7 - Internet va IOT-da ma'lumotlarni uzatish modellarini taqqoslash
+
+3- Amaliy mashg’ulot
+
+Mavzu: IoT texnologiyasi amaliy tadbiq qilinish usullari.
+Butun dunyoda hali ham keng qo'llaniladigan tovarlar uchun shtrix kodlash tizimi chakana savdo va oxirgi mijoz bilan o'zaro aloqada bo'lishga qaratilgan boshqa xizmat ko'rsatish sohalarida (ayniqsa, uning yangi, ikki o'lchovli, mujassamlanishida) juda yaxshi ishlaydi. Ammo omborlarda katta miqdordagi tovarlarni tezkor qayta ishlash, ob'ektlarning noqulay muhitda (ifloslanish va yuqori namlik sharoitida) harakatini qayd etish va nazorat qilish uchun, saqlash birliklarini bir nechta identifikatsiyalash uchun shtrix kodlari endi unchalik yaxshi emas. Ularning mutlaq ustunligi - bu juda arzon narxlarda, ammo logistika, tibbiy va boshqa jiddiy ilovalarda u deyarli yagona bo'lib qolmoqda.
+Boshqa tomondan, kontaktsiz RFID teglari juda katta miqdorga tushadi - har biriga bir necha (o'ngacha) AQSh senti, hatto ko'p million dollarlik buyurtma hajmlari bilan ham. Ularni o'qish uchun uskunalar ham arzon emas; Bundan tashqari, har safar u ma'lum bir mamlakat hukumati tomonidan qo'yilgan cheklovlarga mos kelishiga ishonch hosil qilish kerak. Masalan, Rossiyada 0,1 Vt dan ortiq quvvatga ega bo'lgan VHF diapazonidagi (radio yorlig'ini o'qish moslamalari ishlaydi) radio uskunasidan o'zboshimchalik bilan foydalanishga yo'l qo'yilmaydi, statsionar RFID o'quvchining odatiy quvvati esa 2 Vt va portativ quvvati 0,5 Vt.
+Biroq, ushbu texnologiyaning afzalliklari ko'pincha unga xos bo'lgan barcha kamchiliklardan ustun turadi va ularni yashiradi. RFID standartlari tomonidan maxsus taqdim etilgan to'qnashuvga qarshi algoritm bir vaqtning o'zida ko'p o'nlab teglarni o'qish (va ishonchli) imkonini beradi, masalan, ombor statsionar o'quvchi bilan bir o'tishda tovarlar bilan butun palletni qayta ishlash. RFID yorlig'ini to'g'ridan-to'g'ri ko'rishning hojati yo'qligi sababli (shtrix-koddan farqli o'laroq), tegni o'z ichiga olgan ob'ektni maxsus tarzda ochishning hojati yo'q va tegning o'zi paketga chuqur joylashtirilishi mumkin, bu uning himoyasini oshiradi. salbiy tashqi ta'sirlardan.
+RFIDni amalga oshirish bo'yicha Rossiya va G'arb tajribasi o'rtasidagi asosiy farq (Rossiya texnologiyadan keyinroq foydalanishni boshlaganidan tashqari) bizning mamlakatimizda xavf va yo'qotishlarni baholash madaniyati ancha kam rivojlangan. G'arbda biznesni samarasiz boshqarish natijasida etkazilgan yo'qotishlar baholanadi va ularning paydo bo'lish sabablari aniqlanadi va yo'q qilinadi. Mamlakatimizda bunday yo'qotishlar haligacha "Xudoning jazosi" sifatida ko'rib chiqiladi, hatto bunday yo'qotishlar havas qiladigan doimiylik bilan sodir bo'lsa ham, buni na oldindan ko'rish va na oldini olish mumkin. Shu sababli, asosan xatolarni kamaytirishni taklif qiladigan RFID loyihalarining iqtisodiy samaradorligini baholash juda qiyin. Biznes qancha yo'qotayotganini bilmaydi va shuning uchun RFID bu xarajatlarni qanchalik samarali kamaytirishini baholay olmaydi.
+Shunga qaramay, yirik chakana kompaniyalar, kiyim-kechak, poyabzal, mebel va dori-darmonlarni ishlab chiqaruvchilar va sotuvchilar RFIDga jiddiy qiziqish bildirmoqda. Shuningdek, kutubxonalar va arxivlarni avtomatlashtirish loyihalari bozorning muhim ulushini egallaydi. RFID bozorini rivojlantirishning navbatdagi muhim bosqichi ushbu texnologiyani chakana savdoda to'liq miqyosda qo'llash bo'ladi. Bu ikki yoki uch yil ichida sodir bo'lishi mumkin.
+Potentsial mijozlar uchun eng kam xarajat bilan ilg'or RFID texnologiyasini sinab ko'rish uchun qo'shimcha rag'bat shundaki, asosiy vositalarni hisobga olish yechimi korxonaning ichki jarayonlarini avtomatlashtirishga qaratilgan. Yangi tizimni ishga tushirish paytida ba'zi nosozliklar yoki qoplamalar yuzaga kelsa ham, ular, masalan, ishlab chiqarishni avtomatlashtirish yoki tashqi ma'lumotlar bilan bog'liq jarayonlarning normal jarayonidagi uzilishlardan farqli o'laroq, butun korxonaning yopilishiga va katta xarajatlarga olib kelishi dargumon. logistika.
+
+
+Ta'limda IoTni joriy etish
+Narsalar Interneti (IoT) ta'lim muassasasiga katta ta'sir ko'rsatdi. Ta’lim muassasalari IoT ekotizimini tanlab, turli usullardan – to‘ldirilgan reallikdan bulutli hisoblashgacha foydalanishmoqda. IoT texnologiyasining integratsiyasi bilan jismoniy muhit har qachongidan ham aqlliroq va bir-biriga bog'langan bo'lib bormoqda. Ta'limda IoTni muhokama qilishda ilg'or aqlli sinf, raqamli belgilar va ovozli buyruqlar tizimi kabi narsalarni o'ylash mumkin.
+Biroq, IoT uzoq yo'lni bosib o'tdi va ota-onalarni bolalarini qanday olib ketish va qo'yib yuborish, maktab binolarida aqlli xavfsizlik kameralaridan foydalanish, o'quvchilarning davomatini kuzatishni avtomatlashtirish va boshqa ko'p narsalarni IoTda amalga oshirish mumkinligi haqida xabardor qilish uchun ishlatilishi mumkin. ekotizim.
+Ta'limda narsalar internetining o'rni
+ Texnologiyaning rivojlanishi bilan bizning kelajak avlodimiz allaqachon Internetga va talab bo'yicha ma'lumotlarga qaram bo'lib qolgan. Ta’lim tizimidagi IoT o‘quvchilarga ijobiy yoki salbiy ta’sir qiladimi, degan asosiy savol tug‘iladi. Maxfiylik va ta'limda texnologiyaning qo'shimcha xarajatlari kabi ko'plab masalalar hozirda o'rganilmoqda. Ko'pgina ta'lim muassasalari hali ham IoTni qabul qilishni va ushbu tizim uchun yaxshiroq yechim topishni istamaydi. Ta'limda IoT talabalar va xodimlar nuqtai nazaridan keng tasniflanishi mumkin.
+ Xodimlar nuqtai nazaridan IoT talabalarning davomatini va zarur o'quv jihozlarining mavjudligini boshqarish imkoniyatiga ega. IoT sensorlarini taʼlim tizimining kutubxona, oshxona va kirish kabi bir nechta joylariga oʻrnatish bir nechta joylarda talabalar faoliyatini kuzatish va nazorat qilishga yordam beradi.
+ Sinflarga oʻrnatilgan IoT yordamida oʻqituvchilar ovozli yoki imo-ishorali buyruqlar yordamida sinflarni masofadan boshqarishi, olis joylardan kelgan talabalar bilan bogʻlanishi, muayyan mavzu boʻyicha talabalarning qimmatli fikr-mulohazalarini toʻplashi va imkoniyati cheklangan oʻquvchilarga yordam berishi mumkin. Boshqa stsenariylar qo'shni sinflar bilan aloqa qilish va shovqinni kamaytirish bo'yicha maslahat berish uchun shovqin sensorlaridan foydalanishni o'z ichiga oladi.
+ Tekshiruv davomida o'rnatilgan LCD IoT ekrani ma'lum bir auditoriyada ortiqcha shovqinni aniqlay oladi va ogohlantirish xabarlarini ko'rsatadi. IoT ekotizimining yordami bilan yillik kun yoki sport kunini ro'yxatdan o'tkazish kabi hodisalarni osongina boshqarish mumkin.
+ IoT talabalarga sinfdoshlari bilan mahalliy yoki masofadan muloqot qilish, loyiha ma’lumotlarini almashish, real vaqtda o‘quv materiallarini tahlil qilish va sharhlash hamda masofaviy laboratoriyalar kabi o‘quv vositalaridan foydalanishga yordam beradi.
+4- Amaliy mashg’ulot
+
+Mavzu: RFID radiochastotali identifikatsiya haqida umumiy ma’lumotlar
+
+RFID (Radiochastotani identifikatsiyalash) - bu radio to'lqinlardan foydalanadigan ob'ekt yoki shaxsning identifikatsiya raqamini (noyob seriya raqami ko'rinishida) simsiz o'qiydigan tizimlarga nisbatan qo'llaniladigan umumiy atama. RFID Avtomatik identifikatsiya (Auto-ID) texnologiyalarining keng sohasiga tegishli bo'lib, ular shtrix kodlari, optik o'quvchilar va retinal skanerlash kabi ba'zi biometrik texnologiyalarni o'z ichiga oladi (2.1-rasm). Umuman olganda, Auto-ID texnologiyalari ma'lumotlarni qo'lda kiritishda vaqt va mehnatni tejash va ma'lumotlarning aniqligini oshirish uchun qo'llaniladi. Shtrixli tizimlar kabi ba'zi Auto-ID texnologiyalari ma'lumotni qo'lda skanerlash va yozib olish uchun ko'pincha inson aralashuvini talab qiladi. Tizim
+
+
+inson, ma'lumotni qo'lda skanerlash va qo'lga kiritish uchun. RFID tizimi inson aralashuvisiz va real vaqtda ma'lumotlarni kompyuter tizimiga o'qish va uzatish imkonini beradigan tarzda ishlab chiqilgan. RFID texnologiyasi inson faoliyatining turli sohalarida, jumladan sanoat, savdo, ta'lim, tibbiyot va boshqalarda foydali bo'lishi mumkin.
+2.1 - Avtomatik identifikatsiyalashning asosiy tizimlar.Har qanday RFID tizimi
+
+
+o'quvchi (o'quvchi) va kichik identifikatsiyalash moslamalaridan (RFID teglari) iborat bo'lib, ular odatda rezonansli LC sxemasini, kontrollerni va elektr bilan o'chiriladigan qayta dasturlashtiriladigan faqat o'qish uchun mo'ljallangan xotira qurilmasi EEPROM (elektrik o'chiriladigan programlanadigan faqat o'qish xotirasi) ni o'z ichiga oladi. (2.2-rasm). Xotiraning mazmuni har bir tegga xos bo'lib, teg tashuvchini (shaxs yoki ob'ekt) aniqlash imkonini beradi.
+Bunday tizimning ishlashning asosiy printsipi quyidagicha. O'quvchi bitta teg tomonidan qabul qilinadigan radio to'lqinini chiqaradi. Teg shu tarzda quvvatlanadi va xotiraning kodlangan tarkibi bilan modulyatsiyalangan bir xil chastotali (induktiv ulanish tufayli) radio to'lqinini aks ettiradi. O'quvchi ushbu signalni qabul qiladi, xotira tarkibini aniqlash uchun uni demodulyatsiya qiladi va dekodlaydi. Keyin yuqori darajadagi identifikatsiya tizimi ushbu ma'lumotlarni tekshiradi va shunga mos ravishda jarayonni boshqaradi.
+Bunday tizimning jozibadorligi shundaki, u o'quvchi va RFID teglari o'rtasidagi kontaktsiz o'zaro ta'sirni ta'minlaydi (shunday qilib, teg bilan ob'ektni joylashtirish bo'yicha cheklovlardan qochadi) va teglar quvvat manbasini talab qilmaydi.
+Biroq, o'quvchi maydonida ikkita teg mavjud bo'lganda, ularning ikkalasi ham o'quvchi tomonidan chiqarilgan signalga javob beradi. Bunday holda, o'quvchining demodulyatsiyalangan signali ikkita belgidan ikkita komponentning aralashmasi bo'lib, uni dekodlab bo'lmaydi. Bunday tizim bir vaqtning o'zida ikkita ob'ektni aniqlay olmaydi. Ushbu muammoni hal qilishning bir necha yo'li mavjud. Ulardan ba'zilari, o'quvchi va teglar oldindan belgilangan protokolga muvofiq aloqa qiladi, shuning uchun har bir tegning signallari muvaffaqiyatli ajratiladi. Yana bir yondashuv turli chastotalarda teglardan foydalanishdir.
+O'qish diapazoni bo'yicha RFID tizimlarini quyidagi turlarga bo'lish mumkin: yaqin identifikatsiya (o'qish 20 sm gacha bo'lgan masofada amalga oshiriladi); o'rta masofali identifikatsiya (20 sm dan 5 m gacha);
+uzoq masofali identifikatsiya (5 m dan 100 m gacha).
+RFID texnologiyasi yangi emas va uzoq vaqtdan beri qo'llanilganiga qaramay, uning ommaviy qo'llanilishi yaqinda muhokama qilingan. Buning sababi, yaqin vaqtgacha tizimning asosiy komponenti bo'lgan RFID teglari ancha qimmat bo'lgan. Va faqat bir nechta kompaniyalar RFID teglaridan foydalanish imkoniyatiga ega bo'lishdi, ular yaqin vaqtgacha bir birlik uchun bir dollar yoki undan ko'proq turadi. Shuning uchun ular asosan qayta ishlatiladigan mahsulotlar ishlab chiqaradigan kompaniyalar tomonidan ishlatilgan. Bunday holda, mahsulot kodi saqlanib qoldi va undan kelajakda foydalanish mumkin edi. Biroq, eng amaliy zamonaviy RFID teglari bir martalikdir, oxirgi foydalanuvchi ularni kerak bo'lmagan qadoqlash bilan birga tashlab yuborishi mumkin.
+RFID tizimlaridan foydalanish turli xil tovarlarni ishlab chiqarish, etkazib berish va sotish bilan shug'ullanadigan kompaniyalar uchun eng dolzarbdir. Birinchidan, RFID-tizimlaridan foydalangan holda, ombordagi tovarlarni inventarizatsiya qilish soddalashtirilgan. Bundan tashqari, ularni qabul qilish va jo'natish ancha osonlashadi. Bundan tashqari, RFID teglari va RFID o'qish moslamalari va maxsus kompyuter uskunalari mavjudligi tufayli tovarlarning hisobi va harakati bo'yicha katta ma'lumotlar bazalarini yaratish mumkin bo'ldi.
+Funktsionallik nuqtai nazaridan, RFID teglariga asoslangan ma'lumotlarni yig'ish usuli asosan shtrix-kod texnologiyasiga o'xshaydi, bu butun dunyoda turli xil tovarlarni markalash uchun keng qo'llaniladi. Biroq, RFID tizimlari shtrix-kodga asoslangan tizimlarga nisbatan juda ko'p afzalliklarga ega (2.1-jadval).
+
+Tab. 2.1 RFID va shtrix-kod tizimlarining xususiyatlarini solishtirish
+Характеристики технологии	RFID	Штрих-код
+Необходимость в прямой видимости метки	
+Чтение даже скрытых меток	Чтение без прямой видимости невозможно
+Объѐм памяти	От 10 до 10 000
+байт	До 100 байт
+
+RFID texnologiyasining xususiyatlari Shtrixli kod
+Ko'rish chizig'i teglariga bo'lgan ehtiyoj
+Hatto yashirin belgilarni ham o'qish Ko'rish chizig'isiz o'qish mumkin emas
+Xotira hajmi 10 dan 10 000 gacha
+bayt 100 baytgacha
+5- Amaliy mashg’ulot
+
+Mavzu: WSN simsiz sensor tarmog'i arxitekturasi bilan tanishish
+Simsiz sensorlar tarmog'ining tuzilishi
+
+Oddiy simsiz sensor tarmog'ini ikkita elementga bo'lish mumkin: sensor tugun va tarmoq arxitekturasi
+WSN-dagi sensor tugun to'rtta asosiy komponentdan iborat: quvvat manbai, sensor, ishlov berish bloki, aloqa tizimi.
+                   Simsiz sensor tarmoq tuguni
+Sensor jismoniy dunyodan analog ma'lumotlarni to'playdi va ADC bu ma'lumotlarni raqamli ma'lumotlarga aylantiradi. Odatda mikroprotsessor yoki mikrokontroller bo'lgan asosiy protsessor ma'lumotlarni aqlli qayta ishlash va manipulyatsiyani amalga oshiradi.Aloqa tizimi ma'lumotlarni uzatish va qabul qilish uchun radioaloqa tizimidan, odatda qisqa masofali radiostantsiyadan iborat. Barcha komponentlar kam quvvatli qurilmalar bo'lgani uchun butun tizimni quvvatlantirish uchun CR-2032 kabi kichik batareya ishlatiladi.
+Nomga qaramasdan, sensorli tugun nafaqat sensor komponentidan, balki qayta ishlash, aloqa va saqlash qurilmalari kabi boshqa muhim funktsiyalardan ham iborat. Ushbu barcha xususiyatlar, komponentlar va yaxshilanishlar bilan sensor tugun jismoniy dunyo ma'lumotlarini to'plash, tarmoq tahlili, ma'lumotlar korrelyatsiyasi va boshqa sensorning ma'lumotlarini o'z ma'lumotlari bilan birlashtirish uchun javobgardir.
+
+Simsiz sensorli tarmoq arxitekturasi
+Jismoniy muhitni birgalikda kuzatish uchun katta maydonda ko'p sonli sensor tugunlari joylashtirilganda, ushbu sensor tugunlarini tarmoqqa ulash bir xil darajada muhimdir. WSN dagi sensor tugun nafaqat boshqa datchik tugunlari bilan, balki simsiz aloqadan foydalangan holda tayanch stansiya bilan ham aloqa qiladi.Asosiy stansiya datchik tugunlariga buyruqlar yuboradi va sensor tugunlari bir-biri bilan o`zaro aloqada bo`lgan vazifani bajaradi. Kerakli ma'lumotlarni to'plagandan so'ng, sensor tugunlari ma'lumotlarni tayanch stantsiyaga qaytarib yuboradi.
+Baza stansiyasi, shuningdek, Internet orqali boshqa tarmoqlarga kirish eshigi vazifasini ham bajaradi. Sensor tugunlaridan ma'lumotlarni olgandan so'ng, tayanch stansiya oddiy ma'lumotlarni qayta ishlashni amalga oshiradi va yangilangan ma'lumotlarni foydalanuvchiga Internet orqali yuboradi.
+Har bir sensor tugun tayanch stantsiyaga ulangan bo'lsa, u bitta hop (yoki bitta hop) tarmoq arxitekturasi sifatida tanilgan. Uzoq masofalarga uzatish mumkin bo'lsa-da, aloqa uchun quvvat sarfi ma'lumotlarni yig'ish va hisoblashdan ko'ra ancha yuqori bo'ladi.
+Demak, ko'p tarmoqli tarmoq arxitekturasi odatda jiddiy ilovalarda qo'llaniladi. Sensor tugunlari va tayanch stansiya o'rtasidagi bitta aloqa o'rniga ma'lumotlar bir yoki bir nechta oraliq tugunlar orqali uzatiladi.Bu ikki yo'l bilan amalga oshirilishi mumkin. Yassi tarmoq arxitekturasi va ierarxik tarmoq arxitekturasi. Yassi arxitekturada tayanch stantsiya barcha sensor tugunlariga buyruqlar yuboradi, ammo mos keladigan so'rovga ega sensor tugunlari o'z tengdoshlari tugunlari yordamida multi-hopli yo'l orqali javob beradi.
+Ierarxik arxitekturada sensorli tugunlar guruhi klaster sifatida shakllanadi va sensor tugunlari ma'lumotlarni klasterning mos keladigan boshlariga uzatadi. Keyin klaster boshlari ma'lumotlarni tayanch stantsiyaga uzatishi mumkin.
+Simsiz sensorli tarmoqlar tasnifi
+Simsiz sensor tarmoqlari o'ta amaliy dasturlarga xosdir va dastur talablariga muvofiq o'rnatiladi. Shunday qilib, bitta WSN ning xususiyatlari boshqa WSN ning xususiyatlaridan farq qiladi. Ilovadan qat'i nazar, simsiz sensorli tarmoqlar odatda quyidagi toifalarga bo'linishi mumkin.
+Statik va mobil WSN
+Deterministik va deterministik bo'lmagan WSN
+Bitta tayanch stantsiya va bir nechta tayanch stantsiyalar bilan
+Statik tayanch stansiyalar va mobil tayanch stansiyalar bilan
+Bir martali va ko'p hopli WSN
+WSN-ni ulang va o'ynang
+
+6- Amaliy mashg’ulot
+
+Mavzu: RFID texnologiyasining hozirgi holati va rivojlanish istiqbollari
+RFID texnologiyasi (inglizcha Radio Frequency Identification, radiochastota identifikatsiyasi) - bu transponderlar yoki RFID teglarida saqlangan ma'lumotlar radio signallari yordamida o'qiladigan yoki yoziladigan ob'ektlarni avtomatik identifikatsiyalash usuli. Har qanday RFID tizimi o'quvchi (o'quvchi, o'quvchi yoki so'rovchi) va transponderdan (aka RFID yorlig'i, ba'zan RFID yorlig'i atamasi ham ishlatiladi) iborat.
+Ko'pgina RFID teglari ikki qismdan iborat:
+Birinchisi, axborotni saqlash va qayta ishlash, radiochastota (RF) signalini modulyatsiya qilish va demodulyatsiya qilish va boshqa ba'zi funktsiyalar uchun integral sxema (IC).
+Ikkinchisi - signalni qabul qilish va uzatish uchun antenna.
+RFID teglarini kundalik hayotga kiritish bilan bog'liq bir qator qiyinchiliklar mavjud. Misol uchun, o'quvchilarga ega bo'lmagan iste'molchilar ishlab chiqarish va qadoqlash jarayonida mahsulotga yopishtirilgan teglarni har doim ham aniqlay olmaydi va ulardan qutula olmaydi. Garchi bunday teglar odatda savdo paytida yo'q qilinsa-da, ularning mavjudligining o'zi inson huquqlari va diniy tashkilotlarni xavotirga solmoqda.
+Texnologiyani ishlab chiquvchilar tomonidan o'ylab topilganidek, noyob ma'lumotlarga ega RFID yorlig'i uni boshqarish yoki hisobga olish uchun ob'ektga biriktiriladi va u biriktirilgan ob'ektni aniqlash imkonini beradi. Ushbu teg simsiz ravishda "uning" ob'ekti haqidagi ma'lumotlarni kompyuter ma'lumotlar bazasiga uzatadi, bu esa uning holatini real vaqtda kuzatish imkonini beradi. Birinchi marta RFID teglari aeroportlarda bagajga biriktirila boshlandi. Ammo amaliy qo'llashning birinchi tajribasi allaqachon ushbu texnologiyaning qiyinchiliklarini ko'rsatdi: uzoq parvozlarda teglarning yarmidan ko'pi demagnetizatsiyaga ulgurgani ma'lum bo'ldi.
+RFIDdan foydalanish, shuningdek, metall qadoqlash va suyuqliklar bilan cheklangan, bu tegdan ma'lumotlarni o'qish sifatini kafolatlamaydi.
+Allaqachon ma'lum bo'lgan RFID ilovalari (kirishni boshqarish tizimlari va to'lov tizimlarida kontaktsiz smart-kartalar) Internet xizmatlarining rivojlanishi bilan qo'shimcha mashhurlikka erishmoqda.
+
+RFID texnologiyasining asosiy afzalliklari quyidagilardan iborat:
+Ob'ektni yagona aniqlash qobiliyati;
+Ko'rish chizig'isiz teg o'qish;
+Ko'p sonli teglarni bir zumda o'qish qobiliyati;
+Tegda saqlangan ma'lumotlar miqdori bir necha megabaytga yetishi mumkin va real vaqtda yangilanadi.
+Radiochastotani identifikatsiya qilish (RFID) bozorining rivojlanishi uchta ob'ektiv omil bilan cheklanadi: teglar narxi, turli saytlarda o'qish bilan bog'liq qiyinchiliklar, shuningdek, IT infratuzilmasining rivojlanmaganligi - bular ID Expert tahlilchilarining xulosalari. Ushbu axborot resursi tomonidan o'tkazilgan tadqiqotning maqsadi yaqin kelajakda RFID yechimlarini ishlab chiqishning asosiy yo'nalishlarini aniqlash edi. Respondentlarning aksariyati bunday sohalar sifatida ombor logistikasi, transport logistikasi va kirishni boshqarish tizimlarini tilga oladi.
+Mutaxassislarning ta'kidlashicha, hozirgi vaqtda ko'pchilik kompaniyalar shtrix kodlashdan RFID texnologiyasiga o'tishni qiyinlashtirmaydi. Uning ishlatilishi ma'lum qulayliklar va imtiyozlarni berishi mumkin, ammo hamma ham bu imtiyozlar uchun pul to'lashga tayyor emas.
+RFID kashshoflari axborotni qayta ishlash tezligi juda muhim bo'lganlardir - ular buning uchun teg narxini to'lashga tayyor bo'lganlardir. RFID ning allaqachon yaxshi tashkil etilgan yo'nalishi - bu xavfsizlik va kirishni boshqarish tizimlari, shuningdek, asosiy vositalarni hisobga olish. Ushbu sohada rivojlanish yiliga kamida 10-20% bo'lishi kutilmoqda. Universiada-2013, Olimpiada-2014 va Jahon chempionati-2018 musobaqalarini tashkil etish bu sohaga jiddiy turtki berishi mumkin.
+RFID teglari, shtrix-kodlardan farqli o'laroq, soxtalashtirish deyarli mumkin emas. Shu sababli, kelgusi yillarda biz tovarlarni qalbakilashtirishdan himoya qilish sohasida ulardan foydalanishda portlovchi o'sishni kutishimiz mumkin: dori vositalarini markalash, alkogol aktsiz markalari va hujjatlar. Biroq, o'yinchilar uchun eng sig'imli va potentsial qiziqarli joy - bu chakana savdo. Gipermarketlarda RFIDni joriy etish yo‘qotishlarni kamaytiradi, buxgalteriya hisobini yaxshilaydi va eng muhimi, navbatlarni bartaraf qiladi, xaridlarni qayta ishlashni tezlashtiradi.
+Texnologiyani sanoatga tatbiq etish uchun kuchli biznes asoslari bo'lishi kerak - ko'pincha bu aniq emas, agar imkonsiz bo'lsa. Shuning uchun, RFIDni amalga oshirishga qaror qilishdan oldin, kompaniyalar dastlabki tadqiqotlarni o'tkazishga tayyor bo'lishlari kerak. Ko'pincha ular ma'lum bir vazifa uchun texnologiyadan foydalanishning maqsadga muvofiq emasligini ko'rsatadilar.
+Mulkning operativ hisobi avtomatlashtirilmagan korxonalar ko'pincha aktivlarni hisobga olish va inventarizatsiya qilishda muammolarga duch kelishadi. Ob'ektlarni qabul qilish, qidirish, berish, ko'chirish va hisobdan chiqarishni qo'lda qayd etish, shuningdek ular to'g'risidagi ma'lumotlarni ma'lumotlar bazasiga qo'lda kiritish xatolarga olib keladi va mas'ul xodimlarni "inventarizatsiyadan tortib to inventargacha" keskinlikda yashashga majbur qiladi. Mulkni avtomatlashtirilgan hisobga olish va inventarizatsiya qilish (mebel, kompyuter parki, telefon stansiyalari, orgtexnika va boshqalar), shuningdek, asbob-uskunalarga texnik xizmat ko'rsatish va ta'mirlash masalasi, agar ro'yxatga olingan ob'ektlar soni bir necha mingdan ortiq bo'lsa, deyarli har qanday korxona uchun bir xil darajada dolzarbdir. Shu bilan birga, radiochastotani identifikatsiya qilish (RFID) texnologiyasi yordamida zarur ob'ektlarni inventarizatsiya qilish, solishtirish va qidirish vaqtini o'nlab marta tezlashtirish, ma'lumotlarning ishonchliligi va shaffofligini ta'minlash mumkin. asosiy vositalarni hisobga olish.
+Mamlakatimizda RFID texnologiyasining barcha ko'rinadigan afzalliklari bilan u hali de-fakto standartga aylanmagan. Potentsial mijozlar ushbu texnologiyaga katta qiziqish bildirsa-da, ularning ko'pchiligi uni ishlab chiqishda ehtiyotkor bo'lib qolmoqda. Natijada, RFID-ga asoslangan loyihalarni yakunlash to'g'risida ommaviy e'lonlar kam uchraydi.
+Foydalanish sohalari
+ Butun dunyoda hali ham keng qo'llaniladigan tovarlar uchun shtrix kodlash tizimi chakana savdo va oxirgi mijoz bilan o'zaro munosabatda bo'lishga qaratilgan boshqa xizmat ko'rsatish sohalarida (ayniqsa, uning yangi, ikki o'lchovli, mujassamlanishida) juda yaxshi ishlaydi. Ammo omborlarda katta miqdordagi tovarlarni tezkor qayta ishlash, ob'ektlarning noqulay muhitda (ifloslanish va yuqori namlik sharoitida) harakatini hisobga olish va nazorat qilish uchun, saqlash birliklarini bir nechta identifikatsiyalash uchun shtrix kodlari endi unchalik yaxshi emas. Ularning mutlaq ustunligi - bu juda arzon narxlarda, ammo logistika, tibbiy va boshqa jiddiy ilovalarda u deyarli yagona bo'lib qolmoqda.
+Boshqa tomondan, kontaktsiz RFID teglari juda katta miqdorda turadi - har biriga bir necha (o'ngacha) AQSh senti, hatto ko'p million dollarlik buyurtma hajmlari bilan ham. Ularni o'qish uchun uskunalar ham arzon emas; Bundan tashqari, har safar u ma'lum bir mamlakat hukumati tomonidan qo'yilgan cheklovlarga mos kelishiga ishonch hosil qilish kerak. Masalan, Rossiyada VHF diapazonidagi radio uskunasidan o'zboshimchalik bilan foydalanishga yo'l qo'yilmaydi.
+
+7- Amaliy mashg’ulot
+
+Mavzu: RFID texnologiyasini qo'llash sohalari
+RFID kelajakning asosiy texnologiyalaridan biri bo'lib, narsalar internetining asosiy texnologiyasi hisoblanadi. Bu erda RFIDni inson faoliyatining turli sohalarida qo'llashning bir nechta tipik misollari keltirilgan.
+
+Sanoat va qishloq xo'jaligi
+RFID texnologiyasi inventarizatsiyani yaxshilashni ta'minlaydi va sanoat logistika jarayonlarining samaradorligini sezilarli darajada oshirishi mumkin. Misol uchun, sanoat kompaniyalari bir do'kondan ikkinchisiga o'tadigan muhim qismlarni nazorat qilish uchun RFID tizimidan foydalanadi, bu esa avtomatik boshqaruvni ta'minlaydi, xatolarni kamaytiradi va ishlab chiqarish liniyasida to'g'ri qismlarni topish xarajatlarini kamaytiradi.
+Avtotransport vositalariga yonilg‘i quyishni avtomatlashtirish va RFID texnologiyasidan foydalangan holda transport vositalarini avtomatik identifikatsiyalash bo‘yicha loyihalar amalga oshirildi. Tizim barcha texnologik va hujjatli operatsiyalar davomida yoqilg‘ining shaffof va ishonchli hisobini, har bir avtomobil birligi uchun motor yoqilg‘isi sarfini samarali rejalashtirish va nazorat qilishni, qog‘oz tashuvchilar va smart-kartalardan foydalanmasdan faqat RFID teglaridan foydalangan holda ruxsat etilgan avtotransport vositalariga operatorsiz yoqilg‘i yetkazib berishni ta’minlaydi.
+O'z mahsulotlarini soxta narsalardan himoya qilish uchun farmatsevtika kompaniyalari dori paketlariga transponderlarni joylashtiradilar. Buning yordamida dori vositalarining ishlab chiqaruvchidan dorixonagacha bo'lgan yo'lini kuzatish mumkin.
+Ko'pgina mamlakatlarda fermerlar hayvonlarning qulog'iga transponderlar qo'yish orqali qoramollarga belgi qo'yishadi. Shunday qilib, to'satdan kasallik yoki epidemiya paydo bo'lgan taqdirda, podani tezda izolyatsiya qilish mumkin.
+
+Davlat va jamoat institutlari
+Ba'zi kutubxonalar o'zlarining kitob almashish tizimlarida RFIDni joriy qildilar. Shu bilan birga, transponderlar kitoblarga, filmlarga va kompakt disklarga joylashtiriladi. Natijada
+ 
+Tashrif buyuruvchilar o'zlari tanlagan ommaviy axborot vositalarini mustaqil ravishda tezda olishlari mumkin va transponderlar tufayli bu ommaviy axborot vositalari o'g'irlikdan ishonchli himoyalangan. RFID teglaridan foydalanish ommaviy axborot vositalarini chiqarish va qaytarish jarayonini avtomatlashtirish, inventarizatsiyani yanada samaraliroq qilish va fondni o'g'irlikdan himoya qilish imkonini beradi. Bundan tashqari, kutubxona kartalari RFID teglari bilan ham jihozlanishi mumkin, bu ularni almashtirish va qalbakilashtirishga qarshi kurashishga yordam beradi.
+Kasalxonalar bemorlarni aniqlashni osonlashtirish va ularni xonalarga joylashtirishni optimallashtirish uchun RFIDdan ham foydalanmoqda. Bemorlarga elektron ma'lumotlar bazasida saqlanadigan bemorning ismi-sharifi va kasallik tarixining raqami ko'rsatilgan transponderlar o'rnatilgan bilakuzuklar taqdim etiladi. O'quvchiga ega mobil kompyuter yordamida davolovchi shifokor o'z bemorlarining kasallik tarixi bilan tezkor kirish imkoniyatiga ega bo'ladi.
+Muzeylarda tashrif buyuruvchilar o'zlarining shaxsiy raqamli yordamchisi PDA (Personal Digital Assistant) yordamida eksponatlar haqida ma'lumot so'rashlari mumkin, buning uchun eksponatlar RFID transponderlari bilan jihozlangan. Shu bilan birga, muzey xodimlari qaysi eksponatlar ko'proq qiziqishi haqida ma'lumot oladi.
+
+Fan
+Tadqiqotchilar RFID texnologiyasidan foydalangan holda asalarilar hayotini kuzatdilar. Hasharotlarning orqa tomoniga mayda chiplar yopishtirilgan. Asalarilarning faoliyati haqida bir vaqtning o'zida olingan ma'lumotlar, boshqa narsalar qatorida, kasalliklarga qarshi samaraliroq kurashishga yordam beradi.
+RFID texnologiyasidan foydalangan olimlar genetik jihatdan o'zgartirilgan daraxtlarning o'sishini kuzatdilar. Ushbu tizim oldingi barcha markalash usullaridan sezilarli darajada ustun keldi, chunki daraxt ichiga joylashtirilgan transponder atrof-muhit ta'siridan himoyalangan.
+
+Hayot va dam olish
+Iste'molchilar deyarli har kuni RFID tizimlariga duch kelishadi. Misol uchun, ko'pgina mamlakatlarda transponderlar xorijiy pasportlarga, ba'zi klublarda esa a'zolik kartalariga kiritilgan.
+RFID texnologiyasi uzoq vaqtdan beri binolarga kirishni boshqarish uchun elektron kalit sifatida muvaffaqiyatli qo'llanilmoqda. RFID kartaning magnit kartaga nisbatan afzalligi shundaki, karta va o'quvchi o'rtasida hech qanday aloqa yo'q, u kamroq eskiradi va qo'shimcha parvarishlash kamroq bo'ladi.
+RFID texnologiyasi ham turli xizmatlar uchun haq to'lashning qulay usuli sifatida mashhurlik kasb etmoqda. Mashhur usullardan biri - avtomobilni to'xtatmasdan yo'l bojini to'lash. RFID, shuningdek, avtobuslar, metro va poezdlar uchun to'lovning qulay usuli sifatida qo'llanila boshlandi. Dunyo bo'ylab ko'plab shaharlar magnit chiziqli kartalardan RFID kartalariga o'tdi, chunki bu odamlarga turniketlardan tezroq o'tish imkonini beradi, tirbandlikni kamaytiradi va kassa xizmatini tezlashtiradi.
+Ba'zi o'yin parklarida tashrif buyuruvchilar bir-biri bilan aloqada bo'lish uchun RFID-dan foydalanishlari mumkin. O'quvchilar o'rnatilgan transponder bilan bilaguzukni ro'yxatdan o'tkazadilar va doimiy joylashgan ekranlarda foydalanuvchining manzilini ko'rsatadilar. Ushbu sensorli ekranlar orqali tashrif buyuruvchilar xabarlarni yuborishlari va qabul qilishlari mumkin.
+RFID mulkni himoya qilish uchun ham qo'llaniladi. Ko'pgina zamonaviy avtomobillar rul ustunida RFID o'quvchi bilan birga keladi. Repetitor plastmassaga kiritilgan
+
+8- Amaliy mashg’ulot
+
+Mavzu: Sensor tarmoq arxitekturasi
+
+Simsiz sensor tarmog'i yoki simsiz sensor tarmog'i radiokanal orqali o'zaro bog'langan ko'plab sensorlar va aktuatorlarning taqsimlangan, o'zini o'zi tashkil qiluvchi tarmog'idir.
+Bunday tarmoqning qamrov maydoni xabarlarni bir tugundan boshqasiga o'tkazish qobiliyati tufayli bir necha metrdan bir necha kilometrgacha bo'lishi mumkin va tarqalish muhitiga (shaharsozlik, suv havzalari) va relefga bog'liq.
+Sensor tarmog'ining birinchi prototiplaridan biri suv osti kemalarini aniqlash va aniqlash uchun mo'ljallangan SOSUS deb hisoblanishi mumkin.
+1990-yillarning o'rtalarida simsiz sensorli tarmoq texnologiyalari faol rivojlana boshladi, 2000-yillarning boshlarida mikroelektronikaning rivojlanishi bunday qurilmalar uchun juda arzon element bazasini ishlab chiqarishga imkon berdi. 2010-yillarning boshidagi simsiz sensor tarmoqlari asosan ZigBee standartiga asoslangan.
+Sensor tarmoqlarini joriy etishdan ko'plab soha va faoliyat sohalari (sanoat, transport, kommunal xo'jalik, xavfsizlik) manfaatdor va iste'molchilar soni doimiy ravishda o'sib bormoqda . Ushbu tendentsiya texnologik jarayonlarning murakkablashishi, ishlab chiqarishning rivojlanishi, xavfsizlik, resurslarni nazorat qilish va inventarizatsiyadan foydalanish segmentlariga odamlarning ehtiyojlarini kengaytirish bilan bog'liq. Mikroelektron texnologiyalarning rivojlanishi bilan sanoatda, uy-joy kommunal xo'jaligida va uy xo'jaligida sensorli tarmoqlardan foydalanish bilan bog'liq yangi amaliy vazifalar va nazariy muammolar paydo bo'ladi. Arzon narxlardagi simsiz sensorlarni boshqarish qurilmalaridan foydalanish telemetriya va boshqaruv tizimlarini qo'llash uchun yangi sohalarni ochadi, masalan:
+Aktuatorlarning mumkin bo'lgan nosozliklarini o'z vaqtida aniqlash, tebranish, harorat, bosim va boshqalar kabi parametrlarni nazorat qilish;
+real vaqt rejimida kuzatilayotgan ob'ektning masofaviy tizimlariga kirishni boshqarish;
+muzey boyliklarini muhofaza qilishni ta'minlash;
+eksponatlarni hisobga olish;
+eksponatlarni avtomatik qayta ko'rib chiqish;
+Sanoat aktivlarini tekshirish va texnik xizmat ko'rsatishni avtomatlashtirish;
+Tijorat aktivlarini boshqarish;
+Energiya va resurslarni tejash texnologiyalarida komponentlar sifatida qo'llanilishi;
+Atrof-muhitning ekologik parametrlarini nazorat qilish
+Shuni ta'kidlash kerakki, sensorli tarmoqlarning uzoq tarixiga qaramay[3], sensorlar tarmog'ini qurish kontseptsiyasi nihoyat shakllanmagan va ma'lum dasturiy va apparat (platforma) yechimlarda ifodalanmagan. Sensor tarmoqlarini joriy bosqichda amalga oshirish ko'p jihatdan sanoat vazifasining o'ziga xos talablariga bog'liq. Arxitektura, dasturiy ta'minot va apparat ta'minotini amalga oshirish intensiv texnologiyalarni shakllantirish bosqichida bo'lib, kelajakdagi ishlab chiqaruvchilar uchun texnologik joyni izlash uchun ishlab chiquvchilarning e'tiborini tortadi.
+
+9- Amaliy mashg’ulot
+
+Mavzu: Simsiz sensorli tarmoqning ishlash rejimlari va marshrutlash protokollari
+"Datchik tarmoqlari" deb nomlanuvchi 802.15.4/ZigBee releli qisqa masofali radioaloqa texnologiyasi resurslar va jarayonlarni kuzatish va boshqarish uchun o'z-o'zini tashkil etuvchi nosozliklarga chidamli taqsimlangan tizimlarni rivojlantirishning zamonaviy yo'nalishlaridan biridir. Bugungi kunda simsiz sensor tarmoqlari texnologiyasi sensorlarning ishlashi uchun muhim bo'lgan monitoring va nazorat vazifalarini hal qilish uchun ishlatilishi mumkin bo'lgan yagona simsiz texnologiyadir. Simsiz tarmoqqa integratsiyalangan sensorlar ma'lumotlarni yig'ish, qayta ishlash va uzatish uchun hududiy taqsimlangan o'zini o'zi tashkil qilish tizimini tashkil qiladi. Amal qilishning asosiy sohasi jismoniy muhit va ob'ektlarning o'lchangan parametrlarini nazorat qilish va kuzatishdir.
+
+Qabul qilingan IEEE 802.15.4 standarti simsiz kanalga kirishni boshqarishni va past tezlikdagi simsiz shaxsiy tarmoq tarmoqlari uchun jismoniy qatlamni, ya'ni OSI tarmoq modeliga muvofiq ikkita pastki qatlamni tavsiflaydi. "Klassik" sensor tarmog'i arxitekturasi odatda RC2200AT-SPPIO tugunining misoli [7] ni o'z ichiga olgan tipik tugunga asoslangan:
+
+radio yo'li;
+protsessor moduli;
+batareya;
+turli sensorlar.
+ISO 24730-5 standartiga mos keladigan odatiy sensor tarmog'i tugunida ikkinchi transmitterni sensor sifatida ishlatish sensor tarmog'idan nafaqat atrof-muhit va ob'ektlar parametrlarini kuzatish, balki harakatni aniqlash va kuzatish uchun ham foydalanish imkonini beradi. maxsus radiochastota teglari bilan jihozlangan ob'ektlar. Bunday tugunlardan qurilgan sensor tarmog'i simsiz RTLS infratuzilmasini tashkil qiladi.
+
+Tugun turlari
+Oddiy tugun uchta turdagi qurilmalar bilan ifodalanishi mumkin[9]:
+
+Tarmoq koordinatori (NCD - Network Coordination Device);
+global muvofiqlashtirish, tarmoq parametrlarini tashkil etish va sozlashni amalga oshiradi;
+eng ko'p xotira va quvvat ta'minotini talab qiluvchi uchta qurilma turining eng murakkabi;
+To'liq ishlaydigan qurilma (FFD)
+802.15.4 uchun qo'llab-quvvatlash;
+qo'shimcha xotira va quvvat iste'moli tarmoq koordinatori sifatida harakat qilish imkonini beradi;
+barcha turdagi topologiyalarni qo'llab-quvvatlash ("nuqtadan nuqtaga", "yulduzcha", "daraxt", "to'r tarmog'i");
+tarmoq koordinatori sifatida harakat qilish qobiliyati;
+tarmoqdagi boshqa qurilmalarga kirish imkoniyati;
+RFD - Reduced Function Device;
+802.15.4 funksiyalarining cheklangan to'plamini qo'llab-quvvatlaydi;
+nuqtadan nuqtaga, yulduzcha topologiyalarni qo'llab-quvvatlash;
+koordinator sifatida ishlamaydi;
+tarmoq koordinatori va routerni chaqiradi; 
+
+  10- Amaliy mashg’ulot
+
+                                          Mavzu:     ITS haqida ma'lumot
+ITS tizimlari transport tizimlarining tirbandlik va xavfsizlik bilan bog'liq muammolarini hal qiladi. Mobil transport tizimlari uchun simsiz va simli aloqa tizimlari transport tizimlari, boshqaruv tizimlari va foydalanuvchilar o'rtasida bir necha turdagi ma'lumotlar almashinuvini ta'minlash uchun juda muhimdir. Ushbu bobda ITSning asosiy tushunchasini aniqlash uchun ITS tizimlarining vazifalari qisqacha tushuntiriladi. Bundan tashqari, aloqa funktsiyalarining rolini tushuntirish uchun ITS tizimi arxitekturasining tavsifi, shu jumladan ITS aloqa arxitekturasi taqdim etiladi. 2.2 ITS ITS texnologiyalarining maqsadlari transport muammolarini hal qilish uchun qo'llanilishi uchun mo'ljallangan o'zaro bog'langan foydalanuvchi xizmatlari to'plamiga birlashtirilgan. Masalan, foydalanuvchi uchun xizmatlar 1-jadvalda ko'rsatilganidek belgilanishi mumkin*. 2.3 ITS tizimi arxitekturasi ITS arxitekturasi ITS ni ishlab chiqish uchun umumiy tuzilmani taqdim etadi. Bu tizim dizayni ham, dizayn tamoyillari ham emas. Uning vazifasi har xil dizayn yondashuvlarini ishlab chiqish mumkin bo'lgan asosiy tuzilmani aniqlashdan iborat bo'lib, ularning har biri yuqorida aytib o'tilgan umumiy arxitektura afzalliklarini saqlab qolgan holda foydalanuvchining o'ziga xos ehtiyojlarini qondirish uchun mo'ljallangan. Arxitektura foydalanuvchiga ma'lum bir xizmatni taqdim etish uchun bajarilishi kerak bo'lgan funktsiyalarni (masalan, transport ma'lumotlarini yig'ish yoki marshrut so'rovi), ushbu funktsiyalar amalga oshiriladigan jismoniy ob'ektlar yoki quyi tizimlarni (masalan, yo'l bo'yi yoki transport vositasi), interfeyslarni belgilaydi. / jismoniy quyi tizimlar va axborot oqimi uchun aloqa talablari o'rtasidagi axborot oqimlari (masalan, simli yoki simsiz). Bundan tashqari, u milliy va mintaqaviy hamkorlikni qo'llab-quvvatlash uchun zarur bo'lgan standartlarga, shuningdek, ommaviy ishlab chiqarish iqtisodiyotini rivojlantirishni ta'minlash uchun zarur bo'lgan mahsulot standartlariga qo'yiladigan talablarni belgilaydi va belgilaydi. 1-rasmda ko'rsatilgan markaziy quyi tizimlar odatda davlat/xususiy boshqaruv, hukumat yoki rejalashtirish organlariga yuklangan funksiyalarni bajaradi. Yo'l bo'yidagi quyi tizimlarga datchiklar, signallar, dasturlashtiriladigan yo'l belgilari yoki odamlar yoki barcha turdagi transport vositalari va transport vositasiga o'rnatilgan transport vositalarining quyi tizimlari bilan o'zaro aloqani ta'minlaydigan boshqa ob'ektlarni joylashtirish uchun yo'l bo'yidagi joylarga oson kirishni talab qiluvchi funktsiyalar kiradi. . Sayohatchilarning quyi tizimlari ko'p rejimli sayohatni qo'llab-quvvatlash uchun sayohatchilar yoki operatorlar (masalan, tijorat operatorlari) tomonidan talab qilinadigan ITS funktsiyalari uchun platformalardir. Ular o'zgarmas (masalan, kiosklar yoki uy/ofis kompyuterlari) yoki ko'chma (masalan, PDA) bo'lishi mumkin va umumiy foydalanishga (masalan, kiosklar orqali) yoki individual kirishga (masalan, uyali telefonlar yoki shaxsiy kompyuterlar orqali) ega bo'lishi mumkin. ____________________
+
+11- Amaliy mashg’ulot
+
+Mavzu: M2M dan zamonaviy holati va qo’llanilish  istiqbollari
+M2M uskunalari bozorining rivojlanishining taxminlari va prognozlari juda optimistik va rivojlanayotgan M2M sanoatining salohiyati juda katta. Ushbu bosqichda M2M texnologiyasi faol rivojlanishda davom etmoqda, tizimlar yanada yuqori aqlli bo'lib qoldi va ularni qo'llash doirasi deyarli cheksiz kengaydi. Simsiz aloqa qurilmalari narxini pasaytirish, ularning ishlashi va funksionalligini oshirish hisobiga turli M2M yechimlarini amaliy tatbiq etish imkoniyatlari ham oshdi. Simsiz signal yordamida masofaviy qurilmalarni boshqarish imkoniyati joy va vaqtga bog'liqlikni minimallashtirish imkonini berdi. M2M modullarining so'nggi avlodi GSM/GPRS, GPS, Bluetooth, ZigBee va boshqalar kabi asosiy texnologiyalarni qo'llab-quvvatlaydi.
+Bugungi kunda M2M uskunalari o'g'irlik va xavfsizlik tizimlarida juda keng qo'llaniladi, u ko'plab huquqni muhofaza qilish tuzilmalarining ajralmas qismiga aylandi. Ushbu texnologiyaning joriy etilishi avtomashinani o‘g‘irlash yoki kvartiraga bostirib kirishga urinish holatlarida xavfsizlik xizmatlarining eng tezkor javobini ta’minlash imkonini beradi. Voqea sodir bo'lgan signal GSM tarmog'i orqali boshqaruv paneliga SMS xabar yoki ovozli signal shaklida navbatchi operatorga uzatiladi, bir vaqtning o'zida egasiga xabar berish mumkin. M2M tizimlarini qo'llab-quvvatlash yomon telefonlashtirilgan hududlarda ayniqsa sezilarli.
+Statsionar ob'ektlarni kuzatishdan tashqari, M2M mobil joylashishni aniqlash tizimlarida qo'llanilishi mumkin. Taksi kompaniyalari, yuk tashuvchilar va boshqa ko‘plab kompaniyalar o‘z transport vositalari harakatini real vaqt rejimida kuzatishi, ularning texnik holati to‘g‘risida ma’lumot olishi, yo‘nalishlarni sozlashi va shu orqali yuklarni yetkazib berishni tezlashtirishi mumkin. Bundan tashqari, baxtsiz hodisa sodir bo'lgan taqdirda, voqea joyini ko'rsatadigan avtomatik xabar darhol qutqaruv xizmatiga yuboriladi (masalan, baxtsiz hodisalar yuz berganda favqulodda vaziyatlarni bartaraf etish tizimlari: mahalliy - ERA-GLONASS, Amerika - E911, Evropa - elektron qo'ng'iroq).
+M2M mobil tizimlari bank sohasida uzoq vaqtdan beri muvaffaqiyatli qo'llanilmoqda. Masalan, bankomatlar yoki to‘lov terminallari zarur ma’lumotlarni GSM tarmoqlari orqali avtomatik ravishda uzatishi mumkin, agar ularda mavjud bo‘lsa, shuningdek, chek qog‘ozi yoki naqd pul tugasa, yoki aksincha, naqd pul haddan tashqari ko‘pligi va inkassatorlarning kelishi haqida. talab qilinadi. M2M qishloq xo'jaligi majmuasida ham qo'llanilishi mumkin, tuproq namligini kuzatish datchiklari suv sarfini iloji boricha tejamkor va samarali qiladi. Va "aqlli uy" tizimi uzoq vaqtdan beri orzudan haqiqatga aylandi, uning ko'plab afzalliklari hamma tomonidan qadrlanishi mumkin. Aloqa modullari haroratni, yorug'lik darajasini, ko'priklarning mexanik kuchlanishini, quvurlardagi bosimni, yong'in va tutun sensorlarini va boshqalarni kuzatish uchun juda ko'p turli xil sensorlar bilan ta'minlangan.
+M2M tizimlari turli xil simsiz aloqa texnologiyalaridan foydalanadi. Umumiy tarmoq aloqalari (uyali, sun'iy yo'ldosh, Ethernet va WiFi) eng ko'p qo'llaniladi, ZigBee va Bluetooth kabi individual qurilmalar uchun optimallashtirilgan texnologiyalar hali ham nisbatan kam.
+
+12- Amaliy mashg’ulot
+
+Mavzu: M2M mashinalar aro kommunikatsiyalar
+
+Mashinalararo oʻzaro taʼsir (mashinalar oʻrtasidagi oʻzaro taʼsir, inglizcha Machine-to-Machine, M2M) — mashinalarning bir-biri bilan maʼlumot almashishi yoki uni bir tomonlama avtomatik rejimda inson aralashuvisiz qurilmalar oʻrtasida uzatish imkonini beruvchi texnologiyalarning umumiy nomi. Barcha amaliy xilma-xilligi bilan mashina va mashinaning o'zaro ta'siri g'oyasini uchta elementdan iborat oddiy sxemaga qisqartirish mumkin. Tasavvur qiling-a, raqamli qurilma (mashina) A, har qanday ma'lumotni yig'ish bilan band. Yig'ilgan ma'lumotlar aloqa kanali B (simli yoki simsiz) orqali A qurilmasidan ma'lum masofada joylashgan C qurilmasiga (mashina) uzatiladi, olingan ma'lumotlarni tahlil qiladi va natijalarni saqlaydi va kerak bo'lganda A qurilmasi uchun boshqaruv buyruqlarini ishlab chiqaradi ( 4.1-rasm). Bunday sxema inson aralashuvisiz ishlaydi (mashina mashina bilan aloqa qiladi), shuning uchun nomi: M2M. Garchi aniqroq qisqartma - M2 (CN2) M (Machine-to- (Aloqa-tarmoq-to-) Machine) qisqartmasidan foydalanish to'g'riroq bo'lsa-da, bu mashina-mashinada ba'zi telekommunikatsiya tarmoqlarining majburiy mavjudligini aniq ko'rsatadi. kommunikatsiyalar.
+
+
+ 	 
+ 
+Машина А
+ 
+Сеть связи
+ 
+Машина С
+ 
+
+Рис. 4.1 – Идея связи 
+Ko'pchilik M2Mni IoT ning alohida holati deb hisoblaydi, ba'zilari esa, aksincha, narsalar internetini mashinadan mashinaga aloqani amalga oshirish varianti sifatida ko'rishadi. Mualliflar birinchi yondashuvga amal qilishadi, chunki narsalar Interneti ancha kengroq atama bo'lib, u nafaqat qurilmalar, odamlar va narsalar bilan o'zaro ta'sir qilishni, balki ushbu o'zaro ta'sirni geografik, vaqt koordinatalari va boshqalar kabi qo'shimcha kontekstlar bilan ta'minlashni ham anglatadi.
+M2M tizimlarining paydo bo'lishining aniq sanasini nomlash juda qiyin. Simsiz yechimlar bilan integratsiyalangan birinchi M2M ishlanmalaridan biri OmniTRACS bo'lib, Amerikaning Qualcomm kompaniyasi tomonidan 1989 yilda tijorat transport vositalarini kuzatish uchun yaratilgan.
+Mashinalarning elektron aloqalaridan odamni chiqarib tashlash, uning rolini kuzatuvchining passiv roliga tushirish printsipial jihatdan muhim nuqtadir. Inson ishonchsiz - u sekin, xato qilishga moyil, tez charchaydi, shuning uchun odamni axborot tizimidan chiqarib tashlash ancha samarali elektron komplekslarni yaratishga imkon beradi. Biroq, 20-asrning oxirigacha Yerdagi ma'lumotlarning asosiy generatori va asosiy iste'molchisi bo'lib qolgan inson edi. Va yaqinda vaziyat sezilarli darajada o'zgardi - M2M funksionalligi millionlab qurilmalarda paydo bo'ldi.
+M2M kontseptsiyasi turli texnologik va biznes jarayonlarini avtomatlashtirish uchun telekommunikatsiya va axborot texnologiyalarini birlashtiradi. M2M texnologiyalari turli sohalarda - energetika, logistika, yuk tashish, moliya, savdo, xavfsizlik, menejment, sog'liqni saqlash, ta'lim va boshqalarda qo'llaniladi. Transport sohasida M2M texnologiyalari, masalan, dvigatel diagnostikasi, avtomobil monitoringi, transport vositalarini sun'iy yo'ldosh orqali kuzatish, haydovchilar va yuklarni GLONASS / GPS nazorati va boshqalar. Kundalik hayotda M2M dan foydalanishning odatiy misollari
+
+13- Amaliy mashg’ulot
+
+Mavzu: IoTda ma'lumotlarni uzatish texnologiyalarining tasnifi
+
+IoTda ma'lumotlarni uzatish texnologiyalarining tasnifi Narsalar internetini tashkil etishning asosiy masalalaridan biri quyidagilar o'rtasidagi o'zaro aloqani amalga oshirishdir: a) Internet narsalar; b) foydalanuvchilar va Internet narsalar; c) masofaviy server va internet narsalar. IoT ma'lumotlarni uzatish uchun inson tanasida bir necha o'n santimetr masofada ishlaydigan BAN (Body Area Network) dan butun dunyo bo'ylab Internetgacha bo'lgan ko'plab aloqa tarmoqlaridan foydalanadi. Qisqa masofali aloqa RFID, NFC, Bluetooth, Wi-Fi va boshqalar kabi texnologiyalardan foydalanadi. Uzoq masofali aloqalar turli uyali aloqa tarmoqlari (2G/3G/4G), WiMAX simsiz keng polosali kirish tarmoqlari, GPS/GLONASS asosida amalga oshiriladi. joylashishni aniqlash tarmoqlari va boshqalar. Qoplash hududiga ko'ra, narsalar Internetida qo'llaniladigan telekommunikatsiya tarmoqlarini 4 asosiy turga bo'lish mumkin: 35 16-rasm - IoTda qo'llaniladigan tarmoq texnologiyalari ierarxiyasi. Ushbu tarmoqlar barcha shaxsiy foydalanuvchi qurilmalarini (telefonlar, smartfonlar, shaxsiy raqamli yordamchilar, noutbuklar, naushniklar va boshqalar) birlashtirish uchun mo'ljallangan. IoT bilan bog'liq holda, bunday tarmoq qurilmaning "atrofida" qurilgan ("narsalar"); b) mahalliy tarmoq LAN (Local Area Network) - odatda nisbatan kichik maydonni yoki binolarning kichik guruhini (uy, ofis, kompaniya) qamrab oladigan tarmoq. Mahalliy tarmoqlarga CAN kontroller tarmog'i (Controller Area Network) kiradi - asosan turli aktuatorlar va sensorlarni alohida korxona doirasida yagona tarmoqqa birlashtirishga qaratilgan sanoat tarmog'i; v) MAN metropoliten tarmog'i (Metropolitan Area Network) - alohida foydalanuvchilarni va shahar ichidagi mahalliy tarmoqlarni birlashtiradi, LAN dan kattaroq, lekin WAN dan kichikroq tarmoq; d) WAN (Wide Area Network) - yuzlab va minglab kilometr masofada tarqalgan foydalanuvchilar va tarmoqlarni bog'laydi. Narsalar Interneti deyarli LAN, MAN va WAN texnologiyalariga maxsus talablarni qo'ymaydi, bundan tashqari ular texnik adabiyotlarda juda yaxshi yoritilgan. Shu sababli, ushbu bob faqat IoTda keng qo'llaniladigan kichik va o'rta diapazonli tarmoqlar uchun standartlar va protokollarni qamrab oladi. Internetdagi barcha ma'lumotlarni uzatish texnologiyalari ishlatiladigan uzatish vositasiga qarab narsalarni ikkita katta sinfga bo'lish mumkin: simli va simsiz. IoT-da simli ma'lumotlarni uzatish texnologiyalari metall (mis) aloqa kabelidan, elektr simlaridan (PLC texnologiyasi - Power Line Communication) yoki optik tolali kabeldan foydalanishi mumkin. Biroq, aloqa liniyalarini jismoniy amalga oshirishning murakkabligi sababli, Internet-of-narsalar aloqasi uchun simli texnologiyalar simsiz aloqalarga qaraganda kamroq qo'llaniladi. IoTda qoʻllaniladigan qisqa masofali simsiz tarmoqlarni uch turga boʻlish mumkin: a) WPAN (Wireless Personal Area Network) simsiz shaxsiy tarmoqlar.Ular turli qurilmalarni, jumladan, kompyuter, maishiy va orgtexnika, aloqa va boshqalarni ulash uchun ishlatiladi. Jismoniy va havola qatlamlari IEEE 802.15.4 standarti bilan tartibga solinadi. WPAN diapazoni bir necha metrdan bir necha o'n santimetrgacha. Bunday tarmoqlar alohida qurilmalarni bir-biri bilan ulash uchun ham, ularni yuqori darajadagi tarmoqlar, masalan, global Internet bilan ulash uchun ham ishlatiladi. WPAN turli tarmoq texnologiyalari yordamida joylashtirilishi mumkin; b) simsiz sensor tarmoqlari WSN (Simsiz datchiklar tarmog'i).Radiokanal orqali o'zaro bog'langan, harakatga keltiruvchi qurilmalarning ko'plab datchiklari (datchiklari)ning taqsimlangan, o'z-o'zidan tashkil topgan tarmoqlari. Xabarlarni bir elementdan ikkinchisiga o'tkazish qobiliyati tufayli bunday tarmoqlarning qamrov maydoni bir necha metrdan bir necha kilometrgacha bo'lishi mumkin; c) kichik mahalliy tarmoqlar TAN (Tiny Area Network) Kichik ofis yoki alohida uyda o'rnatilgan hisoblash tarmoqlari. Ular ko'pincha uy tarmoqlari deb ataladi, chunki ular bir oilaga tegishli kompyuterlar, maishiy elektronika va signalizatsiya qurilmalarini birlashtiradi. Ko'pincha bunday tarmoqlar Wi-Fi texnologiyasi asosida quriladi. IoT-da juda ko'p turli xil qurilmalar bilan o'zaro ishlash uchun standartlashtirilgan interfeyslar, ma'lumotlar formatlari va aloqa protokollari talab qilinadi. 1-jadvalda ish chastotasi, ma'lumotlarni uzatish tezligi, OSI qatlamini qo'llab-quvvatlash (jismoniy PHY, MAC mediaga kirish, tarmoq NWK, transport TRP), shuningdek, APS (Application Support Sublayer) ning amalga oshirilishini ko'rsatadigan ba'zi IoT standartlari va protokollari ro'yxati keltirilgan. ) 37 ilovalarni qoʻllab-quvvatlash sublayer ), ACL (Kirish nazorati roʻyxati) va 128-bitli AES (Kengaytirilgan shifrlash standarti) ni qoʻllab-quvvatlash. 1-jadval – IoT standartlari va protokollari Standart chastota, MGts Tezlik kbit/s Protokol darajalari Shifr PHY MAC NWK TRP APS ACL IEEE 802.15.4 868/915/2400 20/40/250 + + - - - + + Zigbee 250 - - + + + + + 6LoWPAN - 50...200 - - + - - + + WirelessHART 2400 250 + + + + + + + ISA 100.11a 2400 250 + + + + + + + Z-wave 865/915/ 869 9.6/40 + + + - + - - Bluetooth 2400 1000 + + + +
+14- Amaliy mashg’ulot
+
+Mavzu:  RFID belgi (teglari) ishlash printsipini o’rganish
+
+RFID texnologiyasining asosi va uning asosiy komponenti yorliq (inglizcha teg) yoki transponder (uzatuvchi - uzatuvchi, javob beruvchi - javob beruvchi) bo'lib, u ma'lum ma'lumotlarni (masalan, mahsulot haqida, ishlab chiqarish, belgilangan joy, yaroqlilik muddati va tegni so'roq qilganda o'quvchiga uzatiladi. Aksariyat RFID teglari ikki qismdan iborat (2.3-rasm). Birinchisi, axborotni saqlash va qayta ishlash, radiochastota signalini modulyatsiya qilish va demodulyatsiya qilish va boshqa ba'zi funktsiyalar uchun integral sxema. Ikkinchisi - signalni qabul qilish va uzatish uchun antenna. RFID tizimi quyidagi printsip asosida ishlaydi: radio signal o'quvchi tomonidan transponderga (teg) yuboriladi, u uni qabul qiladi va uni aks ettiradi (passiv teg) yoki chiqish signalini (faol teg) hosil qiladi. Tegni o'qish jarayonida ma'lumotlar uning xotirasidan kompyuterga o'tkaziladi va u erda ma'lumot qayta ishlanadi
+tushunarli shaklda taqdim etiladi. Strukturaviy ravishda, RFID yorlig'i odatda radio antennaga biriktirilgan mikrochipdan iborat. RFID teglarining ixchamligi tashqi antennalarning o'lchamiga bog'liq bo'lib, ular chipdan ko'p marta kattaroqdir va qoida tariqasida teglarning o'lchamlarini aniqlaydi.
+ RFID yorlig'ining sxematik diagrammasi: chapda - induktiv bog'langan teg, o'ngda - dipol antennali mikroto'lqinli yorliq RFID teglari passiv va faoldir (2.4-rasm). Passiv teglar arzonroq va batareyalari yo'q. Teg o'quvchi tomonidan chiqarilgan elektromagnit to'lqinlarning energiyasidan foydalanadi. Bunday teglar mahsulotni kuzatish, kirishni boshqarish, sanoat avtomatlashtirish va tovarlarni elektron kuzatishda qo'llaniladi.
+
+2.4 - Passiv (chapda) va faol (o'ngda) RFID teglari Faol RFID teglari batareyadan quvvatlanadi, bu sizga katta aniqlik va o'qish diapazoni bilan ishlash imkonini beradi. Ammo batareya tufayli faol teglar cheklangan xizmat muddatiga ega va qimmatroq. Ularni qo'llashning eng keng tarqalgan varianti yuqori qiymatli va qimmatli ob'ektlarni masofadan nazorat qilishdir. Ixtisoslashgan vazifalarni bajarish uchun ichki quvvat manbai (masalan, batareya) va elektronikaga ega bo'lgan yarim faol (yarim passiv) teglar ham mavjud. Ichki quvvat manbai tegning ishlashi uchun energiya beradi. Biroq, o'z ma'lumotlarini uzatish uchun yarim faol teg o'quvchi (o'quvchi) tomonidan chiqarilgan energiyadan foydalanadi. Yarim faol teg, shuningdek, yordamchi batareyaga ega teg deb ham ataladi. O'quvchi va ushbu turdagi teg o'rtasida ma'lumot almashinuvi doimo boshlanadi o'quvchi va keyin yorliq ishlay boshlaydi.
+Bir vaqtlar RFID sanoati "shafqatsiz doira" muammosiga duch keldi - teglar ularga talab oshmaguncha arzonlashmaydi va ular aylanmaguncha ko'paymaydi.
+
+15- Amaliy mashg’ulot
+
+Mavzu:  RFID qurilmalarining ishlash principini o’rganish
+
+RFID texnologiyasi nima - bu radiochastotani identifikatsiya qilish usulini bildiruvchi aloqa tizimi. Bu radio to'lqinlari yordamida tirik yoki jonsiz narsalarni tanib olishdan iborat bo'lgan usul. Auto-ID sifatida barmoq izlari yoki retina, ovoz, kiyim ishlatiladi.
+Tavsif
+Bu to'g'ridan-to'g'ri aloqasiz ma'lumotlar almashinuviga asoslangan texnologiya. U ishlash uchun radio chastotali elektromagnit nurlanishdan foydalanadi.
+Butun tizim 3 komponentdan iborat:
+• dasturiy ta'minot;
+• o'quvchi;
+• yorliqlar.
+Bu usul har qanday ob'ektlarni tanib olish va hisobga olishni avtomatlashtirish imkonini beradi. Jarayon oddiy - RFID tegidan olingan ma'lumotlar o'quvchiga yuboriladi, natijada o'zgarishlar dasturda aks etadi. Har bir narsa muvaffaqiyatli ishlashi uchun transmitterdan signallarni qabul qilish va barcha jihozlarni to'g'ri o'rnatish uchun antenna talab qilinadi. Agar texnologiyani NFC bilan taqqoslasak, RFID afzalliklarga ega. U uzoqroq masofada signalni oladi.
+RFID qanday ishlaydi Bu masalani tushunish oson. Chip qo'llaniladigan narsa chastotani modulyatsiya qiluvchi shaxsiy kodni yuboradi. Teg o'quvchi bilan o'zaro ta'sir qiladi, uning ichiga ikki tomonlama uzatuvchi o'rnatilgan.
+Ushbu uskuna kodlangan signalni tegga uzatadi va uni faollashtiradi. Chipga o'rnatilgan qabul qiluvchi radio signalni o'zgartiradi va javob yuboradi. Oddiy hayotning ko'plab elektron qurilmalari bunday o'zaro ta'sirga ega, ammo biz buni sezmaymiz.
+Ushbu tizim Ikkinchi Jahon urushi davrida keng qo'llanilgan - samolyotda har qanday ob-havoda do'stni begonadan ajratish imkonini beradigan maxsus sensorlar o'rnatilgan. Harbiy harakatlar tugagandan so'ng, u uzoq vaqt davomida ishlatilmadi. Endi deyarli har bir transport va logistika kompaniyasi ushbu tan olish va hisobga olish usulini qurishga harakat qilmoqda.
+Barcha sohalar uchun tayyor echimlar
+ 
+
+Do'konlar
+ 
+Savdo maydonchasida va omborda tovarlarni hisoblashning harakatchanligi, aniqligi va tezligi sizga inventarizatsiya paytida va tovarlarni qabul qilish paytida sotish kunlarini yo'qotmaslik imkonini bera 
+Omborlar
+ 
+Mobil avtomatlashtirish yordamida ombor ishchi kuchingizni tezlashtiring. Tovarlarni qabul qilish, jo'natish, inventarizatsiya qilish va tashishdagi xatolarni doimiy ravishda bartaraf etish.
+Belgilash
+ 
+Tovarlarni majburiy markalash har bir tashkilot uchun kontrafakt tovarlarni o'z omboriga qabul qilishni 100% istisno qilish va ishlab chiqaruvchidan etkazib berish zanjirini kuzatish imkoniyatidir. 
+ 
+Elektron tijorat
+ 
+Omborda tovarlarni qabul qilish va jo'natish tezligi, aniqligi elektron tijorat biznesining asosidir. Zamonaviy, samaraliroq mobil vositalardan foydalanishni boshlang. 
+Muassasalar
+ 
+Tashkilot mulkini hisobga olishning to'g'riligini, har bir bo'linmaning xavfsizligi va harakatini nazorat qilish darajasini oshirish. Mobil buxgalteriya hisobi o'g'irlik va tabiiy yo'qotishlar ehtimolini kamaytiradi.
+Ishlab chiqarish
+ 
+Tovar-moddiy boyliklarni hisobga olishni mobil avtomatlashtirishni joriy etish orqali ishlab chiqarish korxonasi faoliyati samaradorligini oshirish.
+RFID texnologiyalari qayerda ishlatiladi?
+Qo'llash doirasi juda keng:
+•	Chakana savdo. U tovarlarning ombordan do'konga va orqaga harakatlanishini nazorat qiladi. Inventarizatsiya qilish va o'g'irlikning oldini olish ancha osonlashadi.
+• Mo'ynali kiyimlarni ishlab chiqarish va sotish. Har bir mahsulotga majburiy belgilarning maxsus belgisi qo'yilgan.
+• Logistika. Bu yuklarni yuklash va tushirishni tezlashtirish, tovarlarni qabul qilish, tovar qoldiqlari harakatini nazorat qilish imkonini beradi. Ishchilarning e'tiborsizlik tufayli xatolarini kamaytirishga yordam beradi.
+• Ishlab chiqarish. Xodimlar va jihozlarning ishini kuzatib borish, favqulodda vaziyatlar sonini kamaytirish, xom ashyoni hisobga olish ma'lumotlarini dasturga o'tkazish.
+• To'lov xizmatlari. Tovar va xizmatlar uchun kontaktsiz to'lovni amalga oshirish.
+• Xavfsizlikka kirish. Mansabdor shaxslarning avtomatik kirishi uchun biometrik ma'lumotlardan foydalanish.
+• Farmatsevtika. Dori vositalarining haqiqiyligini tekshirish uchun kiritilgan.
+RFID texnologiyasidan foydalanish
+Chastotani radio identifikatsiyalash bilan siz turli jarayonlarni avtomatlashtirishingiz va soddalashtirishingiz mumkin. Buning uchun dasturlar yaratiladi:
+• xodimlarning ish joyida mavjudligini va ularning kelish/ketish vaqtini nazorat qilish;
+• transport vositasini aniqlash;
+• omborlar;
+• ishlab chiqarish operatsiyalari;
+• Dasturlar yoki xonalarga kirish uchun shaxsning shaxsini aniqlash.
+RFIDning afzalliklari
+Bugungi kunda bu kompaniyalardagi ko'pgina ishlab chiqarish jarayonlarini avtomatlashtirish usulidir. RFIDning joriy etilishi bilan butun tashkilotning natijalari sezilarli darajada yaxshilanadi, foyda oshadi va muvaffaqiyatsizliklar kamroq bo'ladi. Asosiy afzalliklari orasida:
+• ushbu tizimning tafsilotlarini soxtalashtirish juda qiyin;
+• o'qish radiusi 300 metrgacha;
+• yorliqni o‘quvchiga tegizishning hojati yo‘q, uning faoliyat sohasida bo‘lish kifoya;
+• tez va aniq ishlaydi;
+• transport yoki boshqa harakatlanuvchi narsadan ham ma'lumotni o'qiy oladi;
+• radioto'lqinlarni uzatuvchi har qanday material orqali ishlay olish;
+• chipdagi axborot katakchalarini yozib olish va saqlash, uning ustiga yozishga ruxsat beriladi;
+• bir vaqtning o'zida bir nechta ob'ektlardan o'qish;
+• atrof-muhit ta'siriga ta'sir qilmaydi, uzoq xizmat muddati.
+ 
+1-Amaliy mashg’ulot. 
+1.	Mavzu: “Aqlli sayyora” tushunchasi.
+
+So‘nggi yillarda o‘ziga xos “narsalar intraneti” bo‘lgan “aqlli” sayyorani yaratish yo‘nalishidagi alohida yirik loyihalar jadal rivojlanmoqda. Shunday qilib, AQSH Milliy Aeronavtika va fazoni tadqiq qilish boshqarmasi (NASA) Cisco koʻmagida Yer haqidagi global maʼlumotlarni yigʻish tizimini – Sayyora terisini yaratmoqda. Sayyoramiz bo‘ylab tarqalgan koinot, havo, dengiz va yerdagi datchiklardan kelayotgan ekologik vaziyat haqidagi ma’lumotlarni to‘plash va tahlil qilish uchun onlayn platformani ishlab chiqish rejalashtirilmoqda. Ushbu ma'lumotlar keng jamoatchilikka, hukumatlarga va tijorat tashkilotlariga taqdim etiladi. Ular atrof-muhit ma'lumotlarini yaqin real vaqtda o'lchash, hisobot berish va tekshirish, global iqlim o'zgarishlarini o'z vaqtida tan olish va ularga moslashish imkonini beradi. Platformani ishlab chiqish global miqyosda yomg'ir o'rmonlarining yo'q qilinishini o'rganadigan "Rainforest Skin" loyihasini o'z ichiga olgan bir qator pilot loyihalardan boshlandi.
+Sayyora terisi dasturi biomassa, suv, er va energiya, iqlim o'zgarishi va ular bilan bog'liq xavflarni (dengiz sathining ko'tarilishi, qurg'oqchilik va epidemiyalar kabi) va uglevodorodlar, suvlar atrofida paydo bo'ladigan yangi ekologik bozorlarni rivojlantirish kabi tabiiy resurslarni samarali boshqarish uchun qaror qabul qilishni qo'llab-quvvatlash tizimlarini ishlab chiqadi. va biologik xilma-xillik.
+Smart Planet kontseptsiyasi IBM tomonidan ilgari surilgan. Uning mohiyati shundaki, IoT texnologiyalari tufayli sayyorani aqlliroq qilish mumkin. Bugungi kunda bu g‘oyaning ta’siri butun dunyoda turli soha va tarmoqlarda, kundalik hayotimizda allaqachon sezilmoqda. Energiya va kommunal kompaniyalar elektr energiyasini ishlab chiqarish va taqsimlashning yaxshiroq, samaraliroq usullarini izlamoqda. Shaharlar hayot sifatini yaxshilash bilan birga jamoalarga vaqt va pulni tejashga yordam beradigan transport boshqaruvi yechimlarini joriy qilmoqda. Iste'mol tovarlari ishlab chiqaruvchi kompaniyalar qisqa vaqt ichida va arzonroq narxda yaxshiroq mahsulotlar yaratish va yetkazib berish uchun aqlli texnologiyalardan foydalanmoqda. Sog'liqni saqlash tizimlari xatolarni kamaytirish, xarajatlarni kamaytirish va ko'proq shaxsiylashtirilgan yordam ko'rsatish uchun ma'lumotlardan foydalanadi.
+Sensor tarmoqlariga asoslangan IoT texnologiyalari ekologiyada keng qo'llaniladi, masalan, qushlar, mayda hayvonlar va hasharotlar harakatini kuzatish, ekinlar va chorva mollariga ta'sirini aniqlash uchun atrof-muhit holatini kuzatish, o'rmon yong'inlari, suv toshqini, ifloslanishni aniqlash. , va boshqalar.
+“Aqlli sayyora” qurishni “aqlli binolar” qurishdan boshlash, keyin ularni “aqlli shaharlar”ga birlashtirish va bu jarayonni butun sayyora “raqamli intellekt” bilan ta’minlanmaguncha davom ettirish kerak. Narsalar internetini joriy qilishning ushbu va boshqa "aqlli" yo'nalishlari keyinroq bobda muhokama qilinadi.
+2-Amaliy mashg’ulot. 
+Mavzu: “Aqlli shahar” tizimlari bilan ishlash.
+
+So'nggi yillarda shaharlarda shahar hayotining ayrim sohalarini avtomatlashtirish uchun axborot tizimlari jadal ravishda yaratilmoqda: shahar atrof-muhit xavfsizligi, transport, energetika va uy-joy kommunal xizmat ko'rsatish, sog'liqni saqlash, ta'lim, davlat va shahar hokimiyati va boshqalar. IoT tamoyillari va texnologiyalar shaharning ishlashi uchun zarur bo'lgan to'liq bog'langan integratsiyalashgan yechimni yaratishga imkon beradi
+atrof-muhit (6.1-rasm) va shaharning barcha aholisi, shahar xizmatlari xodimlari, turli darajadagi mansabdor shaxslar va menejerlar uchun mavjud.
+Shuni e'tirof etish kerakki, narsalar Interneti hali shahar infratuzilmasi va iqtisodiyoti elementlariga chuqur kirib bormagan, lekin u deyarli inqilobiy rol o'ynaydigan ta'sir doirasini shakllantirgan. Bu, birinchi navbatda, transport, energetika va kommunal xizmatlar, ekologiya, jinoyatchilikka qarshi kurash, shahar aholisini axborot bilan ta'minlash va interaktiv uy xo'jaligini boshqarishdir.
+Intellektual mobil qurilmalar va ularga kirish uchun yuqori tezlikdagi keng ko‘lamli tarmoqlar, shahar muhitiga o‘rnatilgan datchiklar – bularning barchasi infratuzilma va odamlar chambarchas bog‘langan hamma joyda joylashgan shaharlar yoki u-shaharlarni yaratish uchun asos bo‘lib xizmat qiladi. Bir nechta hukumatlar allaqachon U-City katta dasturlarini qabul qilgan.
+
+
+
+
+
+
+
+Guruch. 6.1 - "Aqlli shahar" ning asosiy quyi tizimlari
+
+Eng samarali U-tizimlari (narsalar Interneti asosida ulangan) kommunal xizmatlar, transport, to'xtash joylari xizmatlari, shuningdek, ko'cha va maishiy jinoyatlarga qarshi kurash xizmatidir. Bular, aslida, yagona monitoring va nazorat tizimi asosida hal etilishi mumkin bo‘lgan shahar hayotining asosiy muammolaridir. Masalan, Koreyaning Yunpyong Nyutaun shahrida do‘konlar, kafelar va hokazolar haqidagi ma’lumotlarga ega portal ko‘rinishidagi savdo sohasida U-tizimi, shuningdek, bolalarning joylashuvini monitoring qilish tizimi uchun mo‘ljallangan. ota-onalar, samarali faoliyat yuritmoqda. Moskvadagi Yandex.Taxi veb-saytidan foydalanib, siz buyurtma qilingan avtomobilning harakatlarini kuzatishingiz, onlayn xaritada eng yaqin haydovchilarni topishingiz mumkin. GPS yoki GLONASS bilan jihozlangan avtobuslardan maʼlumot yigʻish aholiga avtobusni qancha vaqt kutishlari haqida maʼlumot beruvchi interaktiv tablolar, onlayn resurslar va ilovalar yaratish imkonini beradi. Misol uchun, Moskvada Tverskaya ko'chasida sensorli panellar bilan jihozlangan birinchi beshta "aqlli" bekatlar o'rnatildi. Endi yo‘lovchilar interaktiv xaritada o‘z yo‘llarini kezib, avtobus yoki trolleybusning yetib kelish vaqtini aniq bilib olishlari mumkin. Shuningdek, Moskvada avtoturargohlarni intellektual tizim bilan jihozlash rejalashtirilmoqda, bu esa avtoulovchilarga real vaqt rejimida bepul to'xtash joylari haqida ma'lumot olish imkonini beradi.
+Yana bir qiziqarli misol - aqlli axlat qutilari. To'liq signal markazlashtirilgan boshqaruv tizimiga yuboriladi, u xaritadagi barcha axlat tashish mashinalarini kuzatib boradi va to'ldirilgan konteynerni eng yaqin yuk mashinasining marshrutida o'z ichiga oladi. Va bu ham endi xayol emas: chiqindilarni yig'ish tizimi Dublin va Barselonada shunday ishlaydi.
+      Narsalar Internetida uyali aloqa kabi oddiy, hamma joyda qo'llaniladigan texnologiyadan foydalanish g'oyasi butun dunyoda keng tarqalmoqda. Kelajakda fuqarolarning smartfonlari shahar datchiklarining tobora kengayib borayotgan tarmog'ini tashkil qiladi. Hozir olimlar ijtimoiy muammolarni hal qilish uchun (masalan, “Aqlli shahar” maʼlumotlarini yigʻishda) uyali telefonlarga sensorlar oʻrnatish boʻyicha tajriba oʻtkazmoqda.
+
+So'nggi yillarda shaharlarda shahar hayotining ayrim sohalarini avtomatlashtirish uchun axborot tizimlari jadal ravishda yaratilmoqda: shahar atrof-muhit xavfsizligi, transport, energetika va uy-joy kommunal xizmat ko'rsatish, sog'liqni saqlash, ta'lim, davlat va shahar hokimiyati va boshqalar. IoT tamoyillari va texnologiyalar shaharning ishlashi uchun zarur bo'lgan to'liq bog'langan integratsiyalashgan yechimni yaratishga imkon beradi
+ 
+atrof-muhit (6.1-rasm) va shaharning barcha aholisi, shahar xizmatlari xodimlari, turli darajadagi mansabdor shaxslar va menejerlar uchun mavjud.
+Shuni e'tirof etish kerakki, narsalar Interneti hali shahar infratuzilmasi va iqtisodiyoti elementlariga chuqur kirib bormagan, lekin u deyarli inqilobiy rol o'ynaydigan ta'sir doirasini shakllantirgan. Bu, birinchi navbatda, transport, energetika va kommunal xizmatlar, ekologiya, jinoyatchilikka qarshi kurash, shahar aholisini axborot bilan ta'minlash va interaktiv uy xo'jaligini boshqarishdir.
+Intellektual mobil qurilmalar va ularga kirish uchun yuqori tezlikdagi keng ko‘lamli tarmoqlar, shahar muhitiga o‘rnatilgan datchiklar – bularning barchasi infratuzilma va odamlar chambarchas bog‘langan hamma joyda joylashgan shaharlar yoki u-shaharlarni yaratish uchun asos bo‘lib xizmat qiladi. Bir nechta hukumatlar allaqachon U-City katta dasturlarini qabul qilgan.
+
+Transport
+ 
+
+Energiya va kommunal xizmatlar
+ 
+
+Davlat
+3-Amaliy mashg’ulot. 
+Mavzu:  “Aqlli uy” tizimi bilan tanishish.
+
+“Aqlli uy” zamonaviy yuqori texnologiyali vositalardan foydalangan holda odamlarning eng qulay yashashi uchun yaratilgan. Tizim qanday ishlaydi
+"aqlli uy" - bu turar-joy binosini tashkil etuvchi barcha narsalarni avtomatlashtirish: yoritish, konditsionerlik, xavfsizlik tizimi, elektr energiyasi, isitish, suv ta'minoti va kanalizatsiya va boshqalar. "Aqlli uy" ning asosiy quyi tizimlariga quyidagilar kiradi: iqlim nazorati, yoritish, multimediya (audio va video), xavfsizlik tizimlari, aloqa va boshqalar (6.2-rasm).
+ 
+Standart aqlli uy loyihasida uchta asosiy kichik tarmoqni ajratib ko'rsatish mumkin: multimedia qurilmalari tarmog'i, elektr yoritish uskunalari tarmog'i va sensorlar tarmog'i. Ikkinchi holda, bu harakat, yorug'lik, harorat, bosim, namlik, tebranish va hokazo sensorlar. Shunday qilib, "aqlli uy" dasturiy va apparat vositalari, sensorlar va simli / simsiz tarmoqdan iborat (6.3-rasm).
+Umuman olganda, "aqlli uy" o'z egasiga quyidagi afzalliklarni beradi:
+1) resurslar (gaz, suv, elektr energiyasi) sarfini kamaytirish;
+2) yuqori darajadagi qulaylik;
+3) ko'chmas mulk ob'ektining barcha avtomatlashtirilgan tizimlarining zarur o'zaro ta'sirini ta'minlash, turli xil ish rejimlarini o'rnatish;
+4) favqulodda vaziyatlarning yuzaga kelish ehtimolini kamaytirish;
+5) boshqaruvning samaradorligi, soddaligi va qulayligini oshirish.
+ 
+Uyni avtomatlashtirish uchun aqlli tugunlar to'g'ridan-to'g'ri changyutgichlar, mikroto'lqinli pechlar, muzlatgichlar va televizorlar (quyida tasvirlangan) kabi maishiy texnika bilan birlashtirilishi mumkin. Ular Internet orqali bir-biri bilan va tashqi tarmoq bilan bog'lanishlari mumkin. Bu oxirgi foydalanuvchilarga uydagi qurilmalarni mahalliy va masofadan osongina boshqarish imkonini beradi.
+"Aqlli" narsalar toifasidagi ko'pgina uy jihozlarini Internetdan foydalanish turiga ko'ra ikki guruhga bo'lish mumkin.
+Birinchi guruhga WWW orqali o'z dasturiy ta'minotini yangilaydigan, yangi funktsiyalarni qabul qiladigan, uzoqda joylashgan xostdan boshqaruv signallarini qabul qiladigan va shunga mos ravishda bajarilgan harakatlar va uning holatini tasdiqlovchi ma'lumotlarni yuboradigan uskunalar kiradi. Maishiy texnika tomonidan Internetdan foydalanishning ushbu turi eng oqilona hisoblanadi va potentsial iste'molchiga foydaliligini isbotlashga qodir.
+Ikkinchi guruhga Internet begona jismga o'xshab ketadigan texnologiyalar kiradi. Yechimning mohiyati shundan iboratki, soddalashtirilgan kompyuter va displey mikroto'lqinli pech yoki muzlatgich kabi to'liq tanish maishiy texnika ichiga o'rnatilgan bo'lib, shundan so'ng ular ilgari bo'lmagan joyda, masalan, kompyuterda multimediali ko'ngilocharlarni olish uchun ishlatilishi mumkin. bir xil oshxona.
+Internetga ulangan maishiy texnikaning eng dastlabki namunalaridan biri bu an'anaviy tushdi mashinasi bo'lib, uni masofadan turib yoqish va qovurilgan tost tayyor bo'lganda sizga xabar berish uchun interfeys bilan jihozlangan. Shunday qilib, TCP / IP protokoli sohasidagi birinchi mutaxassislardan biri bo'lgan Jon Romkaning texno-hazillari 1988 yilda bugungi kunda amalga oshirilayotgan narsalar internetining texnotrendini keltirib chiqardi. Quyida Internetga ulangan "aqlli" uy narsalarining eng tipik misollari keltirilgan.
+Internet-muzlatgich (Internet refrigerator yoki Smart refrigerator) 21-asrning boshlarida paydo bo'lgan maishiy muzlatgichlarning yangi sinfidir. Qoida tariqasida, u Internetga doimiy ulanishga ega o'rnatilgan kompyuterga va old panelda sensorli ekranga ega (6.4-rasm). Bunday muzlatgich nafaqat oziq-ovqat mahsulotlarini saqlaydi, balki Internetdan foydalanishga imkon beradi, bu orqali siz turli xil saytlarga (masalan, pishirish uchun pazandalik retseptlari bilan) kirishingiz va hatto uyga etkazib berish bilan onlayn-do'konlarda mahsulotlarga buyurtma berishingiz mumkin. Bundan tashqari, Internet-muzlatgich yordamida siz elektron pochta va video pochta orqali muloqot qilishingiz mumkin. Internet-muzlatgich turli xizmatlarni taqdim etishi mumkin: Internetga kirish, video telefon, elektron pochta, televizor, MP3 musiqa, retseptlar va oziq-ovqat qoidalari ma'lumotlar bazasi, xabar qoldirish uchun elektron qalam, ovozli xabarlar. Internet-muzlatgichlarning bir qator modellari televizor va radio qabul qiluvchi bilan jihozlangan. Bundan tashqari, Internet-muzlatgichdan foydalanganda tashqi video kuzatuv veb-kamerasidan rasmni ko'rsatish mumkin bo'ladi. Bu sizga hatto oshxonadan chiqmasdan ham xususiy uy hovlisida nima sodir bo'layotganini ko'rish, bolalar xonasida chaqalog'ingizga qarash va h.k. Ushbu turdagi ba'zi qurilmalar oziq-ovqat mahsulotlarini saqlash va muzlatish uchun maqbul sharoitlarni tanlab, muzlatgich tarkibini ham kuzatishi mumkin. Bundan tashqari, Internet-muzlatgich yaroqlilik muddati bo'lgan mahsulotlarni hisobga oladi. Bularning barchasi haqida ma'lumot foydalanuvchining smartfoniga yuboriladi va ikkinchisi do'konda bo'lganida, mahsulotga bo'lgan haqiqiy ehtiyojlarini baholay oladi.
+4-Amaliy mashg’ulot.
+Mavzu: Smart Grid bilan tanishish. "Aqlli energiya"
+Hozirgi vaqtda IoT texnologiyalarining eng rivojlangan qo'llanilishi energetika sohasida Smart Grids hisoblanadi. Bunday tarmoqning ishlashi etkazib beruvchi va iste'molchi tarmoqning barcha bo'limlarida monitoring o'tkazish orqali energiya resurslaridan foydalanishning ob'ektiv rasmini olishiga va buning natijasida operativ boshqaruv imkoniyatiga ega bo'lishiga asoslanadi. Voqea sodir bo'lgan taqdirda, bunday tarmoqlar muammoli hududlarni avtomatik ravishda aniqlashga va qisqa vaqt ichida elektr ta'minotini qayta tiklashga, zaxira sxemalari orqali elektr energiyasini to'g'ridan-to'g'ri yo'naltirishga qodir. Iste'molchilar uchun
+"aqlli" tarmoqlar elektr energiyasi iste'molini "qo'lda" ham, avtomatik rejimda ham moslashuvchan tartibga solish imkoniyatini anglatadi.
+Elektr tarmog'i quyidagi tizimlar yordamida boshqariladi (6.7-rasm):
+energiya oqimlarini "aqlli" marshrutlash (Smart Routing) - yuk va sifatni nazorat qilish tizimlari, favqulodda hodisalar natijasida o'z-o'zini davolash tarmoqlari, energiyani saqlash va boshqalar;
+"aqlli" o'lchovlar (Smart Metering) - zamonaviy intellektual o'lchash asboblari (Smart Meter), aqlli qurilish tizimlari (Smart Home), "aqlli" maishiy texnika. 
+ 
+
+Рис. 6.7 – Схема «умной» сети Smart Grid
+
+“Smart” (yoki aqlli) hisoblagich (Smart Meter) - bu iste'mol qilinadigan energiya miqdorini nazorat qilish va vaqti-vaqti bilan ma'lumotni telekommunikatsiya tarmog'i orqali energiya ta'minotchisi yoki buxgalteriya hisobi va hisob-kitoblar markaziga uzatish imkonini beruvchi rivojlangan imkoniyatlarga ega energiya hisoblagichi. uy-joy kommunal xo'jaligi uchun. "Aqlli" hisoblagichlar elektr, gaz, suv, issiqlik iste'molini o'lchashi mumkin, shuningdek, quyida muhokama qilinadigan qo'shimcha funktsiyalarga ega.
+"Smart" o'lchash moslamasi quyidagi texnik xususiyatlarga ega:
+1. Iste'mol qilinadigan energiya resurslarining joriy va arxiv qiymatlarini shakllantiradi va saqlaydi. Arxivlangan ma'lumotlarning miqdori asbob boshqaruvchisi xotirasining hajmiga bog'liq.
+2. Yagona markazdan davriy sinxronizatsiyani talab qiladigan real vaqt rejimida o'rnatilgan soatga ega.
+3. Qurilmaning tolerantligini hisobga olgan holda iste'mol balansini shakllantirish uchun axborotni boshqarish tizimi bilan o'zaro ta'sir qilish qobiliyatiga ega.
+4. Energiya sarfini hisobga olishning avtomatlashtirilgan tizimi va (yoki) hisobga olish va hisob-kitob markaziga masofaviy ma'lumotlarni uzatish uchun telekommunikatsiya qismi bilan ma'lumotlar almashinuvi uchun standart raqamli interfeysga ega.
+"Aqlli" tarmoqlarga qo'yiladigan asosiy talablar quyidagilardan iborat:
+ qisqa tutashuvlar, jismoniy shikastlanishlar va boshqalardan keyin tarmoqning "o'z-o'zini davolash" imkoniyati;
+ iste'molchilarni tarmoqni tartibga solishda faol ishtirok etishga undash imkoniyati (o'z iste'molini tartibga solish orqali);
+zararli tashqi ta'sirlarga yuqori qarshilik (terroristik hujumlar, sabotaj va).
+va boshqalar.);	
+yuqori sifatli elektr energiyasini ta'minlash imkoniyati (shu jumladan belgilangan
+parametrlari) va yo'qotishlarni kamaytirish;
+energiya ishlab chiqarish va saqlash imkoniyatlarini birlashtirish; yuqori samaradorlik.
+“Aqlli” tarmoqlar (Smart Grid) va “aqlli” hisoblagichlar (Smart Metering) texnologiyalarini ishlab chiqish
+Barcha sanoat va maishiy elektr qabul qiluvchilar axborot tarmog'ida o'zaro aloqa qilish qobiliyatiga ega bo'lishlari, boshqariladigan bo'lishlari va o'zlarining elektr energiyasi va energiya iste'molini o'lchash funktsiyalarini bajarishlari istiqboliga ega. Bu energiya tejash va energiya samaradorligini oshirish uchun haqiqiy vosita bo'ladi. 
+
+5-Amaliy mashg’ulot.
+
+Mavzu: Aqlli ishlab chiqarishga kirish
+"Aqlli hayot"
+
+Uyga yetkazib berish bilan hech kimni hayratda qoldirish qiyin, biroq Electrolux o‘zining yangi ishlanmasi – egasi o‘rniga xarid qilish uchun ketadigan AMMI robotini (6.9-rasm) taqdim etish orqali uni bir qadam oldinga tashlashga qaror qildi. AMMI aslida uyingizga oziq-ovqat mahsulotlarini etkazib beradigan va ularni termoelektrik sovutgich bilan yangi saqlaydigan xarid qilish savatidir. Robot egasi faqat do'konda onlayn buyurtma berish va keyin robotni olib ketish uchun yuborishi kerak. AMMI supermarketga osongina yo'l topishi uchun GPS-navigator, shuningdek, shahar ko'chalarida xavfsiz harakatlanish uchun giroskop va uchuvchisiz harakatlanish tizimi bilan jihozlangan.
+
+
+Рис. 6.9 – Робот AMMI компании Electrolux (фото с сайта www.trendhunter.com)
+
+VectraSense kompaniyasining kompyuterlashtirilgan “Poyafzal uchun fe’li” (6.10-rasm) maxsus Magellan operatsion tizimida ishlaydigan va poyabzal egasining individual yurish uslubini bosqichma-bosqich o‘rganishga qodir bo‘lgan o‘rnatilgan ThinkShoe mikrokompyuteriga (o‘ta kam quvvat sarfiga ega) ega. ThinkShoe egasining cho'ntak (mobil) kompyuteriga simsiz ulanishi mumkin. Ma'lumot almashish tezligi 1,5 Mbit / s, ishlatiladigan radio chastotasi 2,4 GGts. Verb boots Internetga kirishi va xatolarni aniq aniqlash va o'z dasturiy ta'minotini yangilash uchun ishlab chiqaruvchining serveri bilan bog'lanishi mumkin. Ular ko'chada uchrashganda, turli xil fe'l poyabzallari bir-birlarini taniydilar va darhol o'z egalarining tashrif qog'ozlarini radio orqali almashadilar - bu ma'lumotni uy kompyuterida ko'rish mumkin. Botinkalar bir juft yassi batareyadan quvvatlanadi, ular taxminan ikki oy davom etadi. 
+
+
+ 
+
+Рис. 6.10 – Компьютер, две воздушные камеры, сенсоры и радиопередатчик – начинка обуви Verb (источник: verbforshoe.com)
+Smart qurilmalarga misol sifatida Google kompaniyasining Google Glass ko'zoynaklarini keltirish mumkin (6.11-rasm). Boshga o'rnatish va o'ng ko'chirish qurilmasi tepasida joylashgan HMD (Head-Mounted Display) displey va yuqori sifatli video montaj qilish qodir kameradan o'rnatiladi. Shisha foydalanuvchi bilan ovozli buyruqlar, displey orqasidagi qo'lda sensorli panel olingan taniladigan imo-ishoralar va suyak o'tkazuvchanligi tovush tizimi orqali o'zaro ta'sir qiladi. Google Glass kontseptsiyasi bir o'rnatish o'zida bir nechta funktsiyani amalga oshirish va ularga bir qurilgan: olingan reallik, mobil aloqa + Internet, videokundalik. Ushbu ko'rinishlar, ularni qo'yish orqali ular ko'rgan narsalarni to'ldiradigan ma'lumotlarni oladi. Misol uchun, ko'rinish hududni tanib, foydalanuvchiga yaqin atrofdagi narsalarni aytib berishi mumkin bo'ladi.
+
+
+Рис. 6.11 – Очки-компьютер Google Glass
+
+Jeyms Lou Cybertecture (Yaponiya) tomonidan ishlab chiqarilgan Cybertecture Mirror "aqlli" gadjet oynasi gadjeti (6.12-rasm) nafaqat hozirda unga qaraydigan odamni aks ettirishi mumkin. Oyna yuzasida, xuddi katta ekranda bo'lgani kabi, siz havo harorati va kalendarni, haftaning sanasi va kunini, shuningdek, munajjimlar bashoratini, foydalanuvchining bo'yi va vaznini va ko'plab qo'shimcha ma'lumotlarni ko'rishingiz mumkin. . Cybertecture Mirror maxsus masofadan boshqarish pulti bilan boshqariladi va o'ziga xos Android operatsion tizimi, Wi-Fi ulanishi va stereo dinamiklarga ega kompyuter turiga o'xshaydi. Barcha kerakli sozlamalar va parametrlar kompyuterda o'rnatilishi va elektron pochta xabarlarini, RSS obunasidan yangiliklarni qabul qilish, fotosuratlarni ko'rish va oyna ekranida vaqtni kuzatish mumkin. Kelajakda yuqori texnologiyali oyna har bir oila a'zosini o'rganishi va moslashtira oladi, shaxsiy eslatmalar, taqvim va individual xarakterdagi boshqa ma'lumotlarni aks ettiradi. Kelajakda tizim oilaviy shifokordan ko‘rsatmalar olishi, RFID teglarini o‘qishi va hattoki videolarni ko‘rsatishi mumkin bo‘ladi. 
+ 
+
+Рис. 6.12 – «Умное» зеркало Cybertecture Mirror
+
+\
+
+
+
+
+6-Amaliy mashg’ulot. 
+Mavzu: Smart Medical tizimi bilan tanishish va u bilan ishlash.
+"Aqlli tibbiyot"
+
+Narsalar internetiga asoslangan “aqlli tibbiyot” odatda turli biosensorlar va datchiklar hamda masofaviy tibbiy yordam tizimlaridan foydalangan holda inson salomatligi monitoringi tizimlari ko‘rinishida amalda qo‘llaniladi. Tibbiyotda sensorli tarmoqlarga asoslangan monitoring tizimlarining mumkin bo'lgan qo'llanilishi:
+1. Insonning fiziologik monitoringi: Sensor tarmoqlari tomonidan to'plangan fiziologik ma'lumotlar uzoq vaqt davomida saqlanishi va tibbiy tadqiqotlar uchun ishlatilishi mumkin. O'rnatilgan tarmoq tugunlari, shuningdek, keksalar, nogironlar harakatlarini kuzatishi va, masalan, tushishning oldini olishi mumkin. Bu tugunlar kichik bo'lib, bemorga ko'proq harakat erkinligini ta'minlaydi, shu bilan birga shifokorlarga kasallikning alomatlarini oldindan aniqlash imkonini beradi. Bundan tashqari, ular kasalxonada davolanishga qaraganda bemorlar uchun qulayroq hayotga hissa qo'shadilar.
+2. Kasalxonada shifokorlar va bemorlarni kuzatish: har bir bemorda kichik va engil tarmoq tugunlari mavjud. Har bir tugunning o'ziga xos vazifasi bor. Masalan, biri yurak urish tezligini kuzatishi mumkin, ikkinchisi esa qon bosimingizni o'lchashi mumkin. Shifokorlar ham shunday tugunga ega bo'lishi mumkin, bu boshqa shifokorlarga ularni kasalxonada topishga imkon beradi.
+3. Kasalxonalarda dori-darmonlarni nazorat qilish: sensorli tugunlar dori-darmonlarga biriktirilishi mumkin, keyin noto'g'ri dori berish ehtimoli minimallashtirilishi mumkin. Shunday qilib, bemorlarda allergiya va kerakli dori-darmonlarni aniqlaydigan tugunlar bo'ladi. Kompyuterlashtirilgan tizimlar noto'g'ri dozalashning nojo'ya ta'sirini kamaytirishga yordam berishini ko'rsatdi.
+Zamonaviy tibbiyotni takomillashtirish bosqichlaridan biri ma'lumotlarni shaxsiylashtirish va shifokorlar o'rtasidagi aloqani kuchaytirishdir. Kasallik tarixiga oson kirish o'z vaqtida samarali davolanishni tayinlash imkonini beradi. Tibbiy yozuvlarni boshqarish asta-sekin tarmoqqa o'tishi mumkin. Saqlash uchun bulutli echimlar qo'llaniladi
+ 
+Internetda katta hajmdagi ma'lumotlar. Internet tufayli turli klinikalarning shifokorlari bemor ma'lumotlariga kirish imkoniga ega. Elektron tibbiy hujjatlar bemorning sog‘lig‘ini o‘z vaqtida o‘rganish, samarali davolash usullarini belgilash imkonini bermoqda. Tibbiyot muassasasining jihozlarini yagona tarmoqqa ulash shifokorlarning ko'chma qurilmalari bo'yicha kerakli ma'lumotlarni olish imkonini beradi, ular bemor haqida ma'lumot oladi: qanday dorilar buyuriladi, test natijalari va hokazo.
+Internet texnologiyalarining joriy etilishi bemor va shifokorning vaqtini tejaydi. Klinikaga borishning hojati yo'q, faqat kompyuterni yoqishingiz kerak va siz tibbiy muassasaga murojaat qilishingiz mumkin. Video qo'ng'iroqlar nafaqat so'rov o'tkazish, balki umumiy tekshiruv o'tkazish imkonini beradi, bu ko'pincha odamning sog'lig'i haqida umumiy tasavvur uchun etarli. Agar siz hali ham shifokor bilan uchrashuvga muhtoj bo'lsangiz, Internet orqali ham uchrashuvga yozilishingiz mumkin.
+Bosim o'lchash asboblari, tarozilar va boshqa ko'chma uskunalar simsiz uzatgichlar bilan jihozlangan bo'lib, ular ma'lumotlarni darhol kompyuterga o'tkazish va sog'lig'ingizni kuzatib borish imkonini beradi. Insonning ahvoli haqida ma'lumot to'playdigan "aqlli kiyimlar" ishlab chiqilmoqda: yurak urishi, tana harorati, nafas olish tezligi. Chiplar ishlab chiqish bosqichida bunday aqlli kiyimlarga tikiladi, bu nafaqat o'lchovlarni oladi, balki ma'lumotlarni mobil telefonga o'tkazish imkonini beradi.
+
+7-Amaliy mashg’ulot.
+Mavzu: “Aqlli muzlatgich”, “Smart changyutgich” va “Smart mikroto‘lqinli pech” smart qurilmalari bilan tanishish va ulardan foydalanish.
+Ushbu aqlli texnologiyaning asosi nima? (ehtimol, bu haqda gapirganda, siz tirnoqsiz qilishingiz mumkin). LG o'zining aqlli maishiy texnikasi uchun to'rtta asosiy texnologiyaga tayanadi: muzlatgichlarda chiziqli kompressor, kir yuvish mashinalarida Inverter Direct Drive, pechlarda Lightwave texnologiyasi va changyutgichlarda KOMPRESSOR chang presslash texnologiyasi. Bundan tashqari, Smart Manager, Smart Diagnosis Smart Access, Smart Adapt va Smart Grid kabi komponentlarni o'z ichiga olgan Smart ThinQ texnologiyasi qo'llaniladi.
+
+“LG’ning IFA 2011 ko‘rgazmasi energiya tejash va yaxshilangan qulaylik haqidadir”, dedi LG Electronics maishiy texnika kompaniyasi prezidenti va bosh ijrochi direktori (bosh direktori) Yang-ha Li. “LG’ning asosiy texnologiyalari maishiy texnika funksionalligi bilan birgalikda ajoyib natijalar, yanada qulaylik va energiya samaradorligini ta’minlaydi. Smart ThinQ texnologiyasi qurilmalarni ishlatish va boshqarish jarayonini, yuzaga kelayotgan muammolarni hal qilishni va birinchi navbatda, uskunani iste’molchi talab qiladigan tarzda boshqarishni soddalashtiradi”.
+LG kompaniyasining energiya tejovchi Smart muzlatgichi tarkibidagi oziq-ovqatlarning joylashuvi, yaroqlilik muddati, miqdori va ozuqaviy ma’lumotlarini ko‘rsatish uchun Smart Manager texnologiyasidan foydalanadi. Smart Manager to'g'ridan-to'g'ri oziq-ovqat do'konidan smartfoningiz yordamida muzlatgich tarkibini samarali kuzatish yoki undagi narsalarni tekshirish imkonini beradi. Bundan tashqari, muzlatgich undagi taomlar bilan qanday taomlarni tayyorlashingiz mumkinligi haqida maslahatlar beradi va hatto yangiliklar translyatsiyalari, musiqa tinglash va ijtimoiy tarmoqlarga kirish kabi ko'ngilochar funksiyalarga ega. 
+Smart Eko eshik tizimiga ega LG Side-byside muzlatgichi
+LG maishiy texnikasi qatoridagi qiziqarli yangilik qo'shimcha Smart Eco Doorga ega yonma-yon innovatsion muzlatgichlar seriyasidir. Eshikning ushbu konfiguratsiyasi ichimlik va gazaklar kabi eng ko'p so'raladigan narsalarga muzlatgichning asosiy eshigini ochmasdan oson kirish imkonini beradi va energiyani sezilarli darajada tejaydi. Bundan tashqari, ko'p jihatdan chiziqli kompressor tufayli muzlatgich energiya tejamkorligi bo'yicha A++ darajasiga ega va juda bardoshli va jim. LG Pure N Fresh innovatsion tizimi ventilyator yordamida havoni sovutgichning butun ichki qismiga aylantirib, uni samarali hidsizlantiradigan filtrni o'z ichiga oladi.
+8-Amaliy mashg’ulot. 
+Mavzu: ITS tizimi bilan tanishish va o'rganish.
+Har xil bilimdon va unchalik ko'p bo'lmagan odamlar o'ngga va chapga tarqaladigan zamonaviy ITS (intellektual transport tizimlari) so'zi IT mutaxassisi uchun juda oz narsani anglatadi. Fantaziyaning maksimal darajasi - bu mashhur aqlli svetoforlar va shaharlarimizdagi tirbandliklar bilan umidsiz kurash. Tirbandlik bo'lmagan hududlarda ITS shunchaki qiziq nazariya bo'lib qolmoqda.
+
+Qanday bo'lmasin, ITS nima ekanligini va ular nima uchun mo'ljallanganligini tushunish yaxshi bo'lar edi. Keling, transport va siyosiy komponentlarni qoldirib, ITga e'tibor qarataylik. Biz ITS arxitekturasini eng yuqori darajada tahlil qilamiz va uning asosiy bloklarini qisqacha ko'rib chiqamiz. Shu bilan birga, tizim arxitektorlari butun mamlakat bo'ylab tizimlarning arxitekturasi qanday qurilganligini bilishga qiziqishadi.
+
+Darhol aytib o'tish joizki, ITS doirasida biz faqat avtomobil transporti sohasini ko'rib chiqamiz va temir yo'l, havo va dengiz transporti haqida gapirmaymiz. Bu alohida katta mavzu bo'lib, unda mutaxassislar bor.
+
+ITS maqsadlari
+
+Dunyoda faqat bitta keng qamrovli ITS arxitekturasi mavjud. Bu AQSh Transport departamenti tomonidan taklif etilgan tashabbus boʻlib, butun mamlakat boʻylab avtomobillar, yoʻl uskunalari, boshqaruv xonalari va maʼlumotlar markazlarini bogʻlaydigan yagona axborot makonini yaratishga qaratilgan. Evropaliklar uzoq vaqt davomida shunga o'xshash narsalarni yaratishga harakat qilishdi, ammo ular bu masalada uzoqqa oldinga siljishmadi, texnik tafsilotlarga berilib ketishdi. 
+Yagona ITS arxitekturasini yaratish uchta asosiy yo'nalishni boshqarish imkonini beradi:
+Xavfsizlik. Asosiy maqsad yo‘llardagi baxtsiz hodisalarni kamaytirishdir. Bu tabiiy va texnogen ofatlar monitoringini ham o'z ichiga oladi.
+Mobillik. Oqim bo'ylab harakatlanayotgan transport vositalaridan tirbandlik to'g'risida ma'lumot to'plash va yo'l harakati qatnashchilarini xabardor qilish.
+Atrof-muhit muhofaza qilish. Vaziyatni real vaqt rejimida kuzatib borish va o'z vaqtida qaror qabul qilish orqali transport vositalaridan atrof-muhitga etkazilgan zararni kamaytirish. 
+Standartning tuzilishi
+
+Standart - bu foydalanuvchiga standart va uni amalga oshirish bosqichlari haqida to'liq ma'lumotni taqdim etishi kerak bo'lgan ko'rsatmalar to'plami. Standartni o'rganish jarayonida biz qisqacha tavsiflashga muvaffaq bo'lgan asosiy yo'nalishlar:
+ITS arxitekturasining mantiqiy va fizik tavsifi.
+Muayyan shahar yoki mintaqaga ITS yondashuvlarini qo'llash ("qo'nish") texnikasi. Natijada, asosiy loyiha rejasi va TOR uchun asosiy funktsional talablar paydo bo'ladi.
+Loyiha uchun investorlarni topish metodologiyasi. Kimga borish va nima deyish kerakligi haqida asta-sekin ko'rsatmalar. Manzil va telefon raqamlari bilan manfaatdor tomonlarning to'liq ro'yxati.
+MS Access formatidagi ma'lumotlar bazasi va kerakli tavsif va hujjatlarni olish imkonini beruvchi Windows uchun GUI dasturi
+
+Albatta, hamma narsa AQSh hukumati mijozlarining o'ziga xos xususiyatlariga bog'liq. Loyihani tashkil etish va manfaatdor tomonlarni aniqlashga kelsak, agar biz uni Rossiyada amalga oshirishga qaror qilsak, standartni deyarli butunlay qayta tiklashimiz kerak. Arxitektura nuqtai nazaridan, federal xizmatlar bilan o'zaro hamkorlikni tashkil qilish nuqtai nazaridan ham yaqin hamkorlik qilish kerak bo'ladi. Mamlakatimizda federal xizmatlarning funktsiyalari turlicha taqsimlangan, ular ko'proq yopiq va bir-biridan ko'proq izolyatsiya qilingan. Ko'pgina tizimlar bir-birini takrorlaydi va yaqin kelajakda hech kim buni o'zgartirmaydi.
+
+Shu bilan birga, ozgina yoki hech qanday o'zgartirishlarsiz ishlatilishi mumkin bo'lgan narsalar mavjud. Bu zamonaviy asbob-uskunalar yordamida harakatni boshqarish bilan bog'liq. Amerikaliklar juda ko'p ish qildilar, ko'plab me'moriy echimlar, ular aytganidek, janglarda sinovdan o'tkazildi. Va "jangovar" arxitektura vakuumdagi sferik arxitekturadan sodda va tushunarli, shuningdek, uzoq muddatli amaliyot paytida paydo bo'ladigan muhim tafsilotlar va nyuanslar bilan to'ldirilganligi bilan ajralib turadi.
+9-Amaliy mashg’ulot.
+ Mavzu: ZigBee standarti bilan tanishish va ishlash printsipini o’rganish.
+Yuqorida aytib o'tilganidek, IEEE Std 802.15.4 standarti OSI tarmoq modelining ikkita pastki qatlamini yuqori qatlamlarga qo'yiladigan talablarni va ularning muvofiqligi shartlarini belgilamasdan tavsiflaydi. Ushbu muammolarni hal qilish maxsus aloqa protokollarini ishlab chiqishni talab qildi. Eng mashhurlari ZigBee alyansining protokollari bo'lib, ular infokommunikatsiya tizimlari uchun dasturiy ta'minot va texnik vositalarni ishlab chiqishga ixtisoslashgan dunyodagi eng yirik kompaniyalar tomonidan yaratilgan. Simsiz sensorli tarmoqlar uchun texnologiyalarni ilgari surish va texnik vositalarni ishlab chiqarishni muvofiqlashtiruvchi ZigBee alyansining ikki yuzdan ortiq a'zolari orasida Texas Instruments, Motorola, Philips, IBM, Ember, Samsung, NEC, Freescale Semiconductor, LG, OKI va boshqalar bor. ko'plab boshqalar. Alliance 2004 yilda ZigBee standartini ishlab chiqdi va ratifikatsiya qildi, u simsiz sensor tarmoqlari uchun to'liq protokollar to'plamini o'z ichiga oladi. ZigBee spetsifikatsiyasining nomi Zig-zag - zigzag va Vee - ari so'zlaridan kelib chiqqan. Tarmoq topologiyasi guldan gulga asalarilarning zigzag uchish yo'liga o'xshaydi, deb taxmin qilingan.
+ZigBee spetsifikatsiyasi nisbatan past tezlikda kafolatlangan xavfsiz ma'lumotlarni uzatishni va avtonom quvvat manbalaridan (batareyalar) tarmoq qurilmalarining uzoq muddatli ishlashini talab qiladigan ilovalarga qaratilgan. U ko'rish chizig'i sharoitida 75 metrgacha bo'lgan masofada 250 Kbit / s gacha tezlikda kam quvvat sarfini va ma'lumotlarni uzatishni ta'minlaydi. ZigBee xususiyatlari jadvalda keltirilgan. 
+5.2-jadval – ZigBee texnologiyasining xarakteristikalari
+Параметр	Значение
+Частотный диапазон, МГц	868/915/2400
+Битовая скорость, кбит/с	20/40/250
+Тип модуляции сигнала	BPSK/BPSK/O-QPSK
+
+
+
+ 
+Метод расширения спектра	DSSS
+
+Чувствительность приемника, дБм	-92 или лучше для 868/915 МГц;
+-85 или лучше для 2400 МГц
+Выходная мощность передатчика, дБм	-32...0
+Размер данных пакета, байт	До 127
+Адресация	16- и 64-бит MAC, 16-бит идентификатор сети
+Типовые требования к реализации стека
+протоколов	45...128 кбайт ПЗУ;
+2,7...12 кбайт ОЗУ
+
+ZigBee IEEE Std 802.15.4 standartiga asoslangan bo'lib, u faqat fizik qatlamni va kam quvvat iste'moliga ega simsiz ma'lumotlar tarmoqlari uchun MAC media kirish qatlamini tavsiflaydi (6.4-rasm). ZigBee standarti tarmoqni boshqarish jarayonlari tavsifi, qurilma mosligi va profillari hamda axborot xavfsizligini o‘z ichiga oladi. Tarmoq darajasida ZigBee marshrutlash mexanizmlarini va mantiqiy tarmoq topologiyasini shakllantirishni belgilaydi.
+ 
+
+Приложение
+ 
+Спецификация Альянса ZigBee
+ 
+Спецификация
+ IEEE 802.15.4 
+ 
+Silicon IEEE 802.15.4
+ 
+Рис. 5.4 - Конфигурация стеков протоколов 802.15.4 и ZigBee
+ZigBee texnologiyasining asosiy xususiyati shundaki, u kam quvvat sarfi bilan nafaqat oddiy tarmoq topologiyalarini (nuqtadan nuqtaga,
+"daraxt" va "yulduz"), balki o'z-o'zini tashkil etuvchi va o'z-o'zini tiklaydigan uyali (to'r) topologiyasi, xabarlarni uzatish va yo'naltirish. Bundan tashqari, ZigBee spetsifikatsiyasi dastur talablari va tarmoq sharoitlariga qarab marshrutlash algoritmini tanlash imkoniyatini, dasturni standartlashtirish mexanizmini - dastur profillarini, standart klaster kutubxonasini, so'nggi nuqtalarni, ulanishlarni, moslashuvchan xavfsizlik mexanizmini o'z ichiga oladi, shuningdek, joylashtirish qulayligini ta'minlaydi. , texnik xizmat ko'rsatish va yangilash. Rossiya Federatsiyasida ZigBee tarmoqlarini 2.405-2.485 GGts chastota diapazonida ishlatish chastota ruxsatnomalari va qo'shimcha tasdiqlashni talab qilmaydi.
+№ 07-20-03-001).
+Simsiz sensorlar tarmog'i texnologiyasi sohasida ZigBee bozorda to'liq mos keluvchi apparat va dasturiy ta'minot bilan eng ko'p quvvatlangan standart hisoblanadi. Bundan tashqari, ZigBee protokollari tarmoq qurilmalarining ko'pincha uyqu rejimida bo'lishiga imkon beradi, bu esa batareyalar bilan quvvatlanganda tugunlarning ishlash muddatini sezilarli darajada oshiradi.
+ZigBee-ga asoslangan WSN protokollar stek darajasida mos keladigan va tarmoqqa ulanishi, ma'lumotlarni uzatishi, qabul qilishi va uzatilishi mumkin bo'lgan turli xil sensorlar uchun "qurilma profillari" yoki profillar rejimini qo'llab-quvvatlaydi. Shu bilan birga, faqat u mo'ljallangan qurilma ushbu ma'lumotni "tushunadi".
+Barcha ZigBee standart qurilmalari, murakkablik darajasiga qarab, uchta sinfga bo'lingan, eng yuqori sinf - koordinator - tarmoqni shakllantirish jarayonini nazorat qiladi, uning topologiyasi haqidagi ma'lumotlarni saqlaydi va barcha WSN-dan to'plangan ma'lumotlarni uzatish uchun shlyuz bo'lib xizmat qiladi. ularni keyingi qayta ishlash uchun sensorlar. Odatda, tarmoqda faqat bitta PAN koordinatori ishlatiladi. O'rtacha 
+PAN-координатор	Маршрутизатор	Оконечное
+устройство
+
+
+Рис. 5.5 - Типовая топология сети ZigBee
+murakkablikdagi qurilma - marshrutizator - xabarlarni uzatish, barcha tarmoq topologiyalarini qo'llab-quvvatlash, shuningdek, klaster koordinatori vazifasini bajarishga qodir. Va, nihoyat, eng oddiy tugun - terminal qurilmasi - faqat eng yaqin routerga ma'lumotlarni uzatishga qodir (5.5-rasm).
+Shunday qilib, ZigBee standarti marshrutizatorlar yordamida klasterlarga birlashtirilgan oddiy tugunlardan tashkil topgan klaster arxitekturasiga ega tarmoqni qo'llab-quvvatlaydi. Klaster marshrutizatorlari qurilmalardan sensor ma'lumotlarini so'raydi va ularni bir-biriga o'tkazib, odatda tashqi IP tarmog'iga ulangan koordinatorga uzatadi, u erda u ma'lumotlarni to'plash va yakuniy qayta ishlash uchun yuboradi. ZigBee tarmog'i o'z-o'zini tashkil qiladi, ya'ni barcha tugunlar ma'lumotlarni etkazib berish yo'nalishlarini mustaqil ravishda aniqlash va sozlash imkoniyatiga ega. Ma'lumotlar zanjir bo'ylab bir tugundan ikkinchisiga radio uzatgichlar yordamida uzatiladi va buning natijasida shlyuzga eng yaqin tugunlar barcha to'plangan ma'lumotlarni shlyuzga qaytaradi. Ushbu ma'lumotlar sensorli sensorlardan o'qilgan ma'lumotlarni, shuningdek, qurilmalarning holati va ma'lumotlarni uzatish jarayoni natijalari haqidagi ma'lumotlarni o'z ichiga oladi. Ba'zi qurilmalar ishlamay qolsa, qayta konfiguratsiyadan keyin sensor tarmog'ining ishlashi davom etishi kerak. Simsiz tugunlar maxsus dastur nazorati ostida ishlaydi. Odatda, barcha sensorli tarmoq tugunlari ularning funksionalligi va tarmoq protokollarining bajarilishini ta'minlaydigan bir xil boshqaruv dasturidan foydalanadi.
+RF4CE (Iste'molchi elektroniği uchun radio chastotasi) televizorlar, pristavkalar va o'yin pristavkalari kabi iste'molchi audio/video masofadan boshqarish qurilmalarida foydalanish uchun standartlashtirilgan ZigBee RF4CE spetsifikatsiyasini ishlab chiqish uchun ZigBee Alliance bilan hamkorlik qildi. U masofadan boshqarishning mavjud yechimlariga nisbatan bir qator afzalliklarga ega, jumladan, ko‘rishdan tashqari ishlash, sichqoncha va klaviatura funksiyalari, imo-ishoralar asosida teginish va imo-ishoralarni boshqarish, ikki tomonlama aloqa va batareyaning ishlash muddatini uzaytirish. 
+10-Amaliy mashg’ulot. 
+Mavzu: Bluetooth Low Energy standarti bilan tanishing va uning qanday ishlashini bilib oling.
+Bluetooth Low Energy (BLE) Technology - Bluetooth 4.0 Bluetooth Special Interest Group (SIG) tomonidan ishlab chiqilgan qisqa masofali simsiz texnologiyadir. Oldingi standartlar - Bluetooth 2.0, Bluetooth 2.1 + EDR, Bluetooth 3.0 dan farqli o'laroq, BLE standarti dastlab ma'lumotlarni yig'ish va o'z-o'zidan ishlaydigan monitoring tizimlarida foydalanishga qaratilgan. BLE 10-20 baravar kam quvvat sarflaydi va klassik Bluetooth yechimlariga qaraganda ma'lumotlarni 50 marta tezroq uzatishga qodir.
+ZigBee, 6LoWPAN yoki Z-Wave kabi sensorli tarmoq texnologiyalaridan farqli o'laroq, tarmoq tugunlari o'rtasida ko'plab ma'lumotlarni uzatishga ega bo'lgan keng tarqalgan tarmoqlarga yo'naltirilgan, Bluetooth Low Energy standarti kabi topologiyalar uchun mo'ljallangan.
+nuqtadan nuqtaga va yulduzcha. BLE ning asosiy ilovalari xavfsizlik asboblari, elektr boshqaruv va displey qurilmalari, akkumulyatorli sensorlar, uy tibbiy asboblari, sport anjomlari.
+BLE qurilmalari 2,4 gigagertsli diapazonda ishlaydi. Standart kanallar orasidagi masofa 2 MGts bo'lgan 40 chastotali kanalni belgilaydi. Jismoniy darajada, GFSK modulyatsiyasi (Gaussian Frequency Shift Anahtaring) 0,45 dan 0,55 gacha bo'lgan modulyatsiya indeksi bilan qo'llaniladi, bu esa eng yuqori quvvat sarfini kamaytiradi. Jismoniy qatlamda uzatish tezligi 1 Mbit / s ni tashkil qiladi. BLE standartida qabul qiluvchining sezgirligi BER (Bit Error Rate) 10-3 ga yetgan qabul qilgichdagi signal darajasi sifatida aniqlanadi. Bu -70 dBm yoki undan yuqori bo'lishi kerak.
+BLE-da qo'llaniladigan adaptiv chastotali sakrash texnologiyasi qurilmalarga ish chastotasining keng diapazonida ish chastotasini tezda o'zgartirishga imkon beradi. Bu nafaqat shovqinlarni kamaytiradi, balki ish chastotasi diapazonida toshib ketishni kamaytiradi yoki butunlay oldini oladi. Eshittirish rejimi bilan bir qatorda, BLE alohida qurilmalar o'rtasida o'rnatilgan ulanishga qaratilgan ma'lumotlarni uzatish usulini taklif qiladi.
+Klassik Bluetooth protokoli stekiga o'xshab, BLE stek ikkita asosiy qismdan iborat: kontroller (kontroller) va tarmoq tugunlari (host) (5.15-rasm). Tekshirish moslamasi jismoniy va havola qatlamini o'z ichiga oladi va ko'pincha o'rnatilgan simsiz qabul qiluvchi-chipga ega tizim sifatida amalga oshiriladi. Tarmoq tugunlari deb ataladigan stek qismi dastur mikrokontrollerida dasturiy tarzda amalga oshiriladi va yuqori darajalarning funksionalligini o'z ichiga oladi (5.15-rasm): L2CAP (Logical Link Control and Adaptation Protocol) moslashuv protokoli, ATT atribut protokoli ( Atribut protokoli), GATT qurilma profili atribut protokoli (Generic Attribute Profile), SMP (Security Manager Protocol) xavfsizlik protokoli, GAP (Generic Access Profile) qurilma profiliga kirish protokoli. Stackning yuqori va pastki qismlari o'rtasidagi o'zaro ta'sir HCI (Host Controller Interface) orqali amalga oshiriladi. Qo'shimcha dastur qatlami funksionalligi xost qatlamining yuqori qismida amalga oshirilishi mumkin.
+
+
+ 
+
+
+
+
+
+
+
+HCI
+
+
+
+
+
+
+Рис. 5.15 - Структура стека протоколов Bluetooth Low Energy
+
+BLE tekshirgichining ba'zi funktsiyalari klassik Bluetooth-dan olinganligiga qaramasdan, ular bir-biriga mos kelmaydi, ya'ni. faqat BLE qurilmasi (bitta rejimli qurilma) faqat Bluetooth 2.x/3.0 versiyasini qo'llab-quvvatlaydigan qurilma bilan bog'lana olmaydi. Ular o'rtasida aloqa o'rnatish uchun qurilmalardan kamida bittasi ikkala protokol stekini (ikki rejimli qurilma) qo'llab-quvvatlashi kerak. Yagona rejimli qurilmalar eng kam quvvat sarfiga ega va asosan yakuniy ijro qurilmalari hisoblanadi. Ikki rejimli qurilmalar uzluksiz quvvatni taklif qiladi, turli xil mobil qurilmalarda joylashgan va oddiy Bluetooth qurilmalari sifatida ham ishlashi mumkin. BLE va Bluetooth xususiyatlari jadvalda keltirilgan. 5.6.
+5.6-jadval - BLE va Bluetooth texnologiyalarining xarakteristikalari
+Параметр	BLE	Bluetooth
+Частотный диапазон, МГц	2400	2400
+Битовая скорость, кбит/с	
+1000	<721 (v1.2), 3000(v2+EDR),
+<24000(v3+HS)
+
+Тип модуляции сигнала	
+
+GFSK	GFSK(v1.2), GFSK/4- DQPSK/8DPSK (v2+EDR),
+802.11 (v3+HS)
+Метод расширения спектра	FHSS (ширина канала 2 МГц)	FHSS (ширина канала 1 МГц)
+Чувствительность приемника, дБм	<-70 -87...93	-90
+Выходная мощность передатчика, дБм	-20...10	20/4/0 (класс 1/2/3)
+Размер данных пакета, байт	От 8 до 47	До 358
+
+
+Адресация	48-бит открытый адрес
+Bluetooth или случайный	
+48-бит открытый адрес Bluetooth
+ 
+
+11-Amaliy mashg’ulot. 
+Mavzu: DECT ULE standarti bilan tanishing va uning qanday ishlashini bilib oling
+ DECT ULE (Digital European Cordless Telecommunications Ultra Low Energy) bu ikkalasini ham qo‘llab-quvvatlaydigan kam quvvatli simsiz texnologiyadir. an'anaviy telefoniya va past tezlikda paketli ma'lumotlarni uzatish. DECT ULE standart DECT simsiz telefoniya texnologiyasining evolyutsiyasidir.
+DECT ULE qo'shilishi sensorli qurilmalar, aqlli hisoblagichlar, uyni avtomatlashtirish qurilmalari va boshqalar kabi past quvvatli va past tarmoqli kengligi turli xil qurilmalarning ishlashini ta'minlash uchun mo'ljallangan. DECT ULE DECT texnologiyasining ko'plab ijobiy xususiyatlarini oldi va yangi xususiyatlarni qo'shdi. ularga, shu jumladan uzoq masofali ishlash, yuqori shovqin immuniteti, butun dunyo bo'ylab ajratilgan chastota diapazoni, past narx, kam quvvat iste'moli, boshqa texnologiyalar (Wi-Fi, Bluetooth va boshqalar) bilan birga yashash qobiliyati, boshqa tarmoqlarga kirish qobiliyati (PSTN) , IP) standartlashtirilgan protokol orqali, texnologiya etukligi . DECT ULE ning asosiy xususiyatlaridan biri uning IPv6 ni qo'llab-quvvatlashidir, bu esa ushbu standartni narsalar Internetida qo'llash imkonini beradi.
+DECT ULE birinchi marta 2011 yilda tasdiqlangan va birinchi mahsulotlar o'sha yili paydo bo'lgan. DECT singari, DECT ULE standarti 1,88-1,90 GGs diapazonida (Evropada) ishlaydi, shuning uchun u 2,4 gigagertsli diapazonda ishlaydigan ZigBee, Bluetooth, Wi-Fi-ga qaraganda ko'proq shovqin immunitetiga ega.10 ta radiokanal 1,728 chastotada ishlatiladi. MGts kengligi.Ma'lumotlarni uzatish tezligi - 1 Mbit / s gacha. Operatsion diapazoni ochiq maydonda 600 metr va yopiq joylarda taxminan 70 metrni tashkil qiladi. DECT ULE qurilmalarining batareya quvvati yillar bilan o'lchanadi (4 yildan 10 yilgacha).
+DECT ULE protokoli stekining arxitekturasi rasmda ko'rsatilgan. 5.17. Jismoniy qatlam 1,152 Mbit / s belgilar tezligi bilan 1880-1920 MGts chastotalarda ishlaydi. Radiodan foydalanish uchun FDMA/TDMA/TDD texnologiyalaridan foydalaniladi. DECT ULE tarmoqlari asosan bitta boshqaruv qurilmasi bilan yulduz topologiyasi asosida qurilgan. MAC o'rta kirish qatlami an'anaviy DECT standartini va qurilmalarni aniqlash, ulanishni o'rnatish, xavfsizlik va hokazolar uchun barcha tegishli imkoniyatlarni qo'llab-quvvatlaydi. Ma'lumotlar havolasi qatlamida ma'lumotlarni boshqarish DECT ULE DLC (Data Link Control) yuqori qatlamlardan katta paketlarni multiplekslash va segmentatsiyalashni ta'minlaydi. . Shuningdek, u ma'lumotlarning autentifikatsiyasi va shifrlanishini, paketlar yaxlitligini va eng yaxshi sifat (eng yaxshi harakat) bilan izchil yetkazib berishni ta'minlaydi.
+
+
+
+Прикладной уровень	Приложения
+	Набор требований DECT (Generic Access Profile, GAP)	
+Набор требований ULE 
+	
+DECT/Service API	
+ULE Data API
+Сетевой уровень	
+LLME | NWK (MM, CC)	
+
+Канальный уровень	DECT DLC	DECT ULE DLC
+	MAC уровень
+Физический 
+уровень	Физический уровень
+
+                                                          5.17 - DECT ULE protokol stegi
+DECT ULE stek dastur qatlami uchun PVX (doimiy virtual sxema) ni o'rnatadi va turli xil protokollarning keng doirasini qo'llab-quvvatlaydi. Boshqarish moslamasi va DECT ULE terminali o'rtasidagi aloqa uchun mumkin bo'lgan texnologiyalardan biri 6LoWPAN hisoblanadi.
+DECT ULE stekini boshqaruv tekisligiga (C-tekisligi) va foydalanuvchi tekisligiga (U-tekisligiga) bo'lish mumkin. 6LoWPAN ULE moslashuv qatlami to'g'ridan-to'g'ri foydalanuvchi tekisligi DLC qatlamida ishlashi mumkin deb taxmin qilinadi.
+ 
+O'tkazish qobiliyati cheklangan liniyalar bo'ylab ma'lumotlarni uzatish vazifalari uchun soddalashtirilgan http protokolining ikkilik versiyasi bo'lgan CoAP (Cheklangan dastur protokoli) ilova protokoli IPv6 protokoli qo'llab-quvvatlanadigan DECT ULE tarmoqlarida ham qo'llanilishi mumkin.
+12-Amaliy mashg’ulot. 
+
+Mavzu: M2M standartlari
+
+Narsalar internetini tashkil etishning asosiy masalalaridan biri quyidagilar o'rtasidagi o'zaro aloqani amalga oshirishdir:
+Internetdagi narsalar,foydalanuvchilar va Internet narsalar, masofaviy server va Internet narsalar.
+IoT ma'lumotlarni uzatish uchun ko'p sonli aloqa tarmoqlaridan foydalanadi,
+inson tanasidagi tarmoqdan boshlab bir necha o'n santimetr masofada ishlaydigan BAN (Body Area Network), butun dunyo bo'ylab Internetgacha. Qisqa masofali aloqa RFID, NFC, Bluetooth, Wi-Fi va boshqalar kabi texnologiyalardan foydalanadi. Uzoq masofali aloqalar turli uyali aloqa tarmoqlari (2G/3G/4G), WiMAX simsiz keng polosali kirish tarmoqlari, GPS/GLONASS asosida amalga oshiriladi. joylashishni aniqlash tarmoqlari va boshqalar
+Qoplash hududiga ko'ra, narsalar Internetida foydalaniladigan telekommunikatsiya tarmoqlarini 4 asosiy turga bo'lish mumkin (5.1-rasm):
+
+
+
+
+
+
+
+
+	LAN		LAN	LAN		LAN	
+
+
+PAN	...	
+
+PAN	
+
+PAN	
+
+PAN	
+
+PAN	...	
+
+PAN
+...		...	...	...	...		...
+Объекты Интернета вещей («вещи»)
+
+
+
+Рис. 5.1 – Иерархия сетевых технологий, используемых в IoT
+
+1. PAN (Personal Area Network) - bu inson "atrofida" qurilgan tarmoq. Ushbu tarmoqlar barcha shaxsiy foydalanuvchi qurilmalarini (telefonlar, smartfonlar, shaxsiy raqamli yordamchilar, noutbuklar, naushniklar va boshqalar) birlashtirish uchun mo'ljallangan. IoTga kelsak, bunday tarmoq qurilma ("narsa") "atrofida" qurilgan.
+2. Lokal tarmoq LAN (Local Area Network) - odatda nisbatan kichik maydonni yoki binolarning kichik guruhini (uy, ofis, kompaniya) qamrab oladigan tarmoq. CAN kontrollerlar tarmog'i (Controller Area Network) mahalliy tarmoqlarga ham tegishli bo'lishi mumkin - asosan turli aktuatorlar va sensorlarni alohida korxona ichida yagona tarmoqqa birlashtirishga qaratilgan sanoat tarmog'i.
+3. Shahar tarmog'i MAN (Metropolitan Area Network) - alohida foydalanuvchilarni va shahar ichidagi mahalliy tarmoqlarni birlashtiradi, LANdan kattaroq, lekin WAN dan kichikroq tarmoq.
+4. WAN (Wide Area Network) - yuzlab va minglab kilometr masofada tarqalgan foydalanuvchilar va tarmoqlarni bog'laydi.
+Narsalar Interneti deyarli LAN, MAN va WAN texnologiyalariga maxsus talablarni qo'ymaydi, bundan tashqari ular texnik adabiyotlarda juda yaxshi yoritilgan. Shu sababli, ushbu bob faqat IoTda keng qo'llaniladigan kichik va o'rta diapazonli tarmoqlar uchun standartlar va protokollarni qamrab oladi.
+"Internet of Things" dagi barcha ma'lumotlarni uzatish texnologiyalari, foydalaniladigan uzatish vositasiga qarab, ikkita katta sinfga bo'linishi mumkin: simli va simsiz.
+
+IoT-da simli ma'lumotlarni uzatish texnologiyalari metall (mis) aloqa kabelidan, elektr simlaridan (PLC texnologiyasi - Power Line Communication) yoki optik tolali kabeldan foydalanishi mumkin. Biroq, aloqa liniyalarini jismoniy amalga oshirishning murakkabligi sababli, Internet-of-narsalar aloqasi uchun simli texnologiyalar simsiz aloqalarga qaraganda kamroq qo'llaniladi.
+IoT-da qo'llaniladigan qisqa masofali simsiz tarmoqlarni uch turga bo'lish mumkin:
+1. Simsiz shaxsiy tarmoq tarmoqlari WPAN (Wireless Personal Area Network).
+Ular turli xil qurilmalarni, jumladan, kompyuter, maishiy va ofis uskunalari, aloqa va boshqalarni ulash uchun ishlatiladi. Jismoniy va havola qatlamlari IEEE 802.15.4 standarti bilan tartibga solinadi. WPAN diapazoni bir necha metrdan bir necha o'n santimetrgacha. Bunday tarmoqlar alohida qurilmalarni bir-biri bilan ulash uchun ham, ularni yuqori darajadagi tarmoqlar, masalan, global Internet bilan ulash uchun ham ishlatiladi. WPAN-ni Bluetooth, ZigBee, 6LoWPAN va shu bobda keyinroq muhokama qilinadigan boshqalar kabi turli tarmoq texnologiyalari yordamida joylashtirish mumkin.
+2. Simsiz sensor tarmoqlari WSN (Simsiz sensorlar tarmog'i).
+Radiokanal orqali o'zaro bog'langan aktuatorlarning bir nechta sensorlari (datchiklari) ning taqsimlangan, o'z-o'zidan tashkil etilgan tarmoqlari. Xabarlarni bir elementdan ikkinchisiga o'tkazish qobiliyati tufayli bunday tarmoqlarning qamrov maydoni bir necha metrdan bir necha kilometrgacha bo'lishi mumkin.
+3. Kichik lokal tarmoqlar TAN (Tiny Area Network).
+Kichik ofis yoki alohida uyda joylashtirilgan hisoblash tarmoqlari. Ular ko'pincha uy tarmoqlari deb ataladi, chunki ular bir oilaga tegishli kompyuterlar, maishiy elektronika va signalizatsiya qurilmalarini birlashtiradi. Ko'pincha bunday tarmoqlar Wi-Fi texnologiyasi asosida quriladi.
+
+5.1-jadval – IoT standartlari va protokollari
+
+
+Стандарт	
+
+Частота, МГц	
+Скоро сть,
+кбит/с	Уровни протокола	Ш
+иф ро ва ни е
+			P H Y	M A C	N W K	T R P	A P S	A C L	
+IEEE 802.15.4	868/915/2
+400	20/40/
+250	+	+	-	-	-	+	+
+ZigBee	2400	250	-	-	+	+	+	+	+
+6LoWPAN	-	50-200	-	-	+	-	-	+	+
+WirelessH ART	2400	250	+	+	+	+	+	+	+
+ISA100.11
+a	2400	250	+	+	+	+	+	+	+
+Z-Wave	865/915/8
+69	9,6/40	+	+	+	-	+	-	-
+Bluetooth LE	2400	1000	+	+	+	+	+	+	+
+DECT ULE	1880-1900	1000	+	+	+	-	-	+	+
+ 
+
+
+13-Amaliy mashg’ulot. 
+Mavzu:  Simsiz tarmoq topologiyasi
+Radio havosidan ma'lumotlarni uzatish vositasi sifatida foydalanishning o'ziga xos xususiyatlari tarmoq topologiyasiga o'z cheklovlarini qo'yadi. Agar biz uni simli tarmoq topologiyasi bilan solishtirsak, u holda yulduz topologiyasi va birlashtirilgan halqa va umumiy shina topologiyasi eng yaqin variantlar bo'lib chiqadi. Taʼkidlash joizki, simsiz tarmoqlarni rivojlantirish ham boshqa koʻplab ishlar qatori tegishli tashkilotlarning ham hushyor nazoratida. Ulardan eng asosiysi Elektr va elektron muhandislar instituti (IEEE). Xususan, simsiz standartlar, tarmoq uskunalari va simsiz tarmoqlar bilan bog'liq barcha narsalar simsiz mahalliy tarmoqlar bo'yicha ishchi guruhi (WLAN) tomonidan nazorat qilinadi, u turli universitetlar va firmalarning 100 dan ortiq vakillarini o'z ichiga oladi - tarmoq uskunalarini ishlab chiquvchilar. Bu komissiya mavjud standartlarni takomillashtirish va so'nggi tadqiqotlar va kompyuter yutuqlari asosida yangilarini yaratish uchun yiliga bir necha marta yig'iladi.
+Rossiyada simsiz ma'lumotlarni uzatish tarmoqlari assotsiatsiyasi ("CONVERSATION") ham mavjud bo'lib, u simsiz ma'lumotlarni uzatish tarmoqlari sohasida yagona siyosatni yuritish bilan shug'ullanadi. Shuningdek, u simsiz tarmoqlar bozorining rivojlanishini nazorat qiladi, ulanganda turli xizmatlarni taqdim etadi, yangi simsiz ulanish markazlarini yaratadi va rivojlantiradi va hokazo. Endi simsiz tarmoqlarning to'g'ridan-to'g'ri topologiyasiga kelsak. Bugungi kunga kelib, simsiz arxitekturaning ikkita varianti yoki oddiyroq aytganda, tarmoq qurish variantlari qo'llaniladi: mustaqil konfiguratsiya (Ad-Hoc) va infratuzilma konfiguratsiyasi. Ularning orasidagi farqlar ahamiyatsiz, ammo ular ulangan foydalanuvchilar soni, tarmoq radiusi, shovqin immuniteti va boshqalar kabi ko'rsatkichlarga keskin ta'sir qiladi.
+MUSTAQIL KONFIGURASYON
+Ko'pincha nuqtadan nuqtaga yoki Independent Basic Service Set (IBSS) deb ataladigan mustaqil konfiguratsiya rejimi (9.1-rasm) foydalanish uchun eng oson hisoblanadi. Shunga ko'ra, bunday simsiz tarmoqni qurish va sozlash eng oson.
+
+Kompyuterlarni simsiz tarmoqqa ulash uchun ularning har birida simsiz _adapter bo'lishi kifoya. Qoida tariqasida, portativ kompyuterlar dastlab bunday adapterlar bilan jihozlangan bo'lib, ular umuman tarmoqni qurishni faqat unga kirishni sozlashgacha qisqartiradi. Odatda, ushbu tashkil etish usuli, agar tarmoq tasodifiy yoki vaqtinchalik qurilgan bo'lsa, shuningdek, boshqa qurilish usuli biron-bir sababga ko'ra mos kelmasa qo'llaniladi. Mustaqil konfiguratsiya rejimi, qurilishi oddiy bo'lsa-da, ba'zi kamchiliklarga ega, ularning asosiylari qisqa tarmoq diapazoni va past shovqin immuniteti bo'lib, bu tarmoq kompyuterlarining joylashuviga cheklovlar qo'yadi. Bunga qo'shimcha ravishda, agar siz tashqi tarmoqqa yoki Internetga ulanishingiz kerak bo'lsa, unda bu oson bo'lmaydi.
+14-Amaliy mashg’ulot. 
+Mavzu: Simsiz tarmoqlarning asosiy arxitekturasi
+802.11 da tarmoq arxitekturasining ikkita asosiy turi mavjud: Ad-hoc va Infratuzilma rejimi. Ulardan eng oddiyi Ad-hoc variant bo'lib, u IBSS (Mustaqil asosiy xizmatlar to'plami) yoki Peer-to-Peer (“nuqtadan nuqtaga”) rejimi deb ham ataladi. Ushbu rejimda aloqa foydalanuvchining ish stantsiyalari o'rtasida to'g'ridan-to'g'ri yakka tartibda o'rnatiladi va har qanday umumiy tarmoq infratuzilmasini yaratish talab qilinmaydi, ammo infratuzilma rejimida ishlaydigan tarmoqlar, xuddi uyali arxitekturaga o'xshash. mobil aloqada qo'llaniladi. Bundan tashqari, bunday tarmoqlar ham bir, ham bir nechta hujayradan iborat bo'lishi mumkin. Simsiz tarmoqning har bir alohida yacheykasi o'zining ta'sir radiusida foydalanuvchi qurilmalari bilan o'zaro aloqada bo'lgan kirish nuqtasi (Kirish nuqtasi) deb ataladigan o'zining tayanch stansiyasi tomonidan boshqariladi. Ushbu rejimda foydalanuvchi qurilmalari bir-biri bilan bevosita bog'lanmaydi, lekin kirish nuqtasi orqali ishlaydi. Kirish nuqtalarining o'zlari bir-biriga kabel tarmog'i yoki maxsus radiokanallar orqali ulanadi va boshqa tarmoqlarga ulanishi yoki Internetga kirishi mumkin.
+Nazariy jihatdan, har bir kirish nuqtasiga 255 tagacha foydalanuvchi ulanishi mumkin (bu raqam IP protokolining cheklovlari bilan belgilanadi), ammo amalda bu raqam sezilarli darajada kamroq bo'lib chiqadi va aslida 20-50 foydalanuvchini tashkil qiladi.
+Katta korporativ muhitlar uchun mo'ljallangan simsiz tarmoqlar juda sezilarli kamchilikka ega - ko'p sonli kirish nuqtalari va bir nuqtaga ulangan ko'p sonli mijozlardan foydalanganda o'zini namoyon qiladigan "darbo'yin" effekti. Tashqi kanal etarlicha keng bo'lsa ham, tarmoq o'tkazuvchanligining keskin pasayishi shaklida ifodalanadi. Gap shundaki, 802.11 standartidagi kirish nuqtalari ma'lum bir vaqtda ulardan faqat bittasi ma'lumotlarni uzatishi mumkin bo'lgan umumiy muhitni ta'minlaydi. Axborot almashish tezligini pasaytirish har qanday foydalanuvchi uchun va undan ham ko'proq korporativ uchun juda muhimdir.
+An'anaviy 802.11 simsiz tarmog'ida bir nechta mijozlar to'g'ridan-to'g'ri kirish nuqtasiga ulanadi. Bunday tarmoqlar bitta tugunli deb ataladi. Ko'p tarmoqli tarmoqda simsiz ulanish imkoniyatiga ega har qanday qurilma ham yo'riqnoma, ham kirish nuqtasi vazifasini bajarishi mumkin. Agar eng yaqin kirish nuqtasi haddan tashqari yuklangan bo'lsa, ma'lumotlar eng yaqin yuklanmagan xostga yo'naltiriladi. Ma'lumotlar bloki o'z manziliga yetguncha bir tugundan ikkinchisiga o'tishda davom etadi. Ko'p tugunli tarmoqqa misol (faqat kabel versiyasi) Internetdir. Simsiz tarmoq tarmoqlarida bo'lgani kabi, elektron pochta xabari to'g'ridan-to'g'ri qabul qiluvchiga yuborilmaydi. Buning o'rniga, u tarmoqlarning tiqilib qolishiga qarab, eng samarali marshrut bo'ylab bir serverdan boshqasiga uzatiladi.
+Ta'kidlash joizki, simsiz tarmoqli tarmoqlar g'oyasi yangi emas va sanoatda tarqalgan ma'lumotlarni yig'ish va qayta ishlash tizimlarida allaqachon keng tarqalgan. Bu erda tarmoq tugunlari sifatida o'rnatilgan mantiqqa ega sensorlar yoki nafaqat ma'lumotlarni to'playdigan, balki ularni dastlabki ishlov berishni ham amalga oshiradigan konvertorlar ishlatiladi. Bu sizga faqat foydali ma'lumotlarni uzatish va tarmoq trafigini sezilarli darajada kamaytirish imkonini beradi. Bular. standart 802.11 simsiz tarmoq, asosiy kirish nuqtalari tizimidan tashqari, unga ulangan mijoz qurilmalari - shaxsiy kompyuterlar, planshetlar, smartfonlar hisobiga o'zini "tugatish" mumkin. Shunday qilib, uning ichidagi barcha mijozlar tarmoq tugunlariga aylanadi va ma'lumotlarni uzatishda ishtirok etishi mumkin, bu, albatta, qo'shimcha ma'lumot yo'llarining paydo bo'lishi tufayli butun tuzilmani yanada moslashuvchan va samaraliroq qildi.
+Texnik nuqtai nazardan, tarmoq protsessori, mantiqiy va simsiz interfeys har bir tarmoq a'zosi ichida to'plangan, shuning uchun markazlashtirilgan kommutatsiya zarurati yo'qoladi. Boshqacha qilib aytganda, mesh tarmoqlar topologiyasi ularni tashkil etuvchi tugunlar orasidagi to'g'ridan-to'g'ri aloqani yoki manba va qabul qiluvchi o'rtasida ma'lumotlarning tranzit uzatilishini ta'minlaydi. Shuning uchun, aloqa boshlanishidan oldin, har bir tugun kirish nuqtasi sifatida harakat qiladimi, tranzit qurilma sifatida xizmat qiladimi yoki ikkala rolni birlashtiradimi, "qaror qilishi" kerak. Keyin alohida tugunlar qo'shnilarini chaqirish/javob protokoli yordamida aniqlaydi. Topish jarayoni tugagandan so'ng, tugunlar aloqa kanallarining xususiyatlarini o'lchaydi: qabul qilingan signal kuchi, tarmoqli kengligi, kechikish va xato tezligi. Tugunlar ushbu qiymatlarni almashadilar, so'ngra ularning asosida har bir tugun o'z qo'shnilari bilan eng yaxshi aloqa yo'lini tanlaydi.
+Har bir tugun qo'shnilarning dolzarb ro'yxatiga ega bo'lishi uchun kashfiyot va eng yaxshi marshrutni tanlash jarayonlari fonda ishlaydi. Har qanday tugunning biron bir sababi yoki boshqa sabablarga ko'ra mavjud bo'lmasa, qo'shnilar tezda mumkin
+15-Amaliy mashg’ulot . 
+Mavzu:  RFID hisoblash qurilmalari
+RFID yorlig'ida saqlangan ma'lumotlarni olish uchun o'quvchi ishlatiladi. Oddiy o'quvchi radio to'lqinlarini chiqaradigan va tegdan signallarni qabul qiluvchi bir yoki bir nechta antennalarga ega (2.6-rasm). Bundan tashqari, olingan ma'lumotlar (tegning identifikatsiya raqami, o'quvchining identifikatori va teg o'qilgan vaqt) keyingi qayta ishlash uchun kompyuter tizimiga raqamli uzatiladi. Iltimos, o'quvchilar teglar mo'ljallangan chastotada ishlashi kerakligini unutmang.
+RFID o'quvchi tomonidan bajariladigan funktsiyalar:
+1. Elektromagnit maydon yordamida teglarga energiya o'tkazish orqali passiv teglarni quvvat bilan ta'minlash.
+2. Yorliqda saqlanadigan ma'lumotlarni o'qish.
+3. Tegga ma'lumotlarni yozish - o'qish-yozish teglari yordamida ma'lumotlarni mahsulotning butun hayotiy tsiklining istalgan vaqtida o'zgartirish, yangilarini qo'shish va eskilarini olib tashlash mumkin.
+4. Kompyuter tizimi bilan aloqa - o'quvchi teglar va kompyuter tizimi o'rtasida ma'lumotni tashish uchun javobgardir, bu Bluetooth porti, Ethernet tarmog'i yoki boshqa simli yoki simsiz texnologiyalar orqali sodir bo'ladi 
+
+2.6 - RFID o'quvchining strukturaviy diagrammasi
+
+Strukturaviy ravishda o'quvchilar qo'lda, ish stoli va statsionardir (2.7-rasm). Ularning har biri kerakli ehtiyojlarga qarab qo'llaniladi. Portativ o'quvchilar to'g'ri mahsulotlarni topish uchun ishlatiladi va omborlarda, kutubxonalarda, chakana savdo do'konlarida va hokazolarda qo'llaniladi. Statsionar o'quvchilar RFID teglarini o'qish va dasturlash uchun ishlatiladi. Ulardan foydalanib, siz yorliqdagi ma'lumotlarni yozishingiz, o'chirishingiz, qayta yozishingiz mumkin. Ular asosan kutubxonalarda, omborlarda qo'llaniladi.
+
+
+а)	б)	в)
+Рис. 2.7 - RFID teglarini o'qiydiganlar (o'qiydiganlar) (tasvirlar masshtabli emas): a) portativ (qo'lda); b) ish stoli (RFID planshet); c) statsionar (RFID eshigi)
+
+Teg va o'quvchi antennalar yordamida tashkil etilgan ma'lumotlarni uzatish uchun radiokanal bilan bog'langan. Shubhasiz, RFID tizimining diapazoni teglar va o'quvchilarga ega bo'lgan antennalarning o'lchamiga bog'liq. Antennalar ikki xil bo'lishi mumkin: tegga o'rnatilgan va qadoqlangan. Birinchi holda, RFID yorlig'i antennasi mikrochip bilan bir xil yuzaga o'rnatiladi va u bilan bir xil korpusga joylashtiriladi. Teg tanasining o'lchamlari odatda antennaning o'lchami va shakli bilan belgilanadi. Teg mikrochipning o'zi juda kichik bo'lishi mumkin.
+Ilovalarning ehtiyojlariga qarab, uy-joy o'quvchi antennalariga yondashuvlar o'ziga xos farqlarga ega. Portativ qurilmalarda antenna o'quvchining o'ziga biriktirilgan, boshqalarida esa undan uzoqroqda joylashgan. Bu erda bir vaqtning o'zida bir nechta antennalarni o'rnatish mumkin (RFID eshiklari deb ataladigan, 3.7c-rasm), ular joylashgan.
+ 
+o'qish sifatini va radio to'lqin signallari diapazonini yaxshilaydigan tarzda.
+
