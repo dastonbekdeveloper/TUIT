@@ -1,0 +1,41 @@
+8-mavzu. RFID texnologiyasini qo'llanilish sohalari.
+
+Reja:
+1.	RFID texnologiyasini qo'llash sohalari
+2.	RFID belgilari
+
+Radiochastota identifikaciyalash kelajakning asosiy texnologiyalarini nazarda tutadi va internetdagi asosiy texnologiya hisoblanadi. Bu erda inson faoliyatining turli sohalarida RFID qo'llash faqat bir necha xarakterli misollar.
+Sanoat va qishloq xo'jaligi RFID texnologiyasi rivojlangan ombor inventarizatsiyasini boshqarish imkonini beradi va sanoatda logistika jarayonlarining samaradorligini sezilarli darajada oshiradi. Misol uchun, sanoat korxonalari RFID tizimidan muhim komponentlarni nazorat qilish uchun foydalanadilar ishlab chiqarish liniyasida kerakli qismlarni topish uchun avtomatik nazorat qilish, xatolar sonini kamaytirish va xarajatlarni kamaytirish imkonini beradi.
+RFID texnologiyasidan foydalangan holda avtotransport vositalarini to'ldirish va avtotransport vositalarini avtomatik identifikatsiya qilish bo'yicha loyihalar amalga oshirildi. 
+Tizim barcha texnologik va hujjatli operaciyalarni amalga oshirishda yonilg'ining shaffof va ishonchli hisobini ta'minlaydi, har bir avtomobil uchun vosita yoqilg'isini iste'mol qilishni samarali rejalashtirish va nazorat qilish, qog'oz tashuvchilar va Smart-kartalardan foydalanmasdan RFID belgilaridan foydalangan holda faqat vakolatli avtoulovlarga yoqilg'ini etkazib berish.
+Mahsulotlarini soxta narsalardan himoya qilish uchun farmacevtika korxonalari dori-darmon paketlariga transponderlarni joylashtiradilar. Shuning uchun ishlab chiqaruvchidan dorixonaga dori-darmonlarni kuzatib borish mumkin.
+Ko'pgina mamlakatlarda fermerlar hayvonning qulog'iga transponderlarni joylashtirish orqali chorva mollarini belgilaydilar. Shunday qilib, kasallik yoki epidemiyaning to'satdan paydo bo'lishi bilan podani tezda ajratish mumkin bo'ladi.
+Davlat va jamoat tashkilotlari ba'zi kutubxonalar RFID ni o'z kitob almashish tizimlariga joriy etdilar. Shu bilan birga, kitoblarda, filmlarda va cdlarda transponderlar joylashtiriladi. Natijada, mehmonlar o'zlari tanlagan axborot vositalarini darhol olishlari mumkin va transponderlar tufayli bu tashuvchilar o'g'irlikdan ishonchli tarzda himoyalangan. 
+RFID belgilaridan foydalanish ommaviy axborot vositalarini chiqarish va qaytarish jarayonini avtomatlashtirish, inventarizatsiyani yanada samarali o'tkazish va fondni o'g'irlikdan himoya qilish imkonini beradi. Bundan tashqari, o'quvchi chiptalari RFID teglar bilan jihozlanishi mumkin, bu esa o'z navbatida va soxta narsalarga qarshi kurashishga imkon beradi. 
+Kasalxonalar, shuningdek, bemorlarni identifikaciyalashni osonlashtirish va ularning turar joylarini tartibga solish uchun radiochastota identifikaciyasidan foydalanadilar. Bemorlarga bemorning nomi kodlangan va uning elektron ma'lumotlar bazasida saqlanadigan kasallik tarixi raqami bo'lgan o'rnatilgan transponderlar bilan qo'lda bilaguzuklar taqdim etiladi. O'quvchi qurilmasi bo'lgan mobil kompyuter orqali ishtirok etuvchi shifokor bemorlarning kasallik hikoyalariga tezkor kirish imkonini beradi.
+Muzeylarda mehmonlar shaxsiy PDA raqamli yordamchisi (shaxsiy raqamli yordamchi) yordamida ko'rgazma eksponatlari haqida ma'lumot olishlari mumkin, buning uchun eksponatlar RFID transponderlari bilan ta'minlanadi. Shu bilan birga, muzey xodimlari qaysi eksponatlar haqida tez-tez ma'lumot olishadi.
+Ilmiy tadqiqotchilar asalarilarning RFID texnologiyasi bilan hayotlarini kuzatdilar. Kichik chiplar hasharotlarning orqa tomoniga yopishtirilgan. Asalarilarning faoliyati haqida olingan ma'lumotlar, boshqa narsalar qatorida, kasalliklarga qarshi samarali kurashishga yordam beradi. 
+RFID texnologiyasi yordamida olimlar genetik jihatdan o'zgartirilgan daraxtlarning o'sishini kuzatdilar. Ushbu tizim eski etiketleme usullaridan sezilarli darajada ustun keldi, chunki daraxtning ichki qismiga joylashtirilgan Transponder atrof-muhit ta'siridan himoyalangan.
+Hayot va bo'sh vaqt iste'molchilar bugungi kunda deyarli har kuni RFID tizimlariga duch kelmoqdalar. 
+Misol uchun, ko'plab mamlakatlarda transponderlar xorijiy pasportlarga va ayrim klublarda — a'zolik kartalariga qo'shiladi. 
+RFID texnologiyasi uzoq va muvaffaqiyatli binolarga kirishni boshqarish uchun elektron kalit sifatida ishlatilgan. Magnit karta bilan solishtirganda RFID karta afzalligi karta va o'quvchi o'rtasida hech qanday aloqa bor, deb, u kam eskirish, kam qo'shimcha xizmat.
+RFID texnologiyasi, shuningdek, turli xizmatlar uchun to'lov qulay yo'li sifatida mashhurlik qozonmoqda. Eng mashhur usullardan biri avtomobilni to'xtatmasdan yo'l to'lovlarini to'lashdir. RFID shuningdek, avtobuslar, metro va poezdlarda sayohat qilish uchun qulay usul sifatida foydalanishni boshlaydi. Dunyoning ko'plab shaharlari magnit chiziqli kartalardan RFID kartalariga ko'chib o'tishdi, chunki bu odamlar turniketlardan tezroq o'tishga, to'siqlarni kamaytirishga va kassa xizmatlarini tezlashtirishga imkon beradi. 
+Ba'zi dam olish maskanlarida mehmonlar RFID bilan bir-biri bilan aloqada bo'lishlari mumkin. O'qish asboblari o'rnatilgan Transponder bilan bilaguzukni qayd qiladi va doimiy joylashtirilgan ekranlarda Foydalanuvchining manzilini ko'rsatadi. Ushbu sensorli ekranlar orqali mehmonlar xabarlarni jo'natishlari va qabul qilishlari mumkin. 
+RFID ham mulkni himoya qilish uchun ishlatiladi. Eng zamonaviy avtomobillar rulda ustun RFID o'quvchi bilan birga keladi.
+Repetitor kalit bazasi atrofida plastikka kiritilgan. O'quvchi kalitdan identifikatsiya kartasini olishlari kerak yoki mashina boshlamaydi. 
+Faol RFID teglar signal sensorlari bilan birlashtirilishi mumkin: masalan, ob'ektlardagi qurollar ruxsatisiz uzatilsa-signal eshitiladi. RFID teglar qimmatli ma'lumotlarga ega bo'lgan kompyuterlarda bo'lishi mumkin: shuning uchun fayl hisobga olish kartasi va kirish huquqini tekshirmasdan o'chirilmaydi.
+Yuqoridagi misollar, kontaktsiz identifikatsiyadan foydalanish nafaqat qulay, balki iqtisodiy jihatdan ham oqlanadigan asosiy ilovalar ro'yxatini iste'mol qilmaydi. 
+
+Nazorat savollari
+1. RFID radio identifikatsiya tizimining maqsadi nima?
+2. RFID tizimining qaysi elementlari mavjud?
+3. RFID va shtrix kodli tizimlarning xususiyatlarini Solishtiring.
+4. RFID yorlig'i qanday tashkil etilgan? Qanday teglar mavjud?
+5. Sirt akustik tamoyili bo'yicha faoliyat RFID teglar xususiyati nima 
+sirt faol moddalar to'lqinlari? 
+6. RFID belgilaridan qaysi chastota diapazonlari ishlatiladi?
+7. RFID tizimlarining funktsiyalari va o'quvchilarini tushuntiring.
+8. RFID texnologiyasini standartlashtirish holati qanday?
+9. Qanday muammolar RFID texnologiyasini yanada kengroq qabul qilishga to'sqinlik qiladi?
+10. Turli sohalarda RFID texnologiyasidan foydalanish misollarini keltiring 
+faoliyat.
