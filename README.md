@@ -1,2 +1,2 @@
 # TUIT
-Tashkent University of Imormation Tachnology
+Tashkent University of Information Tachnology
