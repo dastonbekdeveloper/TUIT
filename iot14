@@ -1,0 +1,23 @@
+14-mavzu. M2M ning zamonaviy holati va qo'llash istiqbollari.
+Reja:
+1.	M2M ning zamonaviy holati
+2.	 M2M ning istiqbollari
+
+M2M-uskunalar bozorining rivojlanish tahminlari va prognozlari juda optimistik va rivojlanayotgan M2M sanoatining salohiyati juda katta. Ushbu bosqichda texnologiya M2M faol rivojlanishda davom etmoqda, tizimlar juda aqlli bo'lib, ularni qo'llash sohasi deyarli cheksizdir. Imkoniyatlar oshdi turli M2M echimlarini amalda qo'llash ham xarajatlarni kamaytirish orqali amalga oshiriladi simsiz qurilmalarda ularning ishlashi va funksionalligini oshirish. 
+Simsiz signal orqali uzoq qurilmalarni boshqarish qobiliyati bu joy va vaqtga qaramlikni kamaytirishga imkon berdi. Oxirgi M2M modullarining avlodi quyidagi asosiy texnologiyalarni qo'llab-quvvatlaydi GSM/GPRS, GPS, Bluetooth, ZigBee va boshqalar.
+Bugun M2M-uskunalar juda keng anti-o'g'irlik va xavfsizlik ishlatiladi bu ko'plab huquqni muhofaza qilish tuzilmalarining ajralmas qismiga aylandi. Kirish ushbu texnologiya maxsus xizmatlarning eng tezkor reaktsiyasini ta'minlaydi avtomobilni o'g'irlash yoki kvartirani buzish uchun harakat qilish. Voqea haqida signal tarmoq orqali uzatiladi SMS-xabar yoki ovozli xabar ko'rinishidagi navbatchi operatorga dispetcherlik konsoliga GSM signal, bir vaqtning o'zida egasiga xabar berish mumkin. Ayniqsa sezilarli qo'llab-quvvatlash Yomon telefonized joylarda M2M tizimlari.
+Stacionar ob'ektlarni monitoring qilishdan tashqari, tizimlarda M2M foydalanish mumkin mobil joylashishni aniqlash. Taksoparklar, yuk tashuvchilar va boshqa ko'plab kompaniyalar o'z avtomobillarining harakatlarini Real vaqtda kuzatib borish, qabul qilish 
+ularning texnik holati haqida ma'lumot, marshrutlarni to'g'rilash, shu bilan tezlashtirish yuk tashish. Bundan tashqari, voqea sodir bo'lgan taqdirda, avtomatik xabar voqeani ko'rsatish darhol qutqaruv xizmatiga yuboriladi (masalan, avariyalarda favqulodda vaziyatlar tizimi: mahalliy-era-GLONASS, Amerika – E911, Evropa-eCall). 
+M2M mobil tizimlari uzoq va muvaffaqiyatli bank sohasida ishlatiladi. Uchun misol uchun, bankomatlar yoki to'lov terminallari avtomatik ravishda uzatilishi mumkin GSM tarmoqlari bo'yicha kerakli ma'lumotlar, agar ular bo'lsa, shuningdek, chek tugagan bo'lsa qog'oz yoki naqd pul yoki aksincha, naqd pul juda ko'p va kelishi kerak kollektorlar. M2mni qishloq xo'jaligi kompleksida, monitoring sensorlarida qo'llash mumkin tuproq namligi suv oqimini iloji boricha iqtisodiy va samarali qilish imkonini beradi. 
+Va "aqlli uy" tizimi uzoq vaqtdan beri orzulardan haqiqatga aylandi, uning ko'pchiligi foyda har bir kishi tomonidan baholanishi mumkin. Aloqa modullari juda ko'p turli harorat nazorat sensor, yorug'lik darajasi, mexanik kuchlanish ko'priklar, quvurlar bosim, yong'in va tutun sensorlar, va hokazo M2M tizimlarida turli simsiz aloqa texnologiyalari qo'llaniladi. Ko'pincha davlat tarmoq kommunikatsiyalari (uyali, sun'iy yo'ldosh, chekilgan va WiFi) individual qurilmalar uchun optimallashtirilgan texnologiyalar – masalan, ZigBee va Bluetooth – hali ham nisbatan kam ishlatiladi (rasm. 4.9).
+ 
+ 
+Rasm. 4.9-M2M tizimlarida ishlatiladigan simsiz texnologiyalarning ulushi (manba:
+Duke-Wooley, 2012)
+
+Nazorat savollari
+1. M2M ning o'zaro ta'sirining asosiy xususiyati nima?
+2. ETSI standartining M2M funktsional arxitekturasi nimani o'z ichiga oladi?
+3. M2M funktsional arxitekturasida qaysi interfeys nuqtalari standartlashtirilgan?
+4. M2MNI amalga oshirish uchun sanoat tarmoqlarining o'ziga xos xususiyati nima?
+5. M2M texnologiyasidan foydalanishga misollar keltiring.
