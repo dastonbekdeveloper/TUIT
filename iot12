@@ -1,0 +1,48 @@
+12-mavzu. Simsiz sensorli tarmoqlar ishlash rejimlari va marshrutizaсiya protokollari.
+
+Reja:
+1.	Simsiz sensorli tarmoqlar ishlash rejimlari 
+2.	Simsiz sensorli tarmoqlar marshrutlash protokollari
+
+Sensorli tugunlar uchun eng ko'p energiya sarfi ma'lumotlarni uzatishdir simsiz muhit. Energiya tejovchi uzatish shakllari kalit hisoblanadi, chunki sensorlarning ishlash muddatini uzaytirish uchun omil, chunki u deyarli butunlay bog'liq batareya muddati. 
+Simsiz sensorli tarmoq ma'lumotlarini yig'ish turli xil bo'lishi mumkin muayyan tarmoqning maqsadiga qarab yo'llar. Hisobga olgan holda tarmoq resurslaridan foydalanishning turli usullari, simsiz sensorli tarmoqlar mavjud faoliyat turiga va maqsadli turiga qarab sinflarga bo'linadi ilovalar:
+1. Faol tarmoqlar. Bunday tarmoqning tugunlari vaqti-vaqti bilan o'z sensorlarini va transmitterlar, o'qishlarni olib tashlang va ularni tayanch stantsiyasiga o'tkazing. Shunday qilib, ular atrof-muhitning "oniy rasmini" bir necha davriylik bilan bajaring va odatda ba'zi muntazam monitoringni talab qiladigan ilovalar uchun ishlatiladi qadriyatlar.
+2. Reaktiv tarmoqlar. Muayyan chastotaga ega Jet tarmoqlarining tugunlari olib tashlanadi ko'rsatkichlar, ammo olingan ma'lumotlar ma'lum bir narsaga tushib qolsa, ularni uzatmang oddiy o'qishlar maydoni. Shu bilan birga, kutilmagan va keskin o'zgarishlar haqida ma'lumot sensorlarning o'qishlarida yoki ularning normal qiymatlari oralig'idan chiqib ketishida darhol tayanch stantsiyasiga uzatiladi. Ushbu turdagi tarmoq ilovalar bilan ishlash uchun mo'ljallangan haqiqiy vaqt.
+3. Gibrid tarmoqlar. Bu yuqorida sanab o'tilgan ikkita turning kombinatsiyasi bo'lib, u erda sensorli nodlar faqat vaqti-vaqti bilan olingan ma'lumotlarni jo'natibgina qolmay, balki keskin javob berishadi qadriyatlar o'zgarishi.
+Simsiz sensorli tarmoqlar marshrutizaсiya protokollari
+Simsiz sensorli tarmoqlar axborot uzatish marshrutini yakuniy tugundan tugungacha aniqlash-koordinator, shuningdek, terminal tugunlari o'rtasida maxsus protokollar qo'llaniladi yo'l-yo'riq. Simsiz sensorli tarmoqlar marshrutlash protokollari quyidagi vazifalarni hal qiladi:
+1. Tarmoq tugunlarini o'z-o'zini boshqarish (o'z-o'zini konfiguratsiya, o'z-o'zini tiklash va o'z-o'zini optimallashtirish).
+2. Ma'lumotlar paketlarini yo'naltirish va tugunlarni aniqlash.
+3. Tarmoq tugunlarining energiya sarfini kamaytirish va umumiy hayot vaqtini oshirish 
+butun tarmoq.
+4. Ma'lumotlarni to'plash va to'plash.
+5. Tarmoqdagi ma'lumotlarni uzatish va qayta ishlash tezligini tartibga solish.
+6. Tarmoq qamrovini maksimal darajada oshirish.
+7. Berilgan xizmat sifatini ta'minlash (QoS).
+8. Ruxsatsiz kirishdan himoya qilish.
+Tarmoqdagi ma'lumotlarni metrik sifatida uzatish usulini tanlashda ular bo'lishi mumkin 
+quyidagi parametrlar ishlatilgan: 
+yo'l uzunligi (qayta qabul qilinadigan ma'lumotlarning soni);
+ishonchlilik;
+kechikish;
+tarmoqli kengligi;
+yuklab olish;
+trafik uzatish narxi va boshqalar.
+Simsiz sensorli tarmoqlar marshrutlash protokollari tarmoqdagi marshrutlarni qo'llab-quvvatlash uchun javobgardir va kerak qattiq noqulay sharoitlarda ham ishonchli aloqani ta'minlash. Ko'p marshrutlash protokollari, quvvatni boshqarish, ma'lumotlarni tarqatish energiya tejash muhim muammo bo'lgan Simsiz sensorli tarmoqlar uchun maxsus mo'ljallangan, qaror protokolga qaratilgan. Boshqalar umumiy uchun ishlab chiqilgan simsiz tarmoqlardagi dasturlar, ammo Simsiz sensorli tarmoqlar o'z dasturlarini topdi. 
+ 
+Rasm. 3.10- Simsiz sensorli tarmoqlar marshrutlash protokollarini tasniflash
+Simsiz sensorli tarmoqlar uchun juda ko'p marshrutlash protokollari mavjud, siz ularni turli sabablarga ko'ra tasniflashingiz mumkin (rasm. 3.10). Qarab tarmoqning ishlash rejimi ishlatiladi, bu esa uzatish zarurligiga olib keladi tugunlardan olingan ma'lumotlar, barcha marshrutlash protokollari proaktiv (barchasi yo'llar kerak bo'lganda oldindan belgilanadi), reaktiv( yo'llar aniqlanadi talab bo'yicha) va gibrid (birinchi ikkita kombinatsiya).
+Tarmoq tuzilmalarini hisobga olgan protokollar quyidagilarga bo'linadi:
+1) yagona-darajali protokollar (tekis) (tekis-asoslangan) marshrut-barcha Simsiz sensorli tarmoqlar tugunlari ular bir xil funktsiyaga ega, misollar: SPIN (axborot uchun Sensor protokollari Negotiation), Direct Diffusion, Rumor Routing;
+2) ierarxik protokollar (hierarchical-asoslangan) marshrut-tarmoq tugunlari ular turli funktsiyalarni bajaradilar, ular jismonan boshqacha bo'lishi mumkin, misollar: LEACH (Low Energy Adaptive Clustering Hierarchy), PEGASIS (Sensorda energiya samaradorligi to'plash Axborot tizimlari), TEEN va APTEEN( Threshold-sensitive Energy Efficient Protocols), SOP (Self-Organization Protocol);
+3) yo'l-yo'riq protokollari tugun joylashgan joyi haqida ma'lumot o'tish: saytda harakatlanish, qidiruv and Energy Aware Routing).
+Marshrutlash protokolining ishlashi turli printsiplarga asoslangan bo'lishi mumkin:
+1) ko'p marshrutlar bilan marshrutlash protokollari (multipath routing) –manbadan maqsadga bir nechta yo'nalish ishlatiladi, bu esa ortadi ulanishning ishonchliligi, lekin yuk va energiya sarfini oshiradi;
+2) "so'rov bo'yicha" marshrutlash protokollari (query-based) – tugun so'rov yuboradi tarmoqdagi ma'lumotlar va so'ralgan ma'lumotlarga ega bo'lgan boshqa tugun so'rovga javob beradi;
+3) "muzokaralar" (muzokaralar yo'li) asosida marshrutlash protokollari tugunlar bilan;
+4) xizmat sifatini hisobga olgan holda protokollar (QoS-based) tarmoqdagi xizmatlarning ma'lum darajasini ta'minlash.
+Ma'lumotlarni to'plashga qaratilgan protokollarda qidiruv birliklar, axborot manbalari va tayanch stantsiya (SS) o'rtasida joylashgan bo'lishi mumkin ma'lumotlarni to'plashni amalga oshirish va SS-ni allaqachon ma'lumotdan yuborish. Bu jarayon sensor tugunlariga energiyani tejash imkonini beradi.
+Barcha marshrutlash protokollari ikkita turga bo'linishi mumkin – birida ulanishning tashabbuskori axborot manbai, boshqalarida esa qabul qiluvchi hisoblanadi.
+Simsiz sensorli tarmoqlar marshrutlash protokollarini tugun turlari asosida tasniflash rasm.3.11
+ 
+Rasm.3.11-BSS marshrutlash protokollarini tugun turlari asosida tasniflash
