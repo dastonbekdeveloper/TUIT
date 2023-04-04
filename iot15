@@ -1,0 +1,33 @@
+15-mavzu. ІoT da ma'lumotlar uzatish texnologiyalari tasnifi.
+Reja:
+1.IoT da ma'lumotlarni uzatish texnologiyalarini tasniflash 
+2.IoT da ishlatiladigan tarmoq texnologiyalarining ierarxiyasi
+
+Internetni tashkil etishning asosiy masalalaridan biri bu amalga oshirishdir o'zaro aloqalar:
+Internet narsalar,foydalanuvchilar va Internet narsalar,uzoq server va Internet narsalar.
+IoT ma'lumotlarni uzatish uchun ko'plab aloqa tarmoqlaridan foydalanadi, masofadan ishlaydigan inson tanasi BAN (Body Area Network) tarmog'idan boshlab bir necha o'n santimetr, butun dunyo bo'ylab Internet tarmog'iga qadar. Aloqa qisqa masofa RFID, NFC, Bluetooth, Wi-Fi va boshqalar kabi texnologiyalardan foydalanadi. 
+Keng ko'lamli aloqa turli uyali tarmoqlar asosida amalga oshiriladi (2G / 3G / 4G), WiMAX simsiz keng polosali tarmoqlar, tarmoqlar GPS/GLONASS joylashishni aniqlash va boshqalar.
+Internet orqali foydalaniladigan telekommunikatsiya tarmoqlari, 4 asosiy turiga bo'linishi mumkin (Rasm. 5.1):
+ 
+Rasm. 5.1-IoT da ishlatiladigan tarmoq texnologiyalarining ierarxiyasi
+
+1. Shaxsiy Pan tarmog'i (shaxsiy maydon tarmog'i) – "atrofida"qurilgan tarmoq inson. Ushbu tarmoqlar Foydalanuvchining barcha shaxsiy qurilmalarini birlashtirishga mo'ljallangan (telefonlar, smartfonlar, shaxsiy kompyuterlar, noutbuklar, minigarnituralar va boshqalar). 
+IoT ga nisbatan bunday tarmoq qurilmaning "atrofida" ("narsalar") quriladi.
+2. Mahalliy lan tarmog'i (mahalliy tarmoq) – odatda nisbatan qamrab olgan tarmoq kichik hudud yoki kichik binolar guruhi (uy, ofis, firma). Mahalliy tarmoqlar jon kontrollerlari tarmog'ini (Controller Area Network) o'z ichiga oladi-sanoat tarmoq, birinchi navbatda, turli xil yagona tarmoqqa qo'shilishga qaratilgan alohida korxona doirasida aktuatorlar va sensorlar. 
+3. Shahar tarmog'i MAN (Metropolitan maydoni Network) – alohida birlashtiradi shahar ichidagi foydalanuvchilar va mahalliy tarmoqlar hajmi bo'yicha tarmoq hisoblanadi Landan katta, lekin WAN dan kichikroq.
+4. WAN global tarmog'i (keng maydon tarmog'i) – foydalanuvchilar va tarmoqlarni bog'laydi, yuzlab va minglab kilometr uzoqlikda tarqalgan.
+Internetdagi narsalar deyarli LAN texnologiyalari uchun maxsus talablarni qo'ymaydi, MAN va WAN, shuningdek, ular texnik adabiyotlarda juda yaxshi yoritilgan. 
+Shuning uchun, ushbu bobda faqat kichik va o'rta tarmoqlarning standartlari va protokollari ko'rib chiqiladi IoT-da keng qo'llaniladigan radius.
+Internetdagi barcha ma'lumotlar uzatish texnologiyalari ishlatilgan narsalarga bog'liq etkazish muhiti ikkita katta sinfga bo'linishi mumkin: simli va simsiz.
+IoT-dagi simli ma'lumotlarni uzatish texnologiyalari metalldan foydalanishi mumkin (mis) aloqa kabeli, simi (PLC – Power Line aloqa texnologiyasi) yoki optik tolali kabel. Biroq, chiziqlar jismoniy amalga oshirish murakkabligi tufayli Internet-narsalar bilan aloqa qilish uchun simli texnologiyalar kamroq qo'llaniladi simsiz darajada. 
+IoT-da ishlatiladigan kichik simsiz tarmoqlar bo'linishi mumkin uch xil:
+1. Simsiz shaxsiy tarmoqlar WPAN (simsiz shaxsiy tarmoq).
+Ular turli xil qurilmalarni, jumladan, kompyuter, maishiy va aloqa uchun ishlatiladi jismoniy va kanal darajalari tartibga solinadi IEEE 802.15.4 standarti. WPAN radiusi bir necha metrdan tortib to bir necha o'n santimetr. Bunday tarmoqlar alohida shaxslarni birlashtirish uchun ishlatiladi qurilmalar bir-biri bilan va ularni yuqori darajadagi tarmoqlar bilan bog'lash uchun, masalan, global Internet tarmog'i. WPAN turli xil foydalanish bilan bekor qilinishi mumkin tarmoq texnologiyasi, masalan, Bluetooth, ZigBee, 6LoWPAN va boshqalar ushbu bobda.
+2. WSN simsiz sensorli tarmoqlar (simsiz Sensor tarmoq).
+Ko'p sensorlarning (sensorlarning)tarqalgan, o'z-o'zini tashkil qiluvchi tarmoqlari radio kanal orqali bir-biri bilan birlashtirilgan ijro etuvchi qurilmalar. Maydoni bunday tarmoqlarning qoplamalari bir necha metrdan bir necha metrgacha bo'lishi mumkin xabarlarni bir elementdan boshqasiga o'tkazish qobiliyati tufayli kilometr.
+3. Kichik mahalliy TAN tarmoqlari (Tiny Area Network).
+Kichik ofis yoki alohida joylarda joylashtirilgan hisoblash tarmoqlari uylar. Ular ko'pincha uy tarmoqlari deb ataladi, chunki ular kompyuterlarni birlashtiradi, bir oilaga tegishli bo'lgan maishiy elektronika va signalizatsiya qurilmalari. Eng ko'p ko'pincha bunday tarmoqlar Wi-Fi texnologiyasi asosida qurilgan.
+Jadval 5.1-IOT standartlari va protokollari
+ 
+
+IoT-da juda ko'p turli xil qurilmalarning o'zaro ta'siri talab qilinadi standartlashtirilgan interfeyslar, ma'lumotlar formatlari va aloqa protokollari. Ichida jadval. 5.1 ba'zi IoT standartlari va protokollarining ro'yxati keltirilgan chastotalar, ma'lumotlar uzatish tezligi, Osi darajasini qo'llab-quvvatlash( jismoniy PHY, kirish MAC muhiti, tarmoq NWK, transport TRP), shuningdek, qo'llab-quvvatlash darajasini amalga oshirish APS (Application Support Sublayer) ilovalari, kirishni boshqarish ro'yxatlarini qo'llab-quvvatlash ACL (Access Control List) va 128-bit AES shifrlash standarti (Kengaytirilgan shifrlash Standart).
