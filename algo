@@ -1,0 +1,675 @@
+Algoritmlarni chekli qadamlardan tashkillashtirish mumkinligi
+====
+ishonchlilik
+====
+#diskretlilik
+====
+cheklilik
+====
+natijalik
+
+
++++++
+
+
+Qanday holatlarda saralash ichki deb sinflanadi?
+====
+#saralanadigan yozuv tezkor xotirada joylashgan bo'lsa 
+====
+saralanadigan yozuvlar yordamchi xotira sathida joylashsa 
+====
+saralanadigan yozuvlar qattiq xotirada joylashsa 
+====
+barcha javoblar to’g’ri
+
+
++++++
+
+
+Qanday holatda saralash sirtqi deb tasniflanadi 
+====
+saralanadigan yozuv tezkor xotirada joylashgan bo'lsa 
+====
+#saralanadigan yozuvlar yordamchi xotira sathida joylashsa 
+====
+saralanadigan yozuvlar qattiq xotirada joylashsa 
+====
+barcha javoblar to’g’ri
+
+
++++++
+
+
+Saralashding qanday usullari mavjud?
+====
+Tim saralashi
+====
+oddiy saylash yordamida saralash usuli, tez saralash usuli 
+====
+pufakli saralash usuli 
+====
+#Barchasi to’g’ri
+
+
++++++
+
+
+ … - tsikl ichida qo'shni elementlarni taqqoslash amallarini bajarish va zarur holatda ularning joyini almashtirishga asoslangan.
+====
+ indeksli saralash 
+====
+stek
+====
+qidirish 
+====
+#pufakli saralash 
+
+
++++++
+
+
+Fibonachchi sonlari deb 
+====
+#o'zidan avvalgi ikkita sonning yig’indisiga teng bo'lgan songa aytamiz
+====
+I;=I+1; F;=I*F shartini qanoatlantiruvchi songa aytamiz
+====
+cheksiz kamayib boruvchi sonlarning yig'indisiga aytiladi 
+====
+a, b javoblari to’g’ri
+
+
++++++
+
+
+Kompyuterning ishlash tezligi nimalarga bo’g’liq ekanligini ayting
+====
+mikroprotsessorga 
+====
+tezkor xotira hajmiga
+====
+ma'lumot hajmiga 
+====
+#barcha javoblar to’g’ri
+
+
++++++
+
+
+Saralashni yaxshilangan algoritm uchun taqqoslashlar soni?
+====
+#n*log (n)
+====
+en
+====
+n*n/4
+====
+to’g’ri javob keltirilmagan 
+
+
++++++
+
+
+Pufakli saralash usulidan foydalanib massicni qanday tezroq saralash mumkin?
+====
+har xil bo'ladi 
+====
+elementlar o’sishi bo’yicha 
+====
+#elementlar kamayishi bo’yicha 
+====
+to’g’ri javob keltirilmagan
+
+
++++++
+
+
+Massiv bu 
+====
+bir jinsli, tartiplangan statik to'g'ri ruxsatga ega tuzilma 
+====
+#umumiy nom bilan ataluvchi bir tiptagi sonlar qiymatlar yig’indisi
+====
+identifikator komponentlar indekslar yordamida kiritiluvchi belgiga ega bo'lgan miqdorlar
+====
+Barchasi to’g’ri
+
+
++++++
+
+
+Algoritmning xususiyatlari to’liq kơrsetilgen javobni ko’rsating?
+====
+aniqlilik, tushunarlilik 
+====
+tushunarlilik, samarodorlik 
+====
+#samarodorlik, umumiylik, aniqlilik, tushunarlilik 
+====
+uziliksizlik, aniqlilik, tushunarlilik, samarodorlik, umumiylik 
+
+
++++++
+
+
+Úlken O notasiyada belgilengen xeshlew hám rexeshlew izlew natiyjeliligin kórsetiń
+====
+#O(1)
+====
+O(N)
+====
+O(log(N))
+====
+O(sqrt(N))
+
+
++++++
+
+
+Ketma-ket qidiruv algoritm tartibi qanday
+====
+#Chiziqli
+====
+Logarifmik 
+====
+Konstantali
+====
+Eksponensial
+
+
++++++
+
+
+Binar qidiruv algoritm tartibi qanday
+====
+#Logarifmik
+====
+Chiziqli
+====
+Konstantali
+====
+Eksponensial
+
+
++++++
+
+
+Xeshlashtirish algoritm tartibi qanday 
+====
+#Konstantali
+====
+Chiziqli
+====
+Logarifmik
+====
+Eksponensial
+
+
++++++
+
+
+Chiziqli qidiruv qachon samarali
+====
+#massiv va ro’yxatda
+====
+dekda
+====
+daraxtda
+====
+navbatda
+
+
++++++
+
+
+Optimizatsiyaning ko'plab masalalari … algoritmlari orqali tez yechiladi.
+====
+tartibli qidirish algoritmi 
+====
+#ochko'z (ochkóz) algoritmi 
+====
+saralash algoritmi 
+====
+pufakli algoritmi 
+
+
++++++
+
+
+Ketma-ket yoki chiziqli qidiruv – bu …
+====
+#Ma’lumotlar butun jadval bo’yicha operativ xotirada kichik adresdan boshlab, to katta adresgacha ketma-ket qarab chiqiladi
+====
+Indekslar jadvalidan gurux topiladi, va unda ko’rsatilgan mos chegaralarda chiziqli algoritm oshiriladi
+====
+Berilgan massiv o’rtasidagi element olinadi, ya’ni  , va u qidiruv argumenti bilan taqqoslanadi. Topilmasa chegaralar mos ravishda o’zgartiriladi
+====
+Funksiya yerdamida xesh-jadval to’ldiriladi va undan qidiriladi
+
+
++++++
+
+
+Binar qidiruv – bu …
+====
+#Berilgan massiv o’rtasidagi element olinadi, ya’ni  , va u qidiruv argumenti bilan taqqoslanadi. Topilmasa chegaralar mos ravishda o’zgartiriladi
+====
+Ma’lumotlar butun jadval bo’yicha operativ xotirada kichik adresdan boshlab, to katta adresgacha ketma-ket qarab chiqiladi
+====
+Indekslar jadvalidan gurux topiladi, va unda ko’rsatilgan mos chegaralarda chiziqli algoritm oshiriladi
+====
+Funksiya yerdamida xesh-jadval to’ldiriladi va undan qidiriladi
+
+
++++++
+
+
+Xeshlash  – bu …
+====
+#Funksiya yerdamida xesh-jadval to’ldiriladi va undan qidiriladi
+====
+Ma’lumotlar butun jadval bo’yicha operativ xotirada kichik adresdan boshlab, to katta adresgacha ketma-ket qarab chiqiladi
+====
+Berilgan massiv o’rtasidagi element olinadi, ya’ni  , va u qidiruv argumenti bilan taqqoslanadi. Topilmasa chegaralar mos ravishda o’zgartiriladi
+====
+Indekslar jadvalidan gurux topiladi, va unda ko’rsatilgan mos chegaralarda chiziqli algoritm oshiriladi
+
+
++++++
+
+
+Operativ xotirada bajariladigan saralash qanday ataladi
+====
+#ichki saralash
+====
+to’liq saralash
+====
+qo’shish orqali saralash
+====
+adreslar jadvalini saralash
+
+
++++++
+
+
+Saralash usullari orasidan noto’g’risini toping.
+====
+#dinamik
+====
+yaxshilangan
+====
+logarifmik
+====
+qat’iy
+
+
++++++
+
+
+Saralashning qaysi usullari,   kalitlarni taqqoslash tartibiga ega?
+====
+#qat’iy
+====
+binar
+====
+yaxshilangan
+====
+logarifmik
+
+
++++++
+
+
+Berilgan to’plam elementlarini biror bir tartibda joylashtirish jarayoni 
+====
+#Saralash
+====
+Qidiruv
+====
+Algoritmlash
+====
+Uslubiyot
+
+
++++++
+
+
+Saralash usuli … deyiladi, agar saralash jarayonida bir hil kalitli elementlar nisbiy joylashuvi o’zgarmasa
+====
+#Turg’un (stable)
+====
+Murakkab (difficult)
+====
+Oddiy (typical)
+====
+Turg’un emas (unstable)
+
+
++++++
+
+
+Qo’yish orqali saralash g’oyasi.
+====
+#Obyektlar hayolan tayyor a(1),...,a(i-1)  va boshlang’ich ketma-ketliklarga bo’linadi. Har bir qadamda (i=2 dan boshlab) boshlang’ich ketma-ketlikdan i-chi element ajratib olinib tayyor ketma-ketlikning kerakli joyiga qo’shiladi.
+====
+Berilgan obyektlar ichidan eng kichik kalitga ega element tanlanadi.Ushbu element boshlang’ich ketma-ketlikdagi birinchi element  bilan o’rin almashadi. Undan keyin ushbu jarayon qolgan elementlarda amalga oshiriladi.
+====
+n - 1 marta massivda quyidan yuqoriga qarab yurib kalitlar jufti-jufti bilan taqqoslanadi. Agar pastki kalit qiymati yuqoridagi jufti kalitidan kichik bo’lsa, u holda ular o’rni almashtiriladi.
+====
+Boshlang’ich ketma-ketlikning har r o’rinda joylashgan elementlari guruhlanib, har bir guruh alohida qo’shish usuli orqali saralanadi.
+
+
++++++
+
+
+Tanlash orqali saralash g’oyasi. 
+====
+#Berilgan obyektlar ichidan eng kichik kalitga ega element tanlanadi.Ushbu element boshlang’ich ketma-ketlikdagi birinchi element  bilan o’rin almashadi. Undan keyin ushbu jarayon qolgan elementlarda amalga oshiriladi.
+====
+n - 1 marta massivda quyidan yuqoriga qarab yurib kalitlar jufti-jufti bilan taqqoslanadi. Agar pastki kalit qiymati yuqoridagi jufti kalitidan kichik bo’lsa, u holda ular o’rni almashtiriladi.
+====
+Boshlang’ich ketma-ketlikning har r o’rinda joylashgan elementlari guruhlanib, har bir guruh alohida qo’shish usuli orqali saralanadi.
+====
+Obyektlar hayolan tayyor a(1),...,a(i-1)  va boshlang’ich ketma-ketliklarga bo’linadi. Har bir qadamda (i=2 dan boshlab) boshlang’ich ketma-ketlikdan i-chi element ajratib olinib tayyor ketma-ketlikning kerakli joyiga qo’shiladi.
+
+
++++++
+
+
+Algoritmning ifodalanish shakllari to’liq yoritilgan javobni ko’rsating?
+====
+#matn va blok sxema shakllari 
+====
+matn, blok -sxema va dastur shakllari 
+====
+matn va dastur shakllari 
+====
+blok -sxema va dastur shakllari 
+
+
++++++
+
+
+Barcha algoritmlarning asosida bitta masala yotgani … 
+====
+#Ba’zi bir boshlang'ich ma'lumotlarni so'nggi ma’lumotlarga turlandirish hisoblanadi.
+====
+ma'lumotlarni almashtirish 
+====
+identifikator komponentlar indekslar yordamida kiritiliwshi belgiga ega bo'lgan tuzilmali qiymatlarni o'rganish 
+====
+ma'lumotlarni tuzilishi bo'yicha tashkil etish 
+
+
++++++
+
+
+Saralash usullari algoritmlari turlarin aytib bering? 
+====
+1) aralashtirib saralash usullari. Pufakli saralash usuli.
+ 2) oddiy saylash yordamida saralash usuli 
+ 3) tez saralash usuli.
+ 4) birdaniga saralash usuli 
+ 5) tasodifiy saralash usuli 
+====
+ 1, 3, 5
+====
+2, 3, 5
+====
+#1, 2, 3
+====
+3, 4, 5
+
+
++++++
+
+
+Quyidagilarning qaysi biri algoritm?
+====
+gapirish madaniyati 
+====
+#arifmetik amallarni bajarish tartibi 
+====
+xavfsizlik choralari 
+====
+raqamlarni bitta tizimdan boshqasina o’tkazish
+
+
++++++
+
+
+Binarlı piramidali saralash metodi qaysi olimlar tomonidan taklif qilingan.
+====
+Dj. Uilyams, N. Virt 
+====
+R. U. Floyd, M. Odams 
+====
+N. Virt, R. U. Floyd
+====
+#Dj. Uilyams, R. U. Floyd 
+
+
++++++
+
+
+ …  deb, hisoblash jarayonida dastlabki berilganlar uchun berilganlar ko'pligi asosida vujudga kelgan algoritmdegi amallar miqdoriga aytiladi.
+====
+algoritmning ishonchliligi 
+====
+algoritmning murakkabgi 
+====
+algoritmning oddiyligi 
+====
+#algoritmning effektivliligi
+
+
++++++
+
+
+Algoritm turlari?
+====
+#chiziqli, takrorlanuvchi, tarmoqlanuvchi 
+====
+takrorlanuvchi, chiziqli, uzlikli
+====
+diskretli, massivli, chiziqli 
+====
+takrorlanuvchi, tarmoqlanuvchi, massivli 
+
+
++++++
+
+
+Ma’lumotlar o’rtasidagi aloqa va munosabatlarni aniqlab berishni ta’miynlaydigan axborot ketma-ketligining shakli ____________________________________ deyiladi.
+====
+#algoritm tuzilmasi 
+====
+tranzaktsiya
+====
+ma’lumotlar tuzilmasi 
+====
+loyihalashtirish 
+
+
++++++
+
+
+Java tilidagi shart operatori qaysi?
+====
+#if
+====
+switch
+====
+goto
+====
+break
+
+
++++++
+
+
+Javada tanlov operatori bu - …
+====
+if... else 
+====
+#switch... case
+====
+continue
+====
+goto
+
+
++++++
+
+
+Java tilida foydalaniladgian tsikl operatorlarini ko'rsating.
+====
+if, switch, else
+====
+while, for, print
+====
+#for, while, do while
+====
+System, main, double
+
+
++++++
+
+
+Noto'g'ri berilgan ifodani aniqlang?
+====
+#A! %5
+====
+A=5
+====
+A==5
+====
+A! =5
+
+
++++++
+
+
+Sharti keyin beriladigan tsikl operatori qaysi?
+====
+for
+====
+#do while
+====
+switch
+====
+while
+
+
++++++
+
+
+case operatoridan so'ng qanday belgi qo'yiladi?
+====
+#“:” – qo’sh nuqta 
+====
+“.” - nuqta 
+====
+“-“- tire
+====
+“;” - nuqtali vergul 
+
+
++++++
+
+
+Bitta satrli va ko'p satrli komentariyalar qanday?
+====
+Bitta satrli (//) bilan va ko'p satrli (*/.. /*) bilan.
+====
+Bitta satrli (/*.. */) bilan va ko'p satrli (//) bilan.
+====
+Bitta satrli (*/.. /*) bilan va ko'p satrli (//) bilan.
+====
+#Bitta satrli (//) bilan va ko'p satrli (/*.. */) bilan.
+
+
++++++
+
+
+Quyidagi dastur kodining bajarilish xotimasi nimaga teng? 
+ int n = 123;
+ System. out.println (" n=" +n%10+n/10%10+n/100 );
+====
+n=123
+====
+n=6
+====
+#n=321
+====
+n=0
+
+
++++++
+
+
+Tsikllarda break kalit so’zi nima uchun ishlatiladi?
+====
+tsiklning o'sha iteratsiyasin o'tkazib yuborish uchun 
+====
+tsiklning boshidan takrorlaydigan boshlash uchun 
+====
+#tsiklni to'xtatib, undan chiqib ketishi uchun 
+====
+tsiklding o'sha iteratsiyasini takroran ishlash uchun
+
+
++++++
+
+
+Úlken O notasiyada belgilengen sızıqlı izlew natiyjeliligin kórsetiń
+====
+#O(N)
+====
+O(log(N))
+====
+O(1)
+====
+O(sqrt(N))
+
+
++++++
+
+
+Úlken O notasiyada belgilengen binar izlew natiyjeliligin kórsetiń
+====
+#O(log(N))
+====
+O(N)
+====
+O(1)
+====
+O(sqrt(N))
+
+
++++++
+
+
+Úlken O notasiyada belgilengen indeksli-izbe-iz izlew natiyjeliligin kórsetiń
+====
+#O(sqrt(n))
+====
+O(N)
+====
+O(1)
+====
+O(log(N))
+
+
++++++
+
+
+Almashtirish orqali saralash g’oyasi. 
+====
+#n - 1 marta massivda quyidan yuqoriga qarab yurib kalitlar jufti-jufti bilan taqqoslanadi. Agar pastki kalit qiymati yuqoridagi jufti kalitidan kichik bo’lsa, u holda ular o’rni almashtiriladi.
+====
+Obyektlar hayolan tayyor a(1),...,a(i-1)  va boshlang’ich ketma-ketliklarga bo’linadi. Har bir qadamda (i=2 dan boshlab) boshlang’ich ketma-ketlikdan i-chi element ajratib olinib tayyor ketma-ketlikning kerakli joyiga qo’shiladi.
+====
+Berilgan obyektlar ichidan eng kichik kalitga ega element tanlanadi.Ushbu element boshlang’ich ketma-ketlikdagi birinchi element  bilan o’rin almashadi. Undan keyin ushbu jarayon qolgan elementlarda amalga oshiriladi.
+====
+Boshlang’ich ketma-ketlikning har r o’rinda joylashgan elementlari guruhlanib, har bir guruh alohida qo’shish usuli orqali saralanadi.
