@@ -1,0 +1,1242 @@
+1)
+Stoxastik dasturlash (SD) noaniqlikni hisobga olgan holda qaror qabul qilishni optimallashtirish bilan shug‘ullanadigan matematik dasturlash usuli bo‘lib, turli sohalarda keng qo‘llaniladi. Quyida SD masalalarining ayrim sohalardagi qo‘llanilishi haqida ma’lumot beriladi:
+
+1. Moliyaviy rejalashtirish va portfelni optimallashtirish
+Qo‘llanilishi: Moliyaviy aktivlar (aksiyalar, obligatsiyalar, derivativlar)dan iborat portfelni noaniq daromad va xavflarni hisobga olib optimallashtirish.
+Misol: Investitsiya portfelining kutilgan daromadini maksimal qilish yoki xavfni minimal qilish.
+2. Energetika sektori
+Qo‘llanilishi: Energiya ishlab chiqarish va taqsimlash tizimlarida resurslarni optimal boshqarish.
+Misol: Elektr energiyasi ishlab chiqarishda narxlar va talabning noaniqligini hisobga olib, ishlab chiqarish jadvalini tuzish.
+3. Transport va logistika
+Qo‘llanilishi: Yuk tashish, yo‘lovchi tashish, vaqti-vaqti bilan o‘zgarib turadigan talab va yo‘llardagi noaniqliklarni boshqarish.
+Misol: Yuk tashish marshrutlarini optimallashtirish yoki yo‘lovchi tashish jadvalini tuzish.
+4. Sog‘liqni saqlash
+Qo‘llanilishi: Resurslarni (shifokorlar, dorilar, uskunalar) boshqarish va talabni bashorat qilish.
+Misol: Kasalxonada bemorlarga xizmat ko‘rsatishni optimallashtirish uchun navbatni boshqarish.
+5. Ta’minot zanjiri boshqaruvi
+Qo‘llanilishi: Omborlarni boshqarish, yetkazib berish va talabni qondirish.
+Misol: Inventarni minimal darajada saqlash bilan birga, talabni qondirish ehtimolini oshirish.
+6. Qishloq xo‘jaligi
+Qo‘llanilishi: Hosildorlikni oshirish va tabiiy resurslarni boshqarish.
+Misol: Iqlim sharoitlari va hosildorlik noaniqligini hisobga olib, ekinlarni rejalashtirish.
+7. Sug‘urta
+Qo‘llanilishi: Xatarlarni tahlil qilish va sug‘urta mahsulotlarini ishlab chiqish.
+Misol: Sug‘urta polislarini baholashda xavfni optimallashtirish.
+8. Telekommunikatsiya
+Qo‘llanilishi: Tarmoqlarni boshqarish va trafikni taqsimlash.
+Misol: Aloqa tarmog‘ida o‘zgaruvchan trafik oqimlarini boshqarish.
+9. Atrof-muhitni boshqarish
+Qo‘llanilishi: Tabiiy resurslarni boshqarish va ekologik masalalarni optimallashtirish.
+Misol: Suv resurslarini boshqarish va chiqindilarni minimallashtirish.
+10. Ijtimoiy loyihalar
+Qo‘llanilishi: Ijtimoiy muammolarni hal qilishda resurslarni samarali taqsimlash.
+Misol: Tabiiy ofatlardan so‘ng yordamni taqsimlashni optimallashtirish.
+Har bir sohada stoxastik dasturlash modellarini qo‘llash uchun turli ma’lumotlar va noaniqlik darajalarini hisobga olish talab qilinadi. Bu esa masalalarni yechishda turli usullarni, jumladan, simulyatsiya, stsenariy tahlili va boshqa maxsus algoritmlardan foydalanishni talab qiladi.
+2)
+Tasodifiy parametrlarning taqsimlanish qonuniyatlari statistik va ehtimollik nazariyasining asosiy tushunchalaridan biri bo‘lib, ularning turli hodisalarda qanday tarqalishini va ehtimolliklarni tasvirlaydi. Quyida eng asosiy taqsimlanish qonuniyatlari keltirilgan:
+
+1. Diskret taqsimlanishlar
+Diskret taqsimlanishlar tasodifiy o‘zgaruvchilar faqat aniq sonli qiymatlar qabul qiladigan hollarga tegishli.
+
+a) Bernulli taqsimlanishi
+Tavsif: Hodisa faqat ikki natijaga ega bo‘lganda qo‘llanadi (masalan, muvaffaqiyat yoki muvaffaqiyatsizlik).
+Parametrlar: 
+𝑝
+p (muvaffaqiyat ehtimoli).
+Ehtimollik funktsiyasi:
+𝑃
+(
+𝑋
+=
+𝑥
+)
+=
+{
+𝑝
+agar 
+𝑥
+=
+1
+,
+1
+−
+𝑝
+agar 
+𝑥
+=
+0.
+P(X=x)={ 
+p
+1−p
+​
+  
+agar x=1,
+agar x=0.
+​
+ 
+b) Binomial taqsimlanish
+Tavsif: 
+𝑛
+n marta takrorlangan mustaqil Bernulli tajribalarda muvaffaqiyatlar soni.
+Parametrlar: 
+𝑛
+n (tajribalar soni), 
+𝑝
+p (muvaffaqiyat ehtimoli).
+Ehtimollik funktsiyasi:
+𝑃
+(
+𝑋
+=
+𝑘
+)
+=
+(
+𝑛
+𝑘
+)
+𝑝
+𝑘
+(
+1
+−
+𝑝
+)
+𝑛
+−
+𝑘
+,
+ 
+𝑘
+=
+0
+,
+1
+,
+…
+,
+𝑛
+.
+P(X=k)=( 
+k
+n
+​
+ )p 
+k
+ (1−p) 
+n−k
+ ,k=0,1,…,n.
+c) Poisson taqsimlanishi
+Tavsif: Ma’lum vaqt yoki oraliqda tasodifiy hodisalar sodir bo‘lish soni.
+Parametrlar: 
+𝜆
+λ (o‘rtacha hodisalar soni).
+Ehtimollik funktsiyasi:
+𝑃
+(
+𝑋
+=
+𝑘
+)
+=
+𝜆
+𝑘
+𝑒
+−
+𝜆
+𝑘
+!
+,
+ 
+𝑘
+=
+0
+,
+1
+,
+2
+,
+…
+.
+P(X=k)= 
+k!
+λ 
+k
+ e 
+−λ
+ 
+​
+ ,k=0,1,2,….
+2. Uzluksiz taqsimlanishlar
+Uzluksiz taqsimlanishlarda tasodifiy o‘zgaruvchilar har qanday haqiqiy qiymat qabul qilishi mumkin.
+
+a) Bir xil taqsimlanish (Uniform Distribution)
+Tavsif: Har bir qiymat bir xil ehtimollikka ega.
+Parametrlar: 
+𝑎
+a, 
+𝑏
+b (oralig‘i).
+Ehtimollik zichligi funktsiyasi:
+𝑓
+(
+𝑥
+)
+=
+{
+1
+𝑏
+−
+𝑎
+,
+agar 
+𝑎
+≤
+𝑥
+≤
+𝑏
+,
+0
+,
+aks holda
+.
+f(x)={ 
+b−a
+1
+​
+ ,
+0,
+​
+  
+agar a≤x≤b,
+aks holda.
+​
+ 
+b) Normal taqsimlanish (Gaussian Distribution)
+Tavsif: Ko‘plab tabiiy hodisalarni tasvirlashda ishlatiladi.
+Parametrlar: 
+𝜇
+μ (o‘rtacha), 
+𝜎
+2
+σ 
+2
+  (dispersiya).
+Ehtimollik zichligi funktsiyasi:
+𝑓
+(
+𝑥
+)
+=
+1
+2
+𝜋
+𝜎
+2
+𝑒
+−
+(
+𝑥
+−
+𝜇
+)
+2
+2
+𝜎
+2
+.
+f(x)= 
+2πσ 
+2
+ 
+​
+ 
+1
+​
+ e 
+− 
+2σ 
+2
+ 
+(x−μ) 
+2
+ 
+​
+ 
+ .
+c) Ekspansion taqsimlanish (Exponential Distribution)
+Tavsif: Hodisalar orasidagi vaqt oralig‘ini modellashda qo‘llanadi.
+Parametrlar: 
+𝜆
+λ (o‘rtacha intensivlik).
+Ehtimollik zichligi funktsiyasi:
+𝑓
+(
+𝑥
+)
+=
+{
+𝜆
+𝑒
+−
+𝜆
+𝑥
+,
+agar 
+𝑥
+≥
+0
+,
+0
+,
+aks holda
+.
+f(x)={ 
+λe 
+−λx
+ ,
+0,
+​
+  
+agar x≥0,
+aks holda.
+​
+ 
+d) Kauchy taqsimlanishi
+Tavsif: Og‘ir dumli taqsimlanish bo‘lib, dispersiyasi aniqlanmagan hodisalarni tasvirlash uchun ishlatiladi.
+Parametrlar: 
+𝑥
+0
+x 
+0
+​
+  (lokatsiya), 
+𝛾
+γ (shkala).
+Ehtimollik zichligi funktsiyasi:
+𝑓
+(
+𝑥
+)
+=
+1
+𝜋
+𝛾
+[
+1
++
+(
+𝑥
+−
+𝑥
+0
+𝛾
+)
+2
+]
+.
+f(x)= 
+πγ[1+( 
+γ
+x−x 
+0
+​
+ 
+​
+ ) 
+2
+ ]
+1
+​
+ .
+3. Boshqa maxsus taqsimlanishlar
+a) Geometrik taqsimlanish
+Tavsif: Birinchi muvaffaqiyatgacha bo‘lgan Bernulli tajribalar soni.
+Parametrlar: 
+𝑝
+p (muvaffaqiyat ehtimoli).
+b) Chi-kvadrat taqsimlanish
+Tavsif: Statistik tahlil va gipotezalarni sinashda qo‘llaniladi.
+Parametrlar: Erkinlik darajasi (
+𝑘
+k).
+c) Student taqsimlanishi (t-taqsimlanish)
+Tavsif: Namuna dispersiyasi noma’lum bo‘lganda parametrlarni baholash.
+Parametrlar: Erkinlik darajasi (
+𝑘
+k).
+d) Beta va Gamma taqsimlanishlari
+Tavsif: Beta — cheklangan oraliqlarda; Gamma — vaqtga bog‘liq jarayonlarda qo‘llaniladi.
+Bu qonuniyatlar turli matematik va ehtimoliy modellarni qurishda asosiy vosita bo‘lib xizmat qiladi. Har bir taqsimlanishni tanlash masalaning xususiyatlariga va ma’lumotlarning tabiiy xususiyatlariga bog‘liq.
+3)
+Bir bosqichli stoxastik dasturlash masalalarining qo‘yilishi
+Bir bosqichli stoxastik dasturlash masalasi odatda qaror qabul qilish jarayonida mavjud bo‘lgan noaniqliklarni hisobga olish uchun tuziladi. Bu noaniqliklar tasodifiy parametrlar orqali ifodalanadi va ular odatda ma’lum taqsimlanish qonuniyatlariga bo‘ysunadi. Masalaning maqsadi — ushbu noaniqlikni hisobga olgan holda qaror qabul qilishni optimallashtirishdir.
+
+Masala umumiy ko‘rinishi
+Bir bosqichli stoxastik dasturlash masalasi quyidagicha qo‘yilishi mumkin:
+
+min
+⁡
+𝑥
+∈
+𝑋
+𝐸
+𝜉
+[
+𝑓
+(
+𝑥
+,
+𝜉
+)
+]
+x∈X
+min
+​
+ E 
+ξ
+​
+ [f(x,ξ)]
+Tushunchalar va tarkibiy qismlar
+Qaror o‘zgaruvchisi (
+𝑥
+x):
+
+Bu o‘zgaruvchi masalani yechishda qabul qilinadigan qarorni ifodalaydi.
+𝑥
+x odatda cheklovlar to‘plami 
+𝑋
+X ichida bo‘ladi.
+Tasodifiy parametr (
+𝜉
+ξ):
+
+Tasodifiy parametr masalada noaniqlikni ifodalaydi. Masalan, talab, narx, yoki xarajat kabi o‘zgaruvchilar tasodifiy bo‘lishi mumkin.
+𝜉
+ξ ma’lum taqsimlanish qonuniyatiga ega bo‘lib, uning qiymatlari ma’lum emas, lekin ehtimollik bilan taqsimlangan.
+Maqsad funktsiyasi (
+𝑓
+(
+𝑥
+,
+𝜉
+)
+f(x,ξ)):
+
+Tasodifiy parametrlar va qaror o‘zgaruvchilariga bog‘liq bo‘lgan xarajat yoki foyda funksiyasi.
+Maqsad — ushbu funktsiyaning kutilgan qiymatini minimallashtirish yoki maksimallashtirish.
+Matematik kutish (
+𝐸
+𝜉
+E 
+ξ
+​
+ ):
+
+Tasodifiy parametrlar taqsimlanishi bo‘yicha maqsad funktsiyasining o‘rtacha qiymatini hisoblash.
+Cheklovlar to‘plami (
+𝑋
+X):
+
+Qaror o‘zgaruvchisi 
+𝑥
+x uchun qo‘yilgan cheklovlar to‘plami.
+Masalaning matematik modeli
+Bir bosqichli stoxastik dasturlash masalasi odatda quyidagicha yoziladi:
+
+min
+⁡
+𝑥
+∈
+𝑋
+𝐸
+𝜉
+[
+𝑐
+⊤
+𝑥
++
+ℎ
+(
+𝑥
+,
+𝜉
+)
+]
+x∈X
+min
+​
+ E 
+ξ
+​
+ [c 
+⊤
+ x+h(x,ξ)]
+Tarkibiy qismlar:
+𝑐
+⊤
+𝑥
+c 
+⊤
+ x: Qaror o‘zgaruvchilar bilan bog‘liq deterministik xarajatlar.
+ℎ
+(
+𝑥
+,
+𝜉
+)
+h(x,ξ): Tasodifiy parametrlar bilan bog‘liq xarajatlar.
+Cheklovlar:
+𝑔
+(
+𝑥
+,
+𝜉
+)
+≤
+0
+,
+𝑥
+∈
+𝑋
+g(x,ξ)≤0,x∈X
+Qo‘llanilishi mumkin bo‘lgan usullar
+Bir bosqichli stoxastik dasturlash masalalari quyidagi usullar yordamida yechiladi:
+
+Stsenariyga asoslangan usul:
+
+Tasodifiy parametrlar bir nechta stsenariylar orqali modellashtiriladi.
+Har bir stsenariy uchun maqsad funktsiya va cheklovlar aniqlanadi.
+Monte-Karlo simulyatsiyasi:
+
+Tasodifiy parametrlarning taqsimlanishini modellashtirish uchun qo‘llanadi.
+Aproximation (qisqartirish) usullari:
+
+Matematik kutishni optimallashtirishda hisoblash murakkabligini kamaytirish uchun aproksimatsiya ishlatiladi.
+Dinamik dasturlash:
+
+Agar masala vaqt bo‘yicha ketma-ket bog‘liq qarorlar qabul qilishni talab qilsa, dinamik dasturlash yondashuvi qo‘llaniladi.
+Amaliy misol
+Masala: Ombor inventarini boshqarish
+Vazifa: Omborda inventar darajasini optimallashtirish, talab (
+𝜉
+ξ) tasodifiy bo‘lganda.
+
+Model:
+
+min
+⁡
+𝑥
+≥
+0
+𝐸
+𝜉
+[
+ℎ
+(
+𝑥
+,
+𝜉
+)
+]
+x≥0
+min
+​
+ E 
+ξ
+​
+ [h(x,ξ)]
+Bu yerda:
+
+𝑥
+x: Omborda saqlanadigan buyumlar soni.
+𝜉
+ξ: Tasodifiy talab.
+ℎ
+(
+𝑥
+,
+𝜉
+)
+h(x,ξ): Omborda saqlash va talabni qondirish xarajatlari.
+Cheklovlar:
+
+𝑥
+≥
+0
+,
+𝑔
+(
+𝑥
+,
+𝜉
+)
+≤
+0
+x≥0,g(x,ξ)≤0
+Bir bosqichli stoxastik dasturlash masalalari real hayotdagi ko‘plab murakkab vaziyatlarni modellashtirish va noaniqliklarni hisobga olgan holda optimal qarorlar qabul qilish uchun asosiy vositadir.
+4)
+Chiziqlashtirish metodi yordamida bir bosqichli stoxastik dasturlash masalalarini yechish bosqichlari
+Chiziqlashtirish metodi stoxastik dasturlash masalalarini yechish uchun ishlatiladigan asosiy usullardan biri bo‘lib, tasodifiy parametrlarni deterministik ekvivalent masalaga aylantirish orqali masalani oddiy chiziqli dasturlash shakliga keltirishni o‘z ichiga oladi. Quyida bu usulning asosiy bosqichlari keltirilgan:
+
+1. Masala qo‘yilishini aniqlash
+Stoxastik dasturlash masalasi odatda quyidagi ko‘rinishda bo‘ladi:
+
+min
+⁡
+𝑥
+∈
+𝑋
+𝐸
+𝜉
+[
+𝑓
+(
+𝑥
+,
+𝜉
+)
+]
+x∈X
+min
+​
+ E 
+ξ
+​
+ [f(x,ξ)]
+Bu yerda:
+
+𝑥
+x: Qaror o‘zgaruvchilar.
+𝜉
+ξ: Tasodifiy parametrlar.
+𝑓
+(
+𝑥
+,
+𝜉
+)
+f(x,ξ): Maqsad funktsiyasi, tasodifiy parametrlar va qaror o‘zgaruvchilariga bog‘liq.
+𝑋
+X: Cheklovlar to‘plami.
+2. Tasodifiy parametrlarni aniqlash va diskretlashtirish
+Tasodifiy parametrlar 
+𝜉
+ξ odatda ma’lum taqsimlanish qonuniyatlariga ega bo‘ladi. Ushbu parametrlarni chiziqlashtirish uchun quyidagi qadamlar bajariladi:
+
+Diskret stsenariylar yaratish: 
+𝜉
+ξ ni bir nechta ehtimollik stsenariylariga bo‘lish. Har bir stsenariy uchun 
+𝜉
+ξ ning qiymati (
+𝜉
+𝑠
+ξ 
+s
+ ) va unga mos ehtimollik (
+𝑝
+𝑠
+p 
+s
+ ) aniqlanadi:
+
+𝑠
+=
+1
+,
+2
+,
+…
+,
+𝑆
+s=1,2,…,S
+Diskret kutilgan qiymatni hisoblash: Matematik kutish quyidagi formula yordamida hisoblanadi:
+
+𝐸
+𝜉
+[
+𝑓
+(
+𝑥
+,
+𝜉
+)
+]
+=
+∑
+𝑠
+=
+1
+𝑆
+𝑝
+𝑠
+𝑓
+(
+𝑥
+,
+𝜉
+𝑠
+)
+E 
+ξ
+​
+ [f(x,ξ)]= 
+s=1
+∑
+S
+​
+ p 
+s
+ f(x,ξ 
+s
+ )
+3. Deterministik ekvivalent masalani tuzish
+Tasodifiy masala deterministik ekvivalentga o‘tkaziladi. Bu bosqichda maqsad funktsiyasi va cheklovlar har bir stsenariy uchun alohida ko‘rib chiqiladi:
+
+min
+⁡
+𝑥
+,
+𝑦
+𝑠
+∑
+𝑠
+=
+1
+𝑆
+𝑝
+𝑠
+𝑓
+(
+𝑥
+,
+𝑦
+𝑠
+)
+x,y 
+s
+ 
+min
+​
+  
+s=1
+∑
+S
+​
+ p 
+s
+ f(x,y 
+s
+ )
+Bu yerda:
+
+𝑦
+𝑠
+y 
+s
+ : Stsenariyga bog‘liq yordamchi o‘zgaruvchilar.
+𝑓
+(
+𝑥
+,
+𝑦
+𝑠
+)
+f(x,y 
+s
+ ): Har bir stsenariy uchun xarajat yoki foyda funksiyasi.
+4. Qo‘shma masala shakllantirish
+Stsenariylar asosida deterministik masala quyidagi shaklda yoziladi:
+
+min
+⁡
+𝑥
+,
+𝑦
+𝑠
+∑
+𝑠
+=
+1
+𝑆
+𝑝
+𝑠
+[
+𝑐
+⊤
+𝑥
++
+ℎ
+(
+𝑥
+,
+𝑦
+𝑠
+)
+]
+x,y 
+s
+ 
+min
+​
+  
+s=1
+∑
+S
+​
+ p 
+s
+ [c 
+⊤
+ x+h(x,y 
+s
+ )]
+Cheklovlar:
+Umumiy cheklovlar: 
+𝑥
+∈
+𝑋
+x∈X
+Har bir stsenariy uchun qo‘shimcha cheklovlar:
+𝑔
+(
+𝑥
+,
+𝑦
+𝑠
+,
+𝜉
+𝑠
+)
+≤
+0
+,
+∀
+𝑠
+=
+1
+,
+…
+,
+𝑆
+g(x,y 
+s
+ ,ξ 
+s
+ )≤0,∀s=1,…,S
+5. Chiziqli dasturlash masalasi shakliga keltirish
+Agar 
+𝑓
+(
+𝑥
+,
+𝜉
+)
+f(x,ξ) va cheklovlar 
+𝑔
+(
+𝑥
+,
+𝜉
+)
+g(x,ξ) chiziqli bo‘lsa, masala chiziqli dasturlash (LP) ko‘rinishiga o‘tkaziladi:
+
+min
+⁡
+𝑥
+,
+𝑦
+𝑠
+∑
+𝑠
+=
+1
+𝑆
+𝑝
+𝑠
+[
+𝑐
+⊤
+𝑥
++
+𝑑
+⊤
+𝑦
+𝑠
+]
+x,y 
+s
+ 
+min
+​
+  
+s=1
+∑
+S
+​
+ p 
+s
+ [c 
+⊤
+ x+d 
+⊤
+ y 
+s
+ ]
+LP masala umumiy ko‘rinishi:
+Maqsad funktsiyasi:
+min
+⁡
+∑
+𝑠
+=
+1
+𝑆
+𝑝
+𝑠
+(
+𝑐
+⊤
+𝑥
++
+𝑑
+⊤
+𝑦
+𝑠
+)
+min 
+s=1
+∑
+S
+​
+ p 
+s
+ (c 
+⊤
+ x+d 
+⊤
+ y 
+s
+ )
+Cheklovlar:
+𝐴
+𝑥
++
+𝐵
+𝑠
+𝑦
+𝑠
+≤
+𝑏
+𝑠
+,
+∀
+𝑠
+=
+1
+,
+…
+,
+𝑆
+Ax+B 
+s
+ y 
+s
+ ≤b 
+s
+ ,∀s=1,…,S
+6. Masalani yechish
+Chiziqli dasturlash masalasini yechish uchun standart algoritmlar qo‘llaniladi:
+
+Simplex usuli (agar masala kichik bo‘lsa).
+Ichki nuqta usullari (katta o‘lchamli masalalar uchun).
+Stsenariylarni parallel hisoblash (agar stsenariylar soni ko‘p bo‘lsa).
+7. Yechimni tahlil qilish
+Optimal yechim (
+𝑥
+∗
+x 
+∗
+ ): Masalaning deterministik ekvivalentida topilgan qaror o‘zgaruvchilarning optimal qiymatlari.
+Stsenariylar bo‘yicha tahlil: Har bir stsenariy uchun 
+𝑦
+𝑠
+∗
+y 
+s∗
+  qiymatlari va mos xarajatlarni tahlil qilish.
+Noaniqlik ta’sirini baholash: Kutilgan qiymat (matematik kutish) va stsenariylar bo‘yicha farqlarni o‘rganish.
+Amaliy misol
+Masala: Talabni qondirish uchun ishlab chiqarish rejasini tuzish
+Vazifa: Talab (
+𝜉
+ξ) tasodifiy bo‘lganda ishlab chiqarish hajmini optimallashtirish.
+
+Model:
+
+min
+⁡
+𝑥
+𝐸
+𝜉
+[
+𝑐
+𝑥
++
+ℎ
+(
+𝑥
+,
+𝜉
+)
+]
+x
+min
+​
+ E 
+ξ
+​
+ [cx+h(x,ξ)]
+Bu yerda:
+
+𝑐
+𝑥
+cx: Ishlab chiqarish xarajatlari.
+ℎ
+(
+𝑥
+,
+𝜉
+)
+h(x,ξ): Yetkazib berish xarajatlari.
+Diskretlashtirish: Talab uchun 3 ta stsenariy:
+
+𝜉
+1
+=
+100
+,
+ 
+𝜉
+2
+=
+150
+,
+ 
+𝜉
+3
+=
+200
+ξ 
+1
+ =100,ξ 
+2
+ =150,ξ 
+3
+ =200
+Mos ehtimolliklar:
+
+𝑝
+1
+=
+0.3
+,
+ 
+𝑝
+2
+=
+0.4
+,
+ 
+𝑝
+3
+=
+0.3
+p 
+1
+ =0.3,p 
+2
+ =0.4,p 
+3
+ =0.3
+Deterministik masala:
+
+min
+⁡
+𝑥
+,
+𝑦
+𝑠
+∑
+𝑠
+=
+1
+3
+𝑝
+𝑠
+[
+5
+𝑥
++
+10
+𝑦
+𝑠
+]
+x,y 
+s
+ 
+min
+​
+  
+s=1
+∑
+3
+​
+ p 
+s
+ [5x+10y 
+s
+ ]
+Cheklovlar:
+
+𝑥
++
+𝑦
+𝑠
+≥
+𝜉
+𝑠
+,
+𝑥
+,
+𝑦
+𝑠
+≥
+0
+x+y 
+s
+ ≥ξ 
+s
+ ,x,y 
+s
+ ≥0
+Masalani standart LP usullari bilan yechish mumkin.
+5)
+Stoxastik dasturlashning boshqa optimallash usullaridan asosiy farqlari
+Stoxastik dasturlash (SD) noaniq ma’lumotlar bilan ishlashni talab qiladigan optimallash muammolarini yechish uchun mo‘ljallangan. U boshqa optimallash usullaridan quyidagi asosiy jihatlari bilan farqlanadi:
+
+1. Noaniqlikni hisobga olish
+Stoxastik dasturlash:
+
+Masalada tasodifiy parametrlar (
+𝜉
+ξ) mavjud va ular odatda ma’lum ehtimollik taqsimlanishiga ega.
+Maqsad — noaniqlikni hisobga olgan holda optimal qaror qabul qilish.
+Matematik kutish (
+𝐸
+E), dispersiya yoki boshqa statistik mezonlardan foydalanadi.
+Deterministik optimallash:
+
+Ma’lumotlar aniq va qat’iy bo‘lib, tasodifiylik yoki noaniqlik hisobga olinmaydi.
+Maqsad — aniqlangan ma’lumotlar asosida optimal yechim topish.
+2. Maqsad funktsiyasi
+Stoxastik dasturlash:
+
+Maqsad funktsiyasi tasodifiy parametrlar va qaror o‘zgaruvchilarining kombinatsiyasiga asoslangan:
+min
+⁡
+𝑥
+∈
+𝑋
+𝐸
+𝜉
+[
+𝑓
+(
+𝑥
+,
+𝜉
+)
+]
+x∈X
+min
+​
+ E 
+ξ
+​
+ [f(x,ξ)]
+Funktsiya ko‘pincha matematik kutish yoki xavfni minimallashtirishni o‘z ichiga oladi.
+Boshqa optimallash usullari:
+
+Maqsad funktsiyasi tasodifiyliksiz aniqlangan:
+min
+⁡
+𝑥
+∈
+𝑋
+𝑓
+(
+𝑥
+)
+x∈X
+min
+​
+ f(x)
+Funktsiya odatda statik va noaniqlikdan mustaqil.
+3. Ehtimollik taqsimlanishi bilan ishlash
+Stoxastik dasturlash:
+
+Tasodifiy parametrlar ehtimollik taqsimlanish qonuniyatlariga ega (masalan, normal, eksponensial, yoki diskret).
+Ushbu taqsimlanishdan foydalanib, matematik kutish va boshqa statistik ko‘rsatkichlar hisoblanadi.
+Deterministik optimallash:
+
+Tasodifiylik mavjud emas, barcha parametrlar qat’iy va aniq.
+4. Qaror qabul qilish bosqichlari
+Stoxastik dasturlash:
+
+Qarorlar noaniqlikdan oldin qabul qilinadi va bu qarorlarning samaradorligi noaniqlik yuzaga kelgandan keyin baholanadi.
+Masalalar ko‘pincha bir bosqichli yoki ko‘p bosqichli bo‘ladi.
+Boshqa optimallash usullari:
+
+Qarorlar faqat mavjud ma’lumotlarga asoslangan holda qabul qilinadi.
+Ko‘p bosqichli jarayonlar kamdan-kam qo‘llaniladi.
+5. Yechim usullari
+Stoxastik dasturlash:
+
+Stsenariy usuli, Monte-Karlo simulyatsiyasi, va chiziqlashtirish kabi maxsus usullar talab qilinadi.
+Tasodifiy parametrlarni deterministik ekvivalentga o‘tkazish bosqichi mavjud.
+Boshqa optimallash usullari:
+
+Standart algoritmlar, masalan, Simplex usuli yoki ichki nuqta usullari, odatda yetarli bo‘ladi.
+6. Amaliy qo‘llanilishi
+Stoxastik dasturlash:
+
+Tabiati noaniqlik bilan bog‘liq bo‘lgan vaziyatlarda qo‘llaniladi:
+Ta’minot zanjiri boshqaruvi.
+Moliyaviy portfelni optimallashtirish.
+Energiya tarmoqlarini boshqarish.
+Resurslarni taqsimlashda xavfni boshqarish.
+Boshqa optimallash usullari:
+
+Noaniqlik bo‘lmagan yoki qat’iy ma’lumotlar asosida qarorlar qabul qilish talab qilinadigan sohalarda:
+Rivojlanish loyihalarini rejalashtirish.
+Transport masalalari.
+Qurilish va ishlab chiqarish rejalari.
+7. Xavfni boshqarish
+Stoxastik dasturlash:
+
+Xavf mezonlari (masalan, Value-at-Risk yoki Conditional Value-at-Risk) hisobga olinadi.
+Noaniqlik sharoitida xavf va foyda o‘rtasidagi muvozanatni ta’minlashga intiladi.
+Boshqa optimallash usullari:
+
+Xavf odatda hisobga olinmaydi yoki qo‘shimcha cheklovlar orqali ifodalanadi.
+8. Hisoblash murakkabligi
+Stoxastik dasturlash:
+
+Tasodifiy parametrlar va stsenariylar soniga qarab hisoblash murakkabligi ortadi.
+Ko‘p stsenariyli masalalar katta hajmli deterministik ekvivalentga ega bo‘ladi.
+Boshqa optimallash usullari:
+
+Hisoblash murakkabligi odatda masalaning o‘lchamiga bog‘liq, lekin tasodifiylik murakkabligini oshirmaydi.
+Xulosa
+Stoxastik dasturlash boshqa optimallash usullaridan asosan noaniqlikni hisobga olish, tasodifiy parametrlar bilan ishlash, va matematik kutish yoki xavfni minimallashtirishga yo‘naltirilganligi bilan ajralib turadi. Ushbu yondashuv real hayotdagi murakkab va noaniq vaziyatlarda optimal qaror qabul qilish uchun muhim vositadir.
